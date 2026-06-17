@@ -1,4 +1,8 @@
 import { isStaticDataHost, YBS_API_BASE } from "@/constants/api";
+import {
+  normalizeBusRoutes,
+  normalizeBusStops,
+} from "@/services/busDataNormalize";
 import type {
   ApiPlanResponse,
   ApiRouteDetail,
@@ -169,7 +173,11 @@ export async function fetchRemoteDataset(baseUrl = YBS_API_BASE): Promise<Remote
         fetchJson<BusRoute[]>(`${clean}/data/bus_routes_list.json`),
         fetchJson<BusStop[]>(`${clean}/data/bus_stops_list.json`),
       ]);
-      return { routes, stops, source: "ybsbusroute (GitHub)" };
+      return {
+        routes: normalizeBusRoutes(routes),
+        stops: normalizeBusStops(stops),
+        source: "ybsbusroute (GitHub)",
+      };
     }
 
     const summary = await fetchAllRouteSummaries(baseUrl);
@@ -184,8 +192,8 @@ export async function fetchRemoteDataset(baseUrl = YBS_API_BASE): Promise<Remote
     const stops = stopsResponse.stops.map(apiStopToBusStop);
 
     return {
-      routes,
-      stops,
+      routes: normalizeBusRoutes(routes),
+      stops: normalizeBusStops(stops),
       source: "ybsbusroute API",
     };
   } catch {

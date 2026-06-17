@@ -6,6 +6,11 @@ import {
   loadCustomRouteRecords,
 } from "@/services/customRouteStorage";
 import { fetchRemoteDataset } from "@/services/ybsRouteApi";
+import {
+  hasValidCoords,
+  normalizeBusRoutes,
+  normalizeBusStops,
+} from "@/services/busDataNormalize";
 import type {
   BusRoute,
   BusStop,
@@ -15,8 +20,8 @@ import type {
   RouteStop,
 } from "@/types/bus";
 
-const BUNDLED_ROUTES = routesList as BusRoute[];
-const BUNDLED_STOPS = stopsList as BusStop[];
+const BUNDLED_ROUTES = normalizeBusRoutes(routesList as BusRoute[]);
+const BUNDLED_STOPS = normalizeBusStops(stopsList as BusStop[]);
 const BUNDLED_META = metadata as Metadata;
 
 let ACTIVE_META: Metadata = BUNDLED_META;
@@ -214,6 +219,7 @@ export function getNearestStop(
   let nearestDistance = Infinity;
 
   for (const stop of STOPS) {
+    if (!hasValidCoords(stop)) continue;
     const distance = haversineKm(latitude, longitude, stop.lat, stop.lng);
     if (distance <= radiusKm && distance < nearestDistance) {
       nearestDistance = distance;
@@ -384,10 +390,11 @@ export function getNearbyStops(
   radiusKm = 1.5,
   limit = 20
 ): BusStop[] {
-  const candidates = STOPS.map((stop) => ({
-    stop,
-    distance: haversineKm(latitude, longitude, stop.lat, stop.lng),
-  }))
+  const candidates = STOPS.filter(hasValidCoords)
+    .map((stop) => ({
+      stop,
+      distance: haversineKm(latitude, longitude, stop.lat, stop.lng),
+    }))
     .filter((item) => item.distance <= radiusKm)
     .sort((a, b) => a.distance - b.distance);
 

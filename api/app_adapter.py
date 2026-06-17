@@ -63,10 +63,8 @@ def load_app_routes() -> list[dict[str, Any]]:
                     "road_mm": stop.get("road") or "",
                     "township_en": stop.get("township") or "",
                     "township_mm": stop.get("township") or "",
-                    "location": {
-                        "lat": lat or 0.0,
-                        "lng": lng or 0.0,
-                    },
+                    "lat": lat or 0.0,
+                    "lng": lng or 0.0,
                 }
             )
 
@@ -112,7 +110,8 @@ def load_app_stops() -> list[dict[str, Any]]:
                 "road_mm": stop.get("road") or "",
                 "township_en": stop.get("township") or "",
                 "township_mm": stop.get("township") or "",
-                "location": {"lat": lat or 0.0, "lng": lng or 0.0},
+                "lat": lat or 0.0,
+                "lng": lng or 0.0,
                 "routes": routes,
             }
         )

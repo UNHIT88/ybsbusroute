@@ -45,6 +45,11 @@ function haversineM(lat1: number, lon1: number, lat2: number, lon2: number): num
 const LOCATION_TIMEOUT_MS = 12_000;
 
 async function getLocationWithFallback() {
+  const servicesEnabled = await Location.hasServicesEnabledAsync();
+  if (!servicesEnabled) {
+    throw new Error("location-services-disabled");
+  }
+
   try {
     return await Promise.race([
       Location.getCurrentPositionAsync({
@@ -110,7 +115,7 @@ export function CurrentStopBuses({ onStopChange }: Props) {
       const { latitude, longitude } = location.coords;
       setUserCoords({ lat: latitude, lng: longitude });
 
-      const nearest = getNearestStop(latitude, longitude, 0.5);
+      const nearest = getNearestStop(latitude, longitude, 1.5);
       if (nearest) {
         const dist = haversineM(latitude, longitude, nearest.lat, nearest.lng);
         selectStop(nearest, dist);
@@ -192,9 +197,17 @@ export function CurrentStopBuses({ onStopChange }: Props) {
           <View style={styles.headerActions}>
             <Pressable
               style={({ pressed }) => [styles.iconButton, pressed && styles.pressed]}
-              onPress={detectNearestStop}
+              onPress={() => {
+                setDetecting(true);
+                detectNearestStop();
+              }}
+              disabled={detecting}
             >
-              <Ionicons name="locate" size={18} color={colors.primary} />
+              {detecting ? (
+                <ActivityIndicator size="small" color={colors.primary} />
+              ) : (
+                <Ionicons name="locate" size={18} color={colors.primary} />
+              )}
             </Pressable>
             <Pressable
               style={({ pressed }) => [
