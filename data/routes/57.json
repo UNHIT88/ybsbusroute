@@ -19,7 +19,15 @@
     {
       "sequence": 1,
       "name": "ဘီအိုစီ",
-      "type": "start"
+      "type": "start",
+      "yrta_id": "1121",
+      "location": {
+        "lng": 96.038336,
+        "lat": 16.872398
+      },
+      "road": "အမှတ်(၅)လမ်းမ",
+      "township": "လှိုင်သာယာ",
+      "match_type": "exact"
     },
     {
       "sequence": 2,

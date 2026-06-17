@@ -28,17 +28,41 @@
     {
       "sequence": 2,
       "name": "ဓမ္မာရုံ",
-      "type": null
+      "type": null,
+      "yrta_id": "1606",
+      "location": {
+        "lng": 96.169914,
+        "lat": 16.921324
+      },
+      "road": "ဝေဘာဂီလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 3,
       "name": "၆ကွေ့",
-      "type": null
+      "type": null,
+      "yrta_id": "818",
+      "location": {
+        "lng": 96.162873,
+        "lat": 16.919091
+      },
+      "road": "သုဓမ္မာလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 4,
       "name": "ဧရာ",
-      "type": null
+      "type": null,
+      "yrta_id": "1823",
+      "location": {
+        "lng": 96.163725,
+        "lat": 16.917321
+      },
+      "road": "သုဓမ္မာလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 5,
@@ -58,7 +82,15 @@
     {
       "sequence": 8,
       "name": "သုနန္ဒာ",
-      "type": null
+      "type": null,
+      "yrta_id": "863",
+      "location": {
+        "lng": 96.16562,
+        "lat": 16.904202
+      },
+      "road": "သုဓမ္မာလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 9,
@@ -68,7 +100,15 @@
     {
       "sequence": 10,
       "name": "သန္တာ",
-      "type": null
+      "type": null,
+      "yrta_id": "861",
+      "location": {
+        "lng": 96.162273,
+        "lat": 16.898997
+      },
+      "road": "သုဓမ္မာလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 11,
@@ -83,27 +123,67 @@
     {
       "sequence": 13,
       "name": "ကျောက်ရေတွင်း",
-      "type": null
+      "type": null,
+      "yrta_id": "885",
+      "location": {
+        "lng": 96.154359,
+        "lat": 16.887233
+      },
+      "road": "သုဓမ္မာလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 14,
       "name": "ဘုန်းကြီးလမ်း",
-      "type": null
+      "type": null,
+      "yrta_id": "1284",
+      "location": {
+        "lng": 96.144892,
+        "lat": 16.775216
+      },
+      "road": "ဘုန်းကြီးလမ်း",
+      "township": "လမ်းမတော်",
+      "match_type": "exact"
     },
     {
       "sequence": 15,
       "name": "၂ဈေး",
-      "type": null
+      "type": null,
+      "yrta_id": "1272",
+      "location": {
+        "lng": 96.158233,
+        "lat": 16.879066
+      },
+      "road": "သုဇိတာလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 16,
       "name": "၅လမ်း",
-      "type": null
+      "type": null,
+      "yrta_id": "1281",
+      "location": {
+        "lng": 96.156913,
+        "lat": 16.874128
+      },
+      "road": "သုဓမ္မာလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 17,
       "name": "လမ်းဝ",
-      "type": null
+      "type": null,
+      "yrta_id": "1280",
+      "location": {
+        "lng": 96.154443,
+        "lat": 16.867223
+      },
+      "road": "သုဓမ္မာလမ်း",
+      "township": "မြောက်ဥက္ကလာပ",
+      "match_type": "exact"
     },
     {
       "sequence": 18,
@@ -118,22 +198,54 @@
     {
       "sequence": 20,
       "name": "ချော်တွင်းကုန်း",
-      "type": null
+      "type": null,
+      "yrta_id": "1236",
+      "location": {
+        "lng": 96.157233,
+        "lat": 16.848967
+      },
+      "road": "ကမ္ဘာအေးဘုရားလမ်း",
+      "township": "မရမ်းကုန်း",
+      "match_type": "exact"
     },
     {
       "sequence": 21,
       "name": "၁၀၆",
-      "type": null
+      "type": null,
+      "yrta_id": "36",
+      "location": {
+        "lng": 96.156468,
+        "lat": 16.842775
+      },
+      "road": "ကမ္ဘာအေးဘုရားလမ်း",
+      "township": "မရမ်းကုန်း",
+      "match_type": "exact"
     },
     {
       "sequence": 22,
       "name": "ရိပ်သာ",
-      "type": null
+      "type": null,
+      "yrta_id": "1241",
+      "location": {
+        "lng": 96.155953,
+        "lat": 16.838375
+      },
+      "road": "ကမ္ဘာအေးဘုရားလမ်း",
+      "township": "မရမ်းကုန်း",
+      "match_type": "exact"
     },
     {
       "sequence": 23,
       "name": "လမ်းနီ",
-      "type": null
+      "type": null,
+      "yrta_id": "1245",
+      "location": {
+        "lng": 96.155303,
+        "lat": 16.83381
+      },
+      "road": "ကမ္ဘာအေးဘုရားလမ်း",
+      "township": "မရမ်းကုန်း",
+      "match_type": "exact"
     },
     {
       "sequence": 24,
@@ -143,12 +255,28 @@
     {
       "sequence": 25,
       "name": "ကုက္ကိုင်း",
-      "type": null
+      "type": null,
+      "yrta_id": "2323",
+      "location": {
+        "lng": 96.152889,
+        "lat": 16.823614
+      },
+      "road": "တက္ကသိုလ်ရိပ်သာလမ်း",
+      "township": "ဗဟန်း",
+      "match_type": "exact"
     },
     {
       "sequence": 26,
       "name": "ဟာမစ်တစ်",
-      "type": null
+      "type": null,
+      "yrta_id": "321",
+      "location": {
+        "lng": 96.156242,
+        "lat": 16.810533
+      },
+      "road": "ကမ္ဘာအေးဘုရားလမ်း",
+      "township": "ဗဟန်း",
+      "match_type": "exact"
     },
     {
       "sequence": 27,
@@ -158,7 +286,15 @@
     {
       "sequence": 28,
       "name": "ရေခဲဆိုင်",
-      "type": null
+      "type": null,
+      "yrta_id": "210",
+      "location": {
+        "lng": 96.158249,
+        "lat": 16.80108
+      },
+      "road": "ကိုယ်မင်းကိုယ်ချင်းလမ်း",
+      "township": "ဗဟန်း",
+      "match_type": "exact"
     },
     {
       "sequence": 29,
@@ -168,7 +304,15 @@
     {
       "sequence": 30,
       "name": "ကျောက်တိုင်",
-      "type": null
+      "type": null,
+      "yrta_id": "202",
+      "location": {
+        "lng": 96.157233,
+        "lat": 16.789124
+      },
+      "road": "တိရိစ္ဆာန်ဥယျာဉ်လမ်း",
+      "township": "ဒဂုံ",
+      "match_type": "exact"
     },
     {
       "sequence": 31,

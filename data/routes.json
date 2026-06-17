@@ -4,7 +4,9 @@
     "scraped_at": "2026-06-17T14:24:02.738157+00:00",
     "route_count": 149,
     "error_count": 0,
-    "license_note": "Data sourced from publicly available records via yangonbusroute.com. See https://yangonbusroute.com/about for their data transparency disclaimer."
+    "license_note": "Data sourced from publicly available records via yangonbusroute.com. See https://yangonbusroute.com/about for their data transparency disclaimer.",
+    "coordinates_source": "YRTA open data via eimg/ybs-data-json",
+    "coordinates_enriched_at": "2026-06-17T14:33:30.074470+00:00"
   },
   "routes": [
     {

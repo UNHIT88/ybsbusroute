@@ -10,6 +10,8 @@ from typing import Any
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 
+from api.routing import find_routes
+
 DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 
 app = FastAPI(
@@ -18,7 +20,7 @@ app = FastAPI(
         "Open API for Yangon Bus Service (YBS) routes and stops. "
         "Data collected from https://yangonbusroute.com/."
     ),
-    version="1.0.0",
+    version="1.1.0",
 )
 
 app.add_middleware(
@@ -51,7 +53,7 @@ def root() -> dict[str, Any]:
     index = load_routes_index()
     return {
         "name": "YBS Bus Route API",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "source": index["metadata"]["source"],
         "scraped_at": index["metadata"]["scraped_at"],
         "route_count": index["metadata"]["route_count"],
@@ -60,6 +62,7 @@ def root() -> dict[str, Any]:
             "route_detail": "/api/routes/{route_id}",
             "stops": "/api/stops",
             "search": "/api/search?q={query}",
+            "plan": "/api/plan?from={start}&to={end}",
             "health": "/health",
         },
     }
@@ -151,4 +154,29 @@ def search(
         "query": q,
         "routes": matched_routes,
         "stops": matched_stops,
+    }
+
+
+@app.get("/api/plan")
+def plan_route(
+    from_stop: str = Query(..., alias="from", min_length=1, description="Start stop name"),
+    to_stop: str = Query(..., alias="to", min_length=1, description="Destination stop name"),
+    max_transfers: int = Query(default=2, ge=0, le=4, description="Maximum bus transfers"),
+) -> dict[str, Any]:
+    try:
+        plans = find_routes(from_stop, to_stop, max_transfers=max_transfers)
+    except ValueError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+    if not plans:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No route found from '{from_stop}' to '{to_stop}' with up to {max_transfers} transfers",
+        )
+
+    return {
+        "from": from_stop,
+        "to": to_stop,
+        "max_transfers": max_transfers,
+        "plans": plans,
     }
