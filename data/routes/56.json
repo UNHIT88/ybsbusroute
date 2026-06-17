@@ -1,0 +1,39 @@
+{
+  "id": "56",
+  "number": "48",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/56",
+  "summary": "ဒလ - ဘုရားငုတ်တို - ကံဘဲ့ - တွံတေး",
+  "major_stops": [
+    "ဒလ",
+    "ဘုရားငုတ်တို",
+    "ကံဘဲ့",
+    "တွံတေး"
+  ],
+  "origin": "ဒလ",
+  "destination": "တွံတေး",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ဒလဘုရားငုတ္တို",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ဘုရားငုတ္တို",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ကံဘဲ့",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "တွံတေး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 4
+}

@@ -1,0 +1,210 @@
+{
+  "id": "76",
+  "number": "67",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/76",
+  "summary": "အလယ်ရွာ - ကျန်စစ်သားလမ်း - ရုံးရှေ့ - ဘုရားလမ်း(စက်မှုဇုန်) - ထနောင်းရိပ် မြတောင်ဝန်ကြီးဦးမှိုလမ်း - ကနောင်မင်းသားကြီးလမ်း - စက်မှုဇုန် - FMI CITY ၁ထိပ် - ရွှေလင်ပန်းအဝိုင်း - အလယ်ရွာ",
+  "major_stops": [
+    "အလယ်ရွာ",
+    "ကျန်စစ်သားလမ်း",
+    "ရုံးရှေ့",
+    "ဘုရားလမ်း(စက်မှုဇုန်)",
+    "ထနောင်းရိပ် မြတောင်ဝန်ကြီးဦးမှိုလမ်း",
+    "ကနောင်မင်းသားကြီးလမ်း",
+    "စက်မှုဇုန်",
+    "FMI CITY ၁ထိပ်",
+    "ရွှေလင်ပန်းအဝိုင်း",
+    "အလယ်ရွာ"
+  ],
+  "origin": "အလယ်ရွာ",
+  "destination": "အလယ်ရွာ",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "အလယ်ရွာ",
+      "type": "start",
+      "yrta_id": "1854",
+      "location": {
+        "lng": 96.315758,
+        "lat": 16.680719
+      },
+      "road": "သန်လျှင်-ကျောက်တန်းလမ်း",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 2,
+      "name": "အဝိုင်းထိပ်(မီးသတ်အဝိုင်း)",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "မူကြိုလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "စိန်ပန်း",
+      "type": null,
+      "yrta_id": "1025",
+      "location": {
+        "lng": 96.196543,
+        "lat": 16.900465
+      },
+      "road": "ဗိုလ်မှူးဗထူးလမ်း",
+      "township": "မြောက်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 5,
+      "name": "ဈေးလေး",
+      "type": null,
+      "yrta_id": "1027",
+      "location": {
+        "lng": 96.197938,
+        "lat": 16.901163
+      },
+      "road": "ဗိုလ်မှူးဗထူးလမ်း",
+      "township": "မြောက်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 6,
+      "name": "ကျောင်းရှေ့",
+      "type": null,
+      "yrta_id": "1468",
+      "location": {
+        "lng": 96.13187,
+        "lat": 17.031038
+      },
+      "road": "အမှတ်(၁)လမ်းမ",
+      "township": "မင်္ဂလာဒုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 7,
+      "name": "ရွှေသီးလေး",
+      "type": null,
+      "yrta_id": "1120",
+      "location": {
+        "lng": 96.062883,
+        "lat": 16.891883
+      },
+      "road": "ကျန်စစ်သားလမ်း",
+      "township": "လှိုင်သာယာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 8,
+      "name": "၁၅ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "၁၂၇ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ကမ္ဘာဇ",
+      "type": null,
+      "yrta_id": "2242",
+      "location": {
+        "lng": 96.061587,
+        "lat": 16.886997
+      },
+      "road": "ကျန်စစ်သားလမ်း",
+      "township": "လှိုင်သာယာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 11,
+      "name": "၁၀၃ဂိတ်ဟောင်း",
+      "type": null,
+      "yrta_id": "2240",
+      "location": {
+        "lng": 96.061319,
+        "lat": 16.881894
+      },
+      "road": "ကျန်စစ်သားလမ်း",
+      "township": "လှိုင်သာယာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 12,
+      "name": "ရုံးရှေ့",
+      "type": null,
+      "yrta_id": "1036",
+      "location": {
+        "lng": 96.210383,
+        "lat": 16.914898
+      },
+      "road": "ဒဂုံတက္ကသိုလ်",
+      "township": "မြောက်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 13,
+      "name": "ဈေးလေး(အောက်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ဘုရားလမ်း",
+      "type": null,
+      "yrta_id": "1080",
+      "location": {
+        "lng": 96.181458,
+        "lat": 16.847858
+      },
+      "road": "သစ္စာလမ်း",
+      "township": "တောင်ဥက္ကလာပ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 15,
+      "name": "ရေဥက္ကံ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ထနောင်းရိပ်",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ကျန်းမာရေး",
+      "type": null,
+      "yrta_id": "519",
+      "location": {
+        "lng": 96.204697,
+        "lat": 16.796222
+      },
+      "road": "မြင်တော်သာလမ်း",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 18,
+      "name": "ဆင်နှစ်ကောင်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "အောင်ချမ်းသာပြာပုံ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "၅သုံးလုံး",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ညောင်ရွာဈေးထိပ်",
+      "type": "end"
+    }
+  ],
+  "stop_count": 21
+}

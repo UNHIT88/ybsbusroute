@@ -1,0 +1,462 @@
+{
+  "id": "37",
+  "number": "31",
+  "prefix": "YPS",
+  "color": "#805ad5",
+  "url": "https://yangonbusroute.com/ybs-route/37",
+  "summary": "အရှေ့ပိုင်းတက္ကသိုလ်(သန်လျင်) - ဘုရားကုန်းလမ်းဆုံ - ကျိုက်ခေါက်ဘုရားလမ်း - သန်လျင်မြို့မဈေး - ရေနံဂိတ်ဝ - သန်လျင်တံတား - ရှုခင်းသာမြို့ပတ်လမ်း - ရှုခင်းသာ(WATER BOOM) -ယမုံနာလမ်း - မဟာဗန္ဓုလတံတား - လမ်း၅၀ - ကုန်သည်လမ်း - ပန်းဆိုးတန်း",
+  "major_stops": [
+    "အရှေ့ပိုင်းတက္ကသိုလ်(သန်လျင်)",
+    "ဘုရားကုန်းလမ်းဆုံ",
+    "ကျိုက်ခေါက်ဘုရားလမ်း",
+    "သန်လျင်မြို့မဈေး",
+    "ရေနံဂိတ်ဝ",
+    "သန်လျင်တံတား",
+    "ရှုခင်းသာမြို့ပတ်လမ်း",
+    "ရှုခင်းသာ(WATER BOOM)",
+    "ယမုံနာလမ်း",
+    "မဟာဗန္ဓုလတံတား",
+    "လမ်း၅၀",
+    "ကုန်သည်လမ်း",
+    "ပန်းဆိုးတန်း"
+  ],
+  "origin": "အရှေ့ပိုင်းတက္ကသိုလ်(သန်လျင်)",
+  "destination": "ပန်းဆိုးတန်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ခြောက်လမ်းသွား",
+      "type": "start",
+      "yrta_id": "1884",
+      "location": {
+        "lng": 96.296875,
+        "lat": 16.738345
+      },
+      "road": "အမှတ်(၆)လမ်းမ",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 2,
+      "name": "အရှေ့ပိုင်းတက္ကသိုလ်",
+      "type": null,
+      "yrta_id": "1641",
+      "location": {
+        "lng": 96.288403,
+        "lat": 16.734071
+      },
+      "road": "အမှတ်(၆)လမ်းမ",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 3,
+      "name": "ကွမ်းယာဆိုင်",
+      "type": null,
+      "yrta_id": "1639",
+      "location": {
+        "lng": 96.283168,
+        "lat": 16.731071
+      },
+      "road": "အမှတ်(၆)လမ်းမ",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 4,
+      "name": "ညောင်ပင်",
+      "type": null,
+      "yrta_id": "1248",
+      "location": {
+        "lng": 96.168176,
+        "lat": 16.853834
+      },
+      "road": "ပါရမီလမ်း",
+      "township": "မရမ်းကုန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 5,
+      "name": "ဘုရားကုန်းလမ်းဆုံ",
+      "type": null,
+      "yrta_id": "1824",
+      "location": {
+        "lng": 96.27413,
+        "lat": 16.728523
+      },
+      "road": "သန်လျှင်-ကျောက်တန်းလမ်း",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 6,
+      "name": "ကျိုက်ခေါက်ဘုရားရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "၁၈ကုန်းထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "အောင်ချမ်းသာ",
+      "type": null,
+      "yrta_id": "1588",
+      "location": {
+        "lng": 96.071359,
+        "lat": 16.989323
+      },
+      "road": "မဟာဗန္ဓုလလမ်း",
+      "township": "ရွှေပြည်သာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 9,
+      "name": "ဆည်မြောင်း",
+      "type": null,
+      "yrta_id": "1812",
+      "location": {
+        "lng": 96.261367,
+        "lat": 16.750962
+      },
+      "road": "ကျိုက်ခေါက်ဘုရားလမ်း",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 10,
+      "name": "သမကောလိပ်",
+      "type": null,
+      "yrta_id": "1643",
+      "location": {
+        "lng": 96.258491,
+        "lat": 16.755133
+      },
+      "road": "သံလျင်",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 11,
+      "name": "ကျားဘုရား",
+      "type": null,
+      "yrta_id": "1810",
+      "location": {
+        "lng": 96.2566,
+        "lat": 16.757768
+      },
+      "road": "ကျိုက်ခေါက်ဘုရားလမ်း",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 12,
+      "name": "ဆေးရုံ အပေါ်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဆေးရုံအောက်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ပဲခူးစု",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ဖို့မြေ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "မြို့မဈေး(သန်လျင်)",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "မြို့မလမ်း(သန်လျင်)",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "လမ်းဆုံ(ဒါရ်ဂါလမ်းဆုံ)",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ရေနံဂိတ်ဝ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "မီးပွိုင့်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "လက်မှတ်ဂိတ်",
+      "type": null,
+      "yrta_id": "507",
+      "location": {
+        "lng": 96.243879,
+        "lat": 16.77839
+      },
+      "road": "ကျိုက်ခေါက်ဘုရားလမ်း",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 22,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null,
+      "yrta_id": "1132",
+      "location": {
+        "lng": 96.054922,
+        "lat": 16.864061
+      },
+      "road": "အမှတ်(၅)လမ်းမ",
+      "township": "လှိုင်သာယာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 23,
+      "name": "ကန်ကြီးထောင့်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "၁၃ဂိတ်",
+      "type": null,
+      "yrta_id": "503",
+      "location": {
+        "lng": 96.219589,
+        "lat": 16.793243
+      },
+      "road": "ရှူ့ခင်းသာမြို့ပတ်လမ်း",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 25,
+      "name": "ဂိတ်ဝ",
+      "type": null,
+      "yrta_id": "1834",
+      "location": {
+        "lng": 96.290653,
+        "lat": 16.716193
+      },
+      "road": "သန်လျှင်-ကျောက်တန်းလမ်း",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 26,
+      "name": "ခန်းမ",
+      "type": null,
+      "yrta_id": "481",
+      "location": {
+        "lng": 96.214546,
+        "lat": 16.790511
+      },
+      "road": "ရှူ့ခင်းသာမြို့ပတ်လမ်း",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 27,
+      "name": "၄၉အစိမ်းဂိတ်",
+      "type": null,
+      "yrta_id": "487",
+      "location": {
+        "lng": 96.211327,
+        "lat": 16.790983
+      },
+      "road": "ရှူ့ခင်းသာမြို့ပတ်လမ်း",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 28,
+      "name": "ကြယ်ငါးပွင့်",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ဝေဇယန္တာ",
+      "type": null,
+      "yrta_id": "497",
+      "location": {
+        "lng": 96.207443,
+        "lat": 16.791579
+      },
+      "road": "ရှူ့ခင်းသာမြို့ပတ်လမ်း",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 30,
+      "name": "၅ကွေ့",
+      "type": null,
+      "yrta_id": "491",
+      "location": {
+        "lng": 96.206392,
+        "lat": 16.791271
+      },
+      "road": "ဇင်းဂမာလမ်း",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 31,
+      "name": "ဆီဆိုင်",
+      "type": null,
+      "yrta_id": "161",
+      "location": {
+        "lng": 96.172737,
+        "lat": 16.77576
+      },
+      "road": "ဗိုလ်တထောင်ဘုရားလမ်း",
+      "township": "ဗိုလ်တထောင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 32,
+      "name": "မီးသွေးဆိုင်",
+      "type": null,
+      "yrta_id": "489",
+      "location": {
+        "lng": 96.203753,
+        "lat": 16.781574
+      },
+      "road": "ရှူ့ခင်းသာမြို့ပတ်လမ်း",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 33,
+      "name": "ကျောင်းရှေ့",
+      "type": null,
+      "yrta_id": "1468",
+      "location": {
+        "lng": 96.13187,
+        "lat": 17.031038
+      },
+      "road": "အမှတ်(၁)လမ်းမ",
+      "township": "မင်္ဂလာဒုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 34,
+      "name": "ရှုခင်းသာ",
+      "type": null,
+      "yrta_id": "432",
+      "location": {
+        "lng": 96.201276,
+        "lat": 16.774682
+      },
+      "road": "ရှူ့ခင်းသာမြို့ပတ်လမ်း",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 35,
+      "name": "၃ဂိတ်ဟောင်း",
+      "type": null,
+      "yrta_id": "435",
+      "location": {
+        "lng": 96.19543,
+        "lat": 16.777615
+      },
+      "road": "မြင်တော်သာလမ်း",
+      "township": "ဒေါပုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 36,
+      "name": "မာန်ပြေ",
+      "type": null,
+      "yrta_id": "430",
+      "location": {
+        "lng": 96.19412,
+        "lat": 16.778452
+      },
+      "road": "ယမုံနာလမ်း",
+      "township": "ဒေါပုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 37,
+      "name": "ရန်ပြေ",
+      "type": null,
+      "yrta_id": "477",
+      "location": {
+        "lng": 96.191028,
+        "lat": 16.77991
+      },
+      "road": "ယမုံနာလမ်း",
+      "township": "ဒေါပုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 38,
+      "name": "သင်္ဘောကျင်း",
+      "type": null,
+      "yrta_id": "307",
+      "location": {
+        "lng": 96.123054,
+        "lat": 16.82448
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "ကမာရွတ်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 39,
+      "name": "အိုးရှင်း",
+      "type": null,
+      "yrta_id": "2219",
+      "location": {
+        "lng": 96.177383,
+        "lat": 16.77385
+      },
+      "road": "မဟာဗန္ဓုလလမ်း",
+      "township": "ဗိုလ်တထောင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 40,
+      "name": "ဂန္ဒီ",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "လမ်း၅၀",
+      "type": null,
+      "yrta_id": "155",
+      "location": {
+        "lng": 96.171252,
+        "lat": 16.771426
+      },
+      "road": "ကုန်သည်လမ်း",
+      "township": "ဗိုလ်တထောင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 42,
+      "name": "ဘိုကလေးဈေး",
+      "type": "end",
+      "yrta_id": "146",
+      "location": {
+        "lng": 96.165646,
+        "lat": 16.774055
+      },
+      "road": "မဟာဗန္ဓုလလမ်း",
+      "township": "ကျောက်တံတား",
+      "match_type": "exact"
+    }
+  ],
+  "stop_count": 42
+}

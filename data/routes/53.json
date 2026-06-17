@@ -1,0 +1,566 @@
+{
+  "id": "53",
+  "number": "45",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/53",
+  "summary": "လှည်းကူးဈေး - အမှတ်၁လမ်း - လှည်းကူးတာဆုံ - လှည်းကူး-ဖောင်ကြီးလမ်း - အမြန်လမ်းဆုံ - ဖောင်ကြီးတာဆုံ - ဗဟိုဝန်ထမ်းတက္ကသိုလ် - မင်းကုန်း",
+  "major_stops": [
+    "လှည်းကူးဈေး",
+    "အမှတ်၁လမ်း",
+    "လှည်းကူးတာဆုံ",
+    "လှည်းကူး",
+    "ဖောင်ကြီးလမ်း",
+    "အမြန်လမ်းဆုံ",
+    "ဖောင်ကြီးတာဆုံ",
+    "ဗဟိုဝန်ထမ်းတက္ကသိုလ်",
+    "မင်းကုန်း"
+  ],
+  "origin": "လှည်းကူးဈေး",
+  "destination": "မင်းကုန်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "လှည်းကူးဈေး",
+      "type": "start",
+      "yrta_id": "2010",
+      "location": {
+        "lng": 96.219327,
+        "lat": 17.097151
+      },
+      "road": "အမှတ်(၁)လမ်းမ",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 2,
+      "name": "သဉ္ဇာဦး",
+      "type": null,
+      "yrta_id": "2012",
+      "location": {
+        "lng": 96.223061,
+        "lat": 17.098546
+      },
+      "road": "အမှတ်(၁)လမ်းမ",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 3,
+      "name": "လှည်းကူးတာဆုံ",
+      "type": null,
+      "yrta_id": "2014",
+      "location": {
+        "lng": 96.225899,
+        "lat": 17.099807
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 4,
+      "name": "စန်းသော်တာ",
+      "type": null,
+      "yrta_id": "2016",
+      "location": {
+        "lng": 96.2268,
+        "lat": 17.104258
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 5,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null,
+      "yrta_id": "1132",
+      "location": {
+        "lng": 96.054922,
+        "lat": 16.864061
+      },
+      "road": "အမှတ်(၅)လမ်းမ",
+      "township": "လှိုင်သာယာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 6,
+      "name": "ညောင်ပင်",
+      "type": null,
+      "yrta_id": "1248",
+      "location": {
+        "lng": 96.168176,
+        "lat": 16.853834
+      },
+      "road": "ပါရမီလမ်း",
+      "township": "မရမ်းကုန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 7,
+      "name": "ဆည်မြောင်းရုံး",
+      "type": null,
+      "yrta_id": "2020",
+      "location": {
+        "lng": 96.226627,
+        "lat": 17.111631
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 8,
+      "name": "ငပိတဲ",
+      "type": null,
+      "yrta_id": "2022",
+      "location": {
+        "lng": 96.226623,
+        "lat": 17.115035
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 9,
+      "name": "ဝါးဆိုင်",
+      "type": null,
+      "yrta_id": "1480",
+      "location": {
+        "lng": 96.142963,
+        "lat": 17.019897
+      },
+      "road": "အမှတ်(၃)စက်သွယ်လမ်း",
+      "township": "မင်္ဂလာဒုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 10,
+      "name": "လေးအိမ်တန်း",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "စခန်းကြီး",
+      "type": null,
+      "yrta_id": "2024",
+      "location": {
+        "lng": 96.226537,
+        "lat": 17.122253
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 12,
+      "name": "ပန်းခြံ",
+      "type": null,
+      "yrta_id": "1262",
+      "location": {
+        "lng": 96.143363,
+        "lat": 16.866725
+      },
+      "road": "ကမ္ဘာအေးဘုရားလမ်း",
+      "township": "မရမ်းကုန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 13,
+      "name": "မှန်ကုန်း",
+      "type": null,
+      "yrta_id": "2026",
+      "location": {
+        "lng": 96.227224,
+        "lat": 17.129636
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 14,
+      "name": "မှန်ကုန်းရွာလယ်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ရွာဖျားဈေးဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ရှင်းလင်းဆောင်",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "နှုတ်ခမ်းမွှေးသိုက်",
+      "type": null,
+      "yrta_id": "2038",
+      "location": {
+        "lng": 96.232159,
+        "lat": 17.180237
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 18,
+      "name": "မြင့်မိုရ်ဦး",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ဇီးကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ထိန်သုံးပင်",
+      "type": null,
+      "yrta_id": "2028",
+      "location": {
+        "lng": 96.226623,
+        "lat": 17.138248
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 21,
+      "name": "ကလီထော်",
+      "type": null,
+      "yrta_id": "2030",
+      "location": {
+        "lng": 96.226366,
+        "lat": 17.143497
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 22,
+      "name": "အောင်သပြေ",
+      "type": null,
+      "yrta_id": "1848",
+      "location": {
+        "lng": 96.30945,
+        "lat": 16.685775
+      },
+      "road": "သန်လျှင်-ကျောက်တန်းလမ်း",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 23,
+      "name": "ကြာကန်",
+      "type": null,
+      "yrta_id": "2034",
+      "location": {
+        "lng": 96.226838,
+        "lat": 17.153257
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 24,
+      "name": "ကဒစ်",
+      "type": null,
+      "yrta_id": "2036",
+      "location": {
+        "lng": 96.228812,
+        "lat": 17.164082
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 25,
+      "name": "နှုတ်ခမ်းမွှေးသိုက်",
+      "type": null,
+      "yrta_id": "2038",
+      "location": {
+        "lng": 96.232159,
+        "lat": 17.180237
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 26,
+      "name": "ဆီအုန်း",
+      "type": null,
+      "yrta_id": "2040",
+      "location": {
+        "lng": 96.233919,
+        "lat": 17.188232
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 27,
+      "name": "သပြေကုန်း",
+      "type": null,
+      "yrta_id": "2042",
+      "location": {
+        "lng": 96.234133,
+        "lat": 17.193931
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 28,
+      "name": "စာဘူးတောင်း",
+      "type": null,
+      "yrta_id": "2044",
+      "location": {
+        "lng": 96.226666,
+        "lat": 17.207172
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 29,
+      "name": "အမြန်လမ်းဆုံ",
+      "type": null,
+      "yrta_id": "2046",
+      "location": {
+        "lng": 96.210787,
+        "lat": 17.225783
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "လှည်းကူး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 30,
+      "name": "ညောင်းကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ကြို့ကုန်းလမ်းသစ်",
+      "type": null,
+      "yrta_id": "2050",
+      "location": {
+        "lng": 96.20023,
+        "lat": 17.247015
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 32,
+      "name": "ဟိုင်းကူး",
+      "type": null,
+      "yrta_id": "2052",
+      "location": {
+        "lng": 96.192677,
+        "lat": 17.274965
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 33,
+      "name": "သပြေတောင်",
+      "type": null,
+      "yrta_id": "2056",
+      "location": {
+        "lng": 96.185253,
+        "lat": 17.28902
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 34,
+      "name": "ဥယျာဉ်ဝ",
+      "type": null,
+      "yrta_id": "2054",
+      "location": {
+        "lng": 96.184866,
+        "lat": 17.298117
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 35,
+      "name": "ဥယျာဉ်ဝလမ်းသစ်",
+      "type": null,
+      "yrta_id": "2058",
+      "location": {
+        "lng": 96.181262,
+        "lat": 17.308155
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 36,
+      "name": "ဘုရားကုန်း",
+      "type": null,
+      "yrta_id": "1824",
+      "location": {
+        "lng": 96.27413,
+        "lat": 16.728523
+      },
+      "road": "သန်လျှင်-ကျောက်တန်းလမ်း",
+      "township": "သန်လျင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 37,
+      "name": "စည်ပင်လမ်းခွဲ",
+      "type": null,
+      "yrta_id": "2062",
+      "location": {
+        "lng": 96.180961,
+        "lat": 17.319955
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 38,
+      "name": "ဖောင်ကြီးတာဆုံ",
+      "type": null,
+      "yrta_id": "2064",
+      "location": {
+        "lng": 96.179502,
+        "lat": 17.322331
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 39,
+      "name": "အောင်ချမ်းသာ",
+      "type": null,
+      "yrta_id": "1588",
+      "location": {
+        "lng": 96.071359,
+        "lat": 16.989323
+      },
+      "road": "မဟာဗန္ဓုလလမ်း",
+      "township": "ရွှေပြည်သာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 40,
+      "name": "ဆေးရုံကုန်း",
+      "type": null,
+      "yrta_id": "2068",
+      "location": {
+        "lng": 96.185811,
+        "lat": 17.327288
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 41,
+      "name": "ဗဟိုဝန်ထမ်းတက္ကသိုလ်",
+      "type": null,
+      "yrta_id": "2070",
+      "location": {
+        "lng": 96.187184,
+        "lat": 17.331549
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 42,
+      "name": "စံပြ",
+      "type": null,
+      "yrta_id": "125",
+      "location": {
+        "lng": 96.144935,
+        "lat": 16.778647
+      },
+      "road": "ဘုန်းကြီးလမ်း",
+      "township": "လမ်းမတော်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 43,
+      "name": "၂ဂိတ်",
+      "type": null,
+      "yrta_id": "1656",
+      "location": {
+        "lng": 96.116331,
+        "lat": 17.065605
+      },
+      "road": "ရန်ကုန်-ပြည်လမ်းမကြီး",
+      "township": "ထောက်ကြန့်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 44,
+      "name": "သမဝါယမကောလိပ်",
+      "type": null,
+      "yrta_id": "2076",
+      "location": {
+        "lng": 96.200917,
+        "lat": 17.345723
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 45,
+      "name": "ဆောက်လုပ်ရေးလမ်းခွဲ",
+      "type": null,
+      "yrta_id": "2078",
+      "location": {
+        "lng": 96.203964,
+        "lat": 17.347525
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 46,
+      "name": "မင်းကုန်း",
+      "type": "end",
+      "yrta_id": "2080",
+      "location": {
+        "lng": 96.208084,
+        "lat": 17.350638
+      },
+      "road": "လှည်းကူး-ဖောင်ကြီးလမ်း",
+      "township": "ဖောင်ကြီး",
+      "match_type": "exact"
+    }
+  ],
+  "stop_count": 46
+}

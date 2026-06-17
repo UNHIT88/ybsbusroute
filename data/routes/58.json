@@ -1,0 +1,45 @@
+{
+  "id": "58",
+  "number": "50",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/58",
+  "summary": "ဒလ - ဘုရားငုတ်တို -ကံဘဲ့ - ကော့မှူး - ကွမ်းခြံကုန်း",
+  "major_stops": [
+    "ဒလ",
+    "ဘုရားငုတ်တို",
+    "ကံဘဲ့",
+    "ကော့မှူး",
+    "ကွမ်းခြံကုန်း"
+  ],
+  "origin": "ဒလ",
+  "destination": "ကွမ်းခြံကုန်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ဒလဘုရားငုတ္တို",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ဘုရားငုတ္တို",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ကံဘဲ့",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ကော့မှူး",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ကွမ်းခြံကုန်း",
+      "type": "end"
+    }
+  ],
+  "stop_count": 5
+}

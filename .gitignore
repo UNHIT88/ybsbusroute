@@ -1,3 +1,4 @@
+# Expo / Node
 node_modules/
 .expo/
 dist/
@@ -8,4 +9,18 @@ web-build/
 *.key
 *.mobileprovision
 *.orig.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# OS / editor
 .DS_Store
+.idea/
+.vscode/
+
+# Scraper temp files
+/tmp/

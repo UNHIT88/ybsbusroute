@@ -1,0 +1,672 @@
+{
+  "id": "68",
+  "number": "60",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/68",
+  "summary": "ယုဇနဦးယျာဉ်မြို့တော် - ကျွန်းရွှေဝါလမ်း - ရွှေလီလမ်း - ဆောက်လုပ်ရေး - ပြည်ထောင်စုလမ်း - တောင်မြောက်လမ်းဆုံ - စံပြဈေး - သံသုမာလမ်း - ရတနာလမ်း - ကျောက်ကုန်း - မိုးကောင်းလမ်း - ရန်ကင်းလမ်း - ရန်ရှင်းလမ်း - လမ်းနီ(မြန်မာပလာဇာ) - လှည်းတန်း - ဘုရင့်နောင်လမ်း - သီရိမင်္ဂလာဈေးသစ်",
+  "major_stops": [
+    "ယုဇနဦးယျာဉ်မြို့တော်",
+    "ကျွန်းရွှေဝါလမ်း",
+    "ရွှေလီလမ်း",
+    "ဆောက်လုပ်ရေး",
+    "ပြည်ထောင်စုလမ်း",
+    "တောင်မြောက်လမ်းဆုံ",
+    "စံပြဈေး",
+    "သံသုမာလမ်း",
+    "ရတနာလမ်း",
+    "ကျောက်ကုန်း",
+    "မိုးကောင်းလမ်း",
+    "ရန်ကင်းလမ်း",
+    "ရန်ရှင်းလမ်း",
+    "လမ်းနီ(မြန်မာပလာဇာ)",
+    "လှည်းတန်း",
+    "ဘုရင့်နောင်လမ်း",
+    "သီရိမင်္ဂလာဈေးသစ်"
+  ],
+  "origin": "ယုဇနဦးယျာဉ်မြို့တော်",
+  "destination": "သီရိမင်္ဂလာဈေးသစ်",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ယုဇနအိမ်ယာ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "မြသီတာပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ယုဇနမုခ်ဦး",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဆီဆိုင်",
+      "type": null,
+      "yrta_id": "161",
+      "location": {
+        "lng": 96.172737,
+        "lat": 16.77576
+      },
+      "road": "ဗိုလ်တထောင်ဘုရားလမ်း",
+      "township": "ဗိုလ်တထောင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 5,
+      "name": "အိုးအိမ်",
+      "type": null,
+      "yrta_id": "1422",
+      "location": {
+        "lng": 96.149508,
+        "lat": 16.953038
+      },
+      "road": "အမှတ်(၃)လမ်းမ",
+      "township": "မင်္ဂလာဒုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 6,
+      "name": "အောင်ချမ်းသာ",
+      "type": null,
+      "yrta_id": "1588",
+      "location": {
+        "lng": 96.071359,
+        "lat": 16.989323
+      },
+      "road": "မဟာဗန္ဓုလလမ်း",
+      "township": "ရွှေပြည်သာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 7,
+      "name": "မှတ်တိုင်သစ်",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "မြနန္ဒာ(အလယ်ဂိတ်)",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ရတနာလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "သိမ်ချောင်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "၆၅ရပ်ကွက်",
+      "type": null,
+      "yrta_id": "651",
+      "location": {
+        "lng": 96.242613,
+        "lat": 16.83494
+      },
+      "road": "ဧရာဝဏ်လမ်းမကြီး",
+      "township": "သာကေတ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 12,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null,
+      "yrta_id": "1132",
+      "location": {
+        "lng": 96.054922,
+        "lat": 16.864061
+      },
+      "road": "အမှတ်(၅)လမ်းမ",
+      "township": "လှိုင်သာယာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 13,
+      "name": "ပုလဲကန်",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ဘီအမ်ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "မင်းကွန်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ရုံးရှေ့",
+      "type": null,
+      "yrta_id": "1036",
+      "location": {
+        "lng": 96.210383,
+        "lat": 16.914898
+      },
+      "road": "ဒဂုံတက္ကသိုလ်",
+      "township": "မြောက်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 17,
+      "name": "ဧရာတီလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ဈေးလေး",
+      "type": null,
+      "yrta_id": "1027",
+      "location": {
+        "lng": 96.197938,
+        "lat": 16.901163
+      },
+      "road": "ဗိုလ်မှူးဗထူးလမ်း",
+      "township": "မြောက်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 19,
+      "name": "စက်မှုဇုန်(၂)",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ဂျီအီးစီ",
+      "type": null,
+      "yrta_id": "644",
+      "location": {
+        "lng": 96.227185,
+        "lat": 16.843935
+      },
+      "road": "ပြည်ထောင်စုလမ်းမကြီး",
+      "township": "တောင်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 21,
+      "name": "သစ်ဆိုင်ကွေ့",
+      "type": null,
+      "yrta_id": "2138",
+      "location": {
+        "lng": 96.223431,
+        "lat": 16.847149
+      },
+      "road": "ပြည်ထောင်စုလမ်းမကြီး",
+      "township": "တောင်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 22,
+      "name": "ယောက်ကော်",
+      "type": null,
+      "yrta_id": "701",
+      "location": {
+        "lng": 96.222056,
+        "lat": 16.848248
+      },
+      "road": "ပြည်ထောင်စုလမ်းမကြီး",
+      "township": "တောင်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 23,
+      "name": "ပန်းခြံ",
+      "type": null,
+      "yrta_id": "1262",
+      "location": {
+        "lng": 96.143363,
+        "lat": 16.866725
+      },
+      "road": "ကမ္ဘာအေးဘုရားလမ်း",
+      "township": "မရမ်းကုန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 24,
+      "name": "ယဉ်ကျေးမှု",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "သုခုမ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "တောင်မြောက်လမ်းဆုံ",
+      "type": null,
+      "yrta_id": "675",
+      "location": {
+        "lng": 96.213344,
+        "lat": 16.861412
+      },
+      "road": "ပြည်ထောင်စုလမ်းမကြီး",
+      "township": "မြောက်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 27,
+      "name": "တံတားဖြူ",
+      "type": null,
+      "yrta_id": "1190",
+      "location": {
+        "lng": 96.134757,
+        "lat": 16.83915
+      },
+      "road": "ပြည်လမ်း",
+      "township": "လှိုင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 28,
+      "name": "ကားကြီးဂိတ်",
+      "type": null,
+      "yrta_id": "1556",
+      "location": {
+        "lng": 96.077862,
+        "lat": 16.961504
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "ရွှေပြည်သာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 29,
+      "name": "စံပြဈေး",
+      "type": null,
+      "yrta_id": "632",
+      "location": {
+        "lng": 96.204109,
+        "lat": 16.843237
+      },
+      "road": "သံသုမာလမ်း",
+      "township": "သင်္ဃန်းကျွန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 30,
+      "name": "လိုင်စင်ရုံး",
+      "type": null,
+      "yrta_id": "2115",
+      "location": {
+        "lng": 96.242849,
+        "lat": 16.895045
+      },
+      "road": "အမှတ်(၂)လမ်းမ",
+      "township": "တောင်ဒဂုံ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 31,
+      "name": "ဒေဝဒဟ",
+      "type": null,
+      "yrta_id": "593",
+      "location": {
+        "lng": 96.198989,
+        "lat": 16.843956
+      },
+      "road": "ရတနာလမ်း",
+      "township": "သင်္ဃန်းကျွန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 32,
+      "name": "ဘဝမြင့်",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "အာနန္ဒာဘုရား",
+      "type": null,
+      "yrta_id": "595",
+      "location": {
+        "lng": 96.194977,
+        "lat": 16.840423
+      },
+      "road": "ရတနာလမ်း",
+      "township": "သင်္ဃန်းကျွန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 34,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null,
+      "yrta_id": "1530",
+      "location": {
+        "lng": 96.086959,
+        "lat": 16.937397
+      },
+      "road": "ပုလဲလမ်း",
+      "township": "ရွှေပြည်သာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 35,
+      "name": "ကျိုက္ကဆံဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "၁၄/၁၅လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ရတနာဈေး",
+      "type": null,
+      "yrta_id": "1070",
+      "location": {
+        "lng": 96.18307,
+        "lat": 16.835869
+      },
+      "road": "ရတနာလမ်း",
+      "township": "သင်္ဃန်းကျွန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 38,
+      "name": "ကုလားဘုရား",
+      "type": null,
+      "yrta_id": "1055",
+      "location": {
+        "lng": 96.180452,
+        "lat": 16.834791
+      },
+      "road": "ရတနာလမ်း",
+      "township": "သင်္ဃန်းကျွန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 39,
+      "name": "၁၆ကွေ့",
+      "type": null,
+      "yrta_id": "1059",
+      "location": {
+        "lng": 96.176424,
+        "lat": 16.833764
+      },
+      "road": "ရတနာလမ်း",
+      "township": "သင်္ဃန်းကျွန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 40,
+      "name": "သံလမ်း",
+      "type": null,
+      "yrta_id": "1048",
+      "location": {
+        "lng": 96.169914,
+        "lat": 16.838986
+      },
+      "road": "ကန်ဘဲ့လမ်း",
+      "township": "ရန်ကင်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 41,
+      "name": "ကျောက်ကုန်း(AMPS Condo)",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "မဟာဗောဓိ",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "မိုးကောင်း",
+      "type": null,
+      "yrta_id": "1047",
+      "location": {
+        "lng": 96.166131,
+        "lat": 16.837804
+      },
+      "road": "ကန်ဘဲ့လမ်း",
+      "township": "ရန်ကင်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 44,
+      "name": "ရန်ကင်းစာတိုက်",
+      "type": null,
+      "yrta_id": "1051",
+      "location": {
+        "lng": 96.162728,
+        "lat": 16.834688
+      },
+      "road": "ရန်ကင်းလမ်း",
+      "township": "ရန်ကင်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 45,
+      "name": "၁၂လုံးတန်း",
+      "type": null,
+      "yrta_id": "6",
+      "location": {
+        "lng": 96.16343,
+        "lat": 16.830714
+      },
+      "road": "ရန်ကင်းလမ်း",
+      "township": "ရန်ကင်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 46,
+      "name": "၁၂လုံးတန်း",
+      "type": null,
+      "yrta_id": "6",
+      "location": {
+        "lng": 96.16343,
+        "lat": 16.830714
+      },
+      "road": "ရန်ကင်းလမ်း",
+      "township": "ရန်ကင်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 47,
+      "name": "ရန်ကင်းဈေး",
+      "type": null,
+      "yrta_id": "330",
+      "location": {
+        "lng": 96.15917,
+        "lat": 16.828858
+      },
+      "road": "ရန်ရှင်းလမ်းသွယ်",
+      "township": "ရန်ကင်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 48,
+      "name": "စက်မှုကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "လမ်းနီလေး(မြန်မာပလာဇာ)",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "ကုက္ကိုင်း",
+      "type": null,
+      "yrta_id": "2323",
+      "location": {
+        "lng": 96.152889,
+        "lat": 16.823614
+      },
+      "road": "တက္ကသိုလ်ရိပ်သာလမ်း",
+      "township": "ဗဟန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 51,
+      "name": "ရေစက်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 52,
+      "name": "သံလွင်",
+      "type": null,
+      "yrta_id": "2327",
+      "location": {
+        "lng": 96.145139,
+        "lat": 16.824228
+      },
+      "road": "တက္ကသိုလ်ရိပ်သာလမ်း",
+      "township": "ဗဟန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 53,
+      "name": "UFL",
+      "type": null,
+      "yrta_id": "2329",
+      "location": {
+        "lng": 96.142044,
+        "lat": 16.825133
+      },
+      "road": "တက္ကသိုလ်ရိပ်သာလမ်း",
+      "township": "ဗဟန်း",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 54,
+      "name": "ကျောင်းလမ်း",
+      "type": null,
+      "yrta_id": "1097",
+      "location": {
+        "lng": 96.040331,
+        "lat": 16.890159
+      },
+      "road": "ရွှေပြည်သာတံတားလမ်း",
+      "township": "လှိုင်သာယာ",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 55,
+      "name": "ကျောင်းရှေ့(ဓမ္မာရုံ)",
+      "type": null
+    },
+    {
+      "sequence": 56,
+      "name": "လှည်းတန်းဈေး",
+      "type": null,
+      "yrta_id": "289",
+      "location": {
+        "lng": 96.128887,
+        "lat": 16.826457
+      },
+      "road": "လှည်းတန်းလမ်း",
+      "township": "ကမာရွတ်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 57,
+      "name": "လှည်းတန်းကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 58,
+      "name": "သင်္ဘောကျင်း",
+      "type": null,
+      "yrta_id": "307",
+      "location": {
+        "lng": 96.123054,
+        "lat": 16.82448
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "ကမာရွတ်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 59,
+      "name": "ရေကြောင်း",
+      "type": null,
+      "yrta_id": "309",
+      "location": {
+        "lng": 96.122069,
+        "lat": 16.829312
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "ကမာရွတ်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 60,
+      "name": "ရွာမကွေ့",
+      "type": null,
+      "yrta_id": "1183",
+      "location": {
+        "lng": 96.120733,
+        "lat": 16.833338
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "လှိုင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 61,
+      "name": "ချောင်းဝ",
+      "type": null,
+      "yrta_id": "1162",
+      "location": {
+        "lng": 96.11603,
+        "lat": 16.833543
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "လှိုင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 62,
+      "name": "ဘူတာရုံလမ်း",
+      "type": null,
+      "yrta_id": "1160",
+      "location": {
+        "lng": 96.113665,
+        "lat": 16.836931
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "လှိုင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 63,
+      "name": "အိုဝမ်း",
+      "type": null,
+      "yrta_id": "1164",
+      "location": {
+        "lng": 96.112821,
+        "lat": 16.840732
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "လှိုင်",
+      "match_type": "exact"
+    },
+    {
+      "sequence": 64,
+      "name": "သီရိမင်္ဂလာဈေးသစ်",
+      "type": "end",
+      "yrta_id": "1167",
+      "location": {
+        "lng": 96.112167,
+        "lat": 16.843268
+      },
+      "road": "ဘုရင့်နောင်လမ်း",
+      "township": "လှိုင်",
+      "match_type": "exact"
+    }
+  ],
+  "stop_count": 64
+}
