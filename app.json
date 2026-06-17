@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "YBS Navigator",
+    "slug": "ybs-navigator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "ybs-navigator",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ybs.navigator",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "YBS Navigator uses your location to find nearby bus stops."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.ybs.navigator",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow YBS Navigator to use your location to find nearby bus stops."
+        }
+      ],
+      "expo-asset"
+    ]
+  }
+}
