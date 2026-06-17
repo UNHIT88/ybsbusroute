@@ -3,7 +3,13 @@ import { getAllRoutes, getAllStops, getDisplayRouteNumber, getRoute } from "@/se
 import { hasValidCoords } from "@/services/busDataNormalize";
 import { findLegSpanOnRoute, isPlanTopologicallyValid } from "@/services/routeValidation";
 import { getEquivalentStopIds } from "@/services/stopClusters";
-import { planQualityScore, sortPlansByQuality, stopsAreTransferEquivalent } from "@/services/tripPlanUtils";
+import {
+  filterTransferPlansWithDirectBuses,
+  getDirectRouteNumbers,
+  planQualityScore,
+  sortPlansByQuality,
+  stopsAreTransferEquivalent,
+} from "@/services/tripPlanUtils";
 
 const TRANSFER_WEIGHT = 55;
 
@@ -433,9 +439,13 @@ export function findTripPlans(fromStopId: number, toStopId: number, limit = 15):
     Math.max(5, limit - directPlans.length)
   );
 
+  const directRouteNumbers = getDirectRouteNumbers(directPlans);
   const merged: TripPlan[] = [];
   const seen = new Set<string>();
-  const candidates = sortPlansByQuality([...directPlans, ...oneTransferPlans, ...transferPlans]);
+  const candidates = filterTransferPlansWithDirectBuses(
+    sortPlansByQuality([...directPlans, ...oneTransferPlans, ...transferPlans]),
+    directRouteNumbers
+  );
   const acceptable = candidates.filter((plan) => isAcceptablePlan(plan));
   const pool = acceptable.length > 0 ? acceptable : candidates;
 

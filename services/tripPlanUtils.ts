@@ -52,6 +52,38 @@ export function formatTransferBetween(
   return `${getStopName(off, locale)} → ${getStopName(on, locale)}`;
 }
 
+export function planHasDuplicateRouteNumbers(plan: TripPlan): boolean {
+  const seen = new Set<string>();
+  for (const leg of plan.legs) {
+    if (seen.has(leg.routeNumber)) return true;
+    seen.add(leg.routeNumber);
+  }
+  return false;
+}
+
+export function getDirectRouteNumbers(plans: TripPlan[]): Set<string> {
+  const direct = new Set<string>();
+  for (const plan of plans) {
+    if (plan.transferCount !== 0) continue;
+    for (const leg of plan.legs) {
+      direct.add(leg.routeNumber);
+    }
+  }
+  return direct;
+}
+
+/** Drop transfer plans that reuse a bus line that already goes direct, or use the same bus twice. */
+export function filterTransferPlansWithDirectBuses(
+  plans: TripPlan[],
+  directRouteNumbers: Set<string>
+): TripPlan[] {
+  return plans.filter((plan) => {
+    if (plan.transferCount === 0) return true;
+    if (planHasDuplicateRouteNumbers(plan)) return false;
+    return !plan.legs.some((leg) => directRouteNumbers.has(leg.routeNumber));
+  });
+}
+
 export function planQualityScore(plan: TripPlan): number {
   const routeNums = plan.legs.map((leg) => leg.routeNumber);
   const duplicateRoutes = routeNums.length - new Set(routeNums).size;
