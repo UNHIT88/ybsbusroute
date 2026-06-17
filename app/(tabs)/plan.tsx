@@ -9,6 +9,7 @@ import { findTripPlans, type TripPlan } from "@/services/routePlanner";
 import { fetchTripPlansRemote } from "@/services/ybsRouteApi";
 import { isStaticDataHost, YBS_API_BASE } from "@/constants/api";
 import { formatStopLine, getStopName } from "@/services/stopLabels";
+import { formatTransferBetween } from "@/services/tripPlanUtils";
 import { useRouter } from "expo-router";
 import { useMemo, useState } from "react";
 import {
@@ -212,6 +213,12 @@ export default function PlanScreen() {
               {item.legs.map((leg, legIndex) => {
                 const from = getStop(leg.fromStopId);
                 const to = getStop(leg.toStopId);
+                const nextLeg =
+                  legIndex < item.legs.length - 1 ? item.legs[legIndex + 1] : null;
+                const isFirstLeg = legIndex === 0;
+                const isLastLeg = legIndex === item.legs.length - 1;
+                const transferLabel =
+                  nextLeg != null ? formatTransferBetween(leg, nextLeg, locale) : "";
                 return (
                   <View key={`${leg.routeNumber}-${legIndex}`} style={styles.legBlock}>
                     <ListCard
@@ -221,18 +228,20 @@ export default function PlanScreen() {
                       meta={`${leg.stopCount} ${t("plan", "stops")}`}
                       onPress={() => router.push(`/route/${leg.routeNumber}`)}
                     />
-                    {from ? (
+                    {isFirstLeg && from ? (
                       <Text style={styles.legMeta}>
                         {t("plan", "boardAt")}: {getStopName(from, locale)}
                       </Text>
                     ) : null}
-                    {to ? (
+                    {isLastLeg && to ? (
                       <Text style={styles.legMeta}>
                         {t("plan", "getOffAt")}: {getStopName(to, locale)}
                       </Text>
                     ) : null}
-                    {legIndex < item.legs.length - 1 ? (
-                      <Text style={styles.transferHint}>{t("plan", "transferAt")}</Text>
+                    {transferLabel ? (
+                      <Text style={styles.transferHint}>
+                        {t("plan", "transferAt")}: {transferLabel}
+                      </Text>
                     ) : null}
                   </View>
                 );

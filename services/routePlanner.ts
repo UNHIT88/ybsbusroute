@@ -3,8 +3,9 @@ import { getAllRoutes, getAllStops, getDisplayRouteNumber, getRoute } from "@/se
 import { hasValidCoords } from "@/services/busDataNormalize";
 import { findLegSpanOnRoute, isPlanTopologicallyValid } from "@/services/routeValidation";
 import { getEquivalentStopIds } from "@/services/stopClusters";
+import { planQualityScore, sortPlansByQuality, stopsAreTransferEquivalent } from "@/services/tripPlanUtils";
 
-const TRANSFER_WEIGHT = 18;
+const TRANSFER_WEIGHT = 55;
 
 type Edge = {
   to: number;
@@ -153,6 +154,66 @@ function findDirectRoutePlans(fromStopId: number, toStopId: number): TripPlan[] 
   return plans.sort((a, b) => a.totalCost - b.totalCost);
 }
 
+function findOneTransferPlans(fromStopId: number, toStopId: number): TripPlan[] {
+  const fromIds = getEquivalentStopIds(fromStopId);
+  const toIds = getEquivalentStopIds(toStopId);
+  const routes = getAllRoutes();
+  const plans: TripPlan[] = [];
+  const seen = new Set<string>();
+
+  for (const routeA of routes) {
+    for (const fromId of fromIds) {
+      for (const transferStop of routeA.stops) {
+        const spanA = findLegSpanOnRoute(routeA, fromId, transferStop.stop_id);
+        if (!spanA || spanA.stopCount === 0) continue;
+        if (routeA.stops[spanA.toIdx]?.stop_id !== transferStop.stop_id) continue;
+
+        const legAFrom = routeA.stops[spanA.fromIdx].stop_id;
+        const legATo = routeA.stops[spanA.toIdx].stop_id;
+
+        for (const routeB of routes) {
+          if (routeB.route_number === routeA.route_number) continue;
+
+          for (const boardStop of routeB.stops) {
+            if (!stopsAreTransferEquivalent(legATo, boardStop.stop_id)) continue;
+
+            for (const toId of toIds) {
+              const spanB = findLegSpanOnRoute(routeB, boardStop.stop_id, toId);
+              if (!spanB || spanB.stopCount === 0) continue;
+
+              const legBFrom = routeB.stops[spanB.fromIdx].stop_id;
+              const legBTo = routeB.stops[spanB.toIdx].stop_id;
+              const signature = `${routeA.route_number}:${legAFrom}->${legATo}|${routeB.route_number}:${legBFrom}->${legBTo}`;
+              if (seen.has(signature)) continue;
+              seen.add(signature);
+
+              plans.push(
+                simplifyTripPlan({
+                  legs: [
+                    makeLeg(routeA.route_number, legAFrom, legATo, spanA.stopCount),
+                    makeLeg(routeB.route_number, legBFrom, legBTo, spanB.stopCount),
+                  ],
+                  transferCount: 1,
+                  totalStops: spanA.stopCount + spanB.stopCount,
+                  totalCost: spanA.stopCount + spanB.stopCount + TRANSFER_WEIGHT,
+                })
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return sortPlansByQuality(plans);
+}
+
+function isAcceptablePlan(plan: TripPlan): boolean {
+  if (plan.legs.length <= 2) return true;
+  const microLegs = plan.legs.filter((leg) => leg.stopCount <= 1).length;
+  return microLegs <= 1 || microLegs / plan.legs.length < 0.45;
+}
+
 type Prev = {
   stopId: number;
   route: string | null;
@@ -216,6 +277,65 @@ function dijkstra(
   return { cost: dist.get(targetStopId)!, path };
 }
 
+function mergeConsecutiveSameRouteLegs(legs: TripLeg[]): TripLeg[] {
+  if (legs.length <= 1) return legs;
+
+  const merged: TripLeg[] = [];
+  let current = { ...legs[0] };
+
+  for (let i = 1; i < legs.length; i++) {
+    const next = legs[i];
+    if (current.routeNumber !== next.routeNumber) {
+      merged.push(current);
+      current = { ...next };
+      continue;
+    }
+
+    const route = getRoute(current.routeNumber);
+    if (!route) {
+      merged.push(current);
+      current = { ...next };
+      continue;
+    }
+
+    const spanA = findLegSpanOnRoute(route, current.fromStopId, current.toStopId);
+    const spanB = findLegSpanOnRoute(route, next.fromStopId, next.toStopId);
+    const canMerge =
+      spanA != null &&
+      spanB != null &&
+      spanB.fromIdx <= spanA.toIdx + 1 &&
+      spanB.toIdx >= spanA.toIdx;
+
+    if (canMerge) {
+      current = {
+        ...current,
+        toStopId: next.toStopId,
+        stopCount: current.stopCount + next.stopCount,
+      };
+    } else {
+      merged.push(current);
+      current = { ...next };
+    }
+  }
+
+  merged.push(current);
+  return merged;
+}
+
+function simplifyTripLegs(legs: TripLeg[]): TripLeg[] {
+  return mergeConsecutiveSameRouteLegs(legs).filter((leg) => leg.stopCount > 0);
+}
+
+function simplifyTripPlan(plan: TripPlan): TripPlan {
+  const legs = simplifyTripLegs(plan.legs);
+  return {
+    legs,
+    transferCount: Math.max(0, legs.length - 1),
+    totalStops: legs.reduce((sum, leg) => sum + leg.stopCount, 0),
+    totalCost: plan.totalCost,
+  };
+}
+
 function pathToLegs(path: Array<{ stopId: number; route: string | null }>): TripLeg[] {
   const legs: TripLeg[] = [];
   let currentRoute: string | null = null;
@@ -250,7 +370,7 @@ function pathToLegs(path: Array<{ stopId: number; route: string | null }>): Trip
     legs.push(makeLeg(currentRoute, legStart, path[path.length - 1].stopId, legStops));
   }
 
-  return legs;
+  return simplifyTripLegs(legs);
 }
 
 function planSignature(plan: TripPlan): string {
@@ -277,12 +397,12 @@ function findTransferRoutePlans(
     const legs = pathToLegs(plan.path);
     if (legs.length <= 1) break;
 
-    const trip: TripPlan = {
+    const trip = simplifyTripPlan({
       legs,
       transferCount: legs.length - 1,
       totalStops: legs.reduce((sum, leg) => sum + leg.stopCount, 0),
       totalCost: plan.cost,
-    };
+    });
 
     const signature = planSignature(trip);
     if (results.some((item) => planSignature(item) === signature)) {
@@ -306,18 +426,26 @@ export function findTripPlans(fromStopId: number, toStopId: number, limit = 15):
   if (fromStopId === toStopId) return [];
 
   const directPlans = findDirectRoutePlans(fromStopId, toStopId);
-  const transferPlans = findTransferRoutePlans(fromStopId, toStopId, Math.max(5, limit - directPlans.length));
+  const oneTransferPlans = findOneTransferPlans(fromStopId, toStopId);
+  const transferPlans = findTransferRoutePlans(
+    fromStopId,
+    toStopId,
+    Math.max(5, limit - directPlans.length)
+  );
 
   const merged: TripPlan[] = [];
   const seen = new Set<string>();
+  const candidates = sortPlansByQuality([...directPlans, ...oneTransferPlans, ...transferPlans]);
+  const acceptable = candidates.filter((plan) => isAcceptablePlan(plan));
+  const pool = acceptable.length > 0 ? acceptable : candidates;
 
-  for (const plan of [...directPlans, ...transferPlans].sort((a, b) => a.totalCost - b.totalCost)) {
+  for (const plan of pool) {
     if (!isPlanTopologicallyValid(plan)) continue;
 
     const signature = planSignature(plan);
     if (seen.has(signature)) continue;
     seen.add(signature);
-    merged.push(plan);
+    merged.push(simplifyTripPlan(plan));
     if (merged.length >= limit) break;
   }
 
