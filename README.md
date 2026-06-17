@@ -33,6 +33,10 @@ uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
 
 Open http://localhost:8000/docs for interactive API documentation.
 
+### React Native Expo
+
+See **[examples/expo/README.md](examples/expo/README.md)** for a ready-to-copy API client, hooks, and demo app.
+
 ## API endpoints
 
 | Method | Endpoint | Description |
