@@ -1,10 +1,11 @@
 import type { BusRoute } from "@/types/bus";
-import { getRoute } from "@/services/busData";
+import { getRoute, getStop, routeStopMatchesBusStop } from "@/services/busData";
 import { fetchLegRoadDistanceMeters } from "@/services/osrmApi";
 import type { TripLeg, TripPlan } from "@/services/routePlanner";
 import { getEquivalentStopIds } from "@/services/stopClusters";
+import { hasValidCoords } from "@/services/busDataNormalize";
 
-const MAX_SINGLE_HOP_KM = 12;
+const MAX_SINGLE_HOP_KM = 30;
 const MAX_ROAD_TO_AIR_RATIO = 5.5;
 
 function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
@@ -23,17 +24,26 @@ export function findLegSpanOnRoute(
   fromStopId: number,
   toStopId: number
 ): { fromIdx: number; toIdx: number; stopCount: number } | null {
+  const fromStop = getStop(fromStopId);
+  const toStop = getStop(toStopId);
   const fromIds = getEquivalentStopIds(fromStopId);
   const toIds = getEquivalentStopIds(toStopId);
-  const stopIds = route.stops.map((stop) => stop.stop_id);
+
+  const matchesFrom = (routeStop: BusRoute["stops"][number], index: number) =>
+    fromIds.has(routeStop.stop_id) ||
+    (fromStop != null && routeStopMatchesBusStop(fromStop, routeStop));
+
+  const matchesTo = (routeStop: BusRoute["stops"][number]) =>
+    toIds.has(routeStop.stop_id) ||
+    (toStop != null && routeStopMatchesBusStop(toStop, routeStop));
 
   let best: { fromIdx: number; toIdx: number; stopCount: number } | null = null;
 
-  for (let fromIdx = 0; fromIdx < stopIds.length; fromIdx++) {
-    if (!fromIds.has(stopIds[fromIdx])) continue;
+  for (let fromIdx = 0; fromIdx < route.stops.length; fromIdx++) {
+    if (!matchesFrom(route.stops[fromIdx], fromIdx)) continue;
 
-    for (let toIdx = fromIdx + 1; toIdx < stopIds.length; toIdx++) {
-      if (!toIds.has(stopIds[toIdx])) continue;
+    for (let toIdx = fromIdx + 1; toIdx < route.stops.length; toIdx++) {
+      if (!matchesTo(route.stops[toIdx])) continue;
 
       const stopCount = toIdx - fromIdx;
       if (!best || stopCount < best.stopCount) {
@@ -52,15 +62,24 @@ export function isLegValidOnRoute(leg: TripLeg): boolean {
   const span = findLegSpanOnRoute(route, leg.fromStopId, leg.toStopId);
   if (!span) return false;
 
-  const fromId = route.stops[span.fromIdx]?.stop_id;
-  const toId = route.stops[span.toIdx]?.stop_id;
-  if (fromId == null || toId == null) return false;
+  const fromRouteStop = route.stops[span.fromIdx];
+  const toRouteStop = route.stops[span.toIdx];
+  if (fromRouteStop == null || toRouteStop == null) return false;
+
+  const fromStop = getStop(leg.fromStopId);
+  const toStop = getStop(leg.toStopId);
+  const fromMatches =
+    getEquivalentStopIds(leg.fromStopId).has(fromRouteStop.stop_id) ||
+    (fromStop != null && routeStopMatchesBusStop(fromStop, fromRouteStop));
+  const toMatches =
+    getEquivalentStopIds(leg.toStopId).has(toRouteStop.stop_id) ||
+    (toStop != null && routeStopMatchesBusStop(toStop, toRouteStop));
 
   return (
     span.fromIdx < span.toIdx &&
     span.stopCount === leg.stopCount &&
-    getEquivalentStopIds(leg.fromStopId).has(fromId) &&
-    getEquivalentStopIds(leg.toStopId).has(toId)
+    fromMatches &&
+    toMatches
   );
 }
 
@@ -96,20 +115,35 @@ async function legLooksGeographicallyCoherent(leg: TripLeg): Promise<boolean> {
   const stops = legStops(leg);
   if (stops.length < 2) return true;
 
-  for (let i = 0; i < stops.length - 1; i++) {
+  const validStops = stops.filter((stop) => hasValidCoords(stop));
+  if (validStops.length < 2) return true;
+
+  for (let i = 0; i < validStops.length - 1; i++) {
     const hop = haversineKm(
-      stops[i].lat,
-      stops[i].lng,
-      stops[i + 1].lat,
-      stops[i + 1].lng
+      validStops[i].lat,
+      validStops[i].lng,
+      validStops[i + 1].lat,
+      validStops[i + 1].lng
     );
     if (hop > MAX_SINGLE_HOP_KM) return false;
   }
 
-  const airKm = legAirDistanceKm(leg);
+  const airKm = validStops.reduce((total, stop, index) => {
+    if (index === 0) return 0;
+    return (
+      total +
+      haversineKm(
+        validStops[index - 1].lat,
+        validStops[index - 1].lng,
+        stop.lat,
+        stop.lng
+      )
+    );
+  }, 0);
+
   if (airKm <= 0.2) return true;
 
-  const roadMeters = await fetchLegRoadDistanceMeters(stops);
+  const roadMeters = await fetchLegRoadDistanceMeters(validStops);
   if (!Number.isFinite(roadMeters)) return true;
 
   const roadKm = roadMeters / 1000;
@@ -130,6 +164,8 @@ export async function scorePlanWithRoadDistance(plan: TripPlan): Promise<number>
 
 export async function refineTripPlans(plans: TripPlan[]): Promise<TripPlan[]> {
   const valid = plans.filter((plan) => isPlanTopologicallyValid(plan));
+  if (valid.length === 0) return [];
+
   const checked: Array<{ plan: TripPlan; roadScore: number; coherent: boolean }> = [];
 
   for (const plan of valid) {
@@ -141,7 +177,7 @@ export async function refineTripPlans(plans: TripPlan[]): Promise<TripPlan[]> {
     checked.push({ plan, roadScore, coherent });
   }
 
-  return checked
+  const ranked = checked
     .filter((item) => item.coherent)
     .sort((a, b) => {
       if (a.plan.transferCount !== b.plan.transferCount) {
@@ -153,4 +189,6 @@ export async function refineTripPlans(plans: TripPlan[]): Promise<TripPlan[]> {
       return a.roadScore - b.roadScore;
     })
     .map((item) => item.plan);
+
+  return ranked.length > 0 ? ranked : valid;
 }

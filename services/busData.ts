@@ -41,10 +41,12 @@ function rebuildStopClusters() {
 
   for (const stop of STOPS) {
     if (clusterByStopId.has(stop.id)) continue;
+    if (!hasValidCoords(stop)) continue;
 
     const cluster = [stop.id];
     for (const other of STOPS) {
       if (other.id === stop.id || clusterByStopId.has(other.id)) continue;
+      if (!hasValidCoords(other)) continue;
       if (haversineKm(stop.lat, stop.lng, other.lat, other.lng) <= 0.12) {
         cluster.push(other.id);
       }

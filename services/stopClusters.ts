@@ -1,7 +1,8 @@
 import stopsList from "@/assets/data/bus_stops_list.json";
 import type { BusStop } from "@/types/bus";
+import { hasValidCoords, normalizeBusStops } from "@/services/busDataNormalize";
 
-const STOPS = stopsList as BusStop[];
+const STOPS = normalizeBusStops(stopsList as BusStop[]);
 
 function haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
   const toRad = (value: number) => (value * Math.PI) / 180;
@@ -20,12 +21,14 @@ function buildTransferClusters(stops: BusStop[], thresholdKm = 0.12): number[][]
 
   for (const stop of stops) {
     if (visited.has(stop.id)) continue;
+    if (!hasValidCoords(stop)) continue;
 
     const cluster = [stop.id];
     visited.add(stop.id);
 
     for (const other of stops) {
       if (visited.has(other.id)) continue;
+      if (!hasValidCoords(other)) continue;
       if (haversineKm(stop.lat, stop.lng, other.lat, other.lng) <= thresholdKm) {
         cluster.push(other.id);
         visited.add(other.id);

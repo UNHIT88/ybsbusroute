@@ -1,5 +1,6 @@
 import type { BusRoute, BusStop } from "@/types/bus";
 import { getAllRoutes, getAllStops, getDisplayRouteNumber, getRoute } from "@/services/busData";
+import { hasValidCoords } from "@/services/busDataNormalize";
 import { findLegSpanOnRoute, isPlanTopologicallyValid } from "@/services/routeValidation";
 import { getEquivalentStopIds } from "@/services/stopClusters";
 
@@ -40,11 +41,13 @@ function buildTransferClustersFromStops(stops: BusStop[], thresholdKm = 0.12): n
 
   for (const stop of stops) {
     if (visited.has(stop.id)) continue;
+    if (!hasValidCoords(stop)) continue;
     const cluster = [stop.id];
     visited.add(stop.id);
 
     for (const other of stops) {
       if (visited.has(other.id)) continue;
+      if (!hasValidCoords(other)) continue;
       const toRad = (value: number) => (value * Math.PI) / 180;
       const dLat = toRad(other.lat - stop.lat);
       const dLon = toRad(other.lng - stop.lng);
@@ -156,22 +159,31 @@ type Prev = {
 };
 
 function dijkstra(
-  fromId: number,
-  toId: number,
+  fromIds: Set<number>,
+  toIds: Set<number>,
   blockedEdges?: Set<string>
 ): { cost: number; path: Array<{ stopId: number; route: string | null }> } | null {
   const adj = buildGraph();
   const dist = new Map<number, number>();
   const prev = new Map<number, Prev>();
-  const queue: Array<{ stopId: number; cost: number }> = [{ stopId: fromId, cost: 0 }];
+  const queue: Array<{ stopId: number; cost: number }> = [];
 
-  dist.set(fromId, 0);
+  for (const fromId of fromIds) {
+    dist.set(fromId, 0);
+    queue.push({ stopId: fromId, cost: 0 });
+  }
+
+  let targetStopId: number | null = null;
 
   while (queue.length) {
     queue.sort((a, b) => a.cost - b.cost);
     const current = queue.shift()!;
     if (current.cost > (dist.get(current.stopId) ?? Infinity)) continue;
-    if (current.stopId === toId) break;
+
+    if (toIds.has(current.stopId)) {
+      targetStopId = current.stopId;
+      break;
+    }
 
     for (const edge of adj.get(current.stopId) ?? []) {
       const edgeKey = `${current.stopId}->${edge.to}:${edge.route ?? "walk"}`;
@@ -186,20 +198,22 @@ function dijkstra(
     }
   }
 
-  if (!dist.has(toId)) return null;
+  if (targetStopId === null || !dist.has(targetStopId)) return null;
 
   const path: Array<{ stopId: number; route: string | null }> = [];
-  let cursor: number | undefined = toId;
+  let cursor: number | undefined = targetStopId;
 
-  while (cursor !== undefined && cursor !== fromId) {
+  while (cursor !== undefined && !fromIds.has(cursor)) {
     const step = prev.get(cursor);
     if (!step) return null;
     path.unshift({ stopId: cursor, route: step.route });
     cursor = step.stopId;
   }
-  path.unshift({ stopId: fromId, route: null });
 
-  return { cost: dist.get(toId)!, path };
+  if (cursor === undefined) return null;
+  path.unshift({ stopId: cursor, route: null });
+
+  return { cost: dist.get(targetStopId)!, path };
 }
 
 function pathToLegs(path: Array<{ stopId: number; route: string | null }>): TripLeg[] {
@@ -248,6 +262,8 @@ function findTransferRoutePlans(
   toStopId: number,
   limit: number
 ): TripPlan[] {
+  const fromIds = getEquivalentStopIds(fromStopId);
+  const toIds = getEquivalentStopIds(toStopId);
   const results: TripPlan[] = [];
   const blocked = new Set<string>();
   let attempts = 0;
@@ -255,7 +271,7 @@ function findTransferRoutePlans(
 
   while (results.length < limit && attempts < maxAttempts) {
     attempts += 1;
-    const plan = dijkstra(fromStopId, toStopId, blocked);
+    const plan = dijkstra(fromIds, toIds, blocked);
     if (!plan) break;
 
     const legs = pathToLegs(plan.path);
@@ -272,7 +288,7 @@ function findTransferRoutePlans(
     if (results.some((item) => planSignature(item) === signature)) {
       const firstLeg = trip.legs[0];
       if (!firstLeg) break;
-      blocked.add(`${fromStopId}->${firstLeg.toStopId}:${firstLeg.routeNumber}`);
+      blocked.add(`${firstLeg.fromStopId}->${firstLeg.toStopId}:${firstLeg.routeNumber}`);
       continue;
     }
 

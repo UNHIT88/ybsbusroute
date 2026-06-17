@@ -55,16 +55,13 @@ export default function PlanScreen() {
     setSearched(true);
     setRefining(true);
 
-    let initial: TripPlan[] = [];
-    if (!isStaticDataHost(YBS_API_BASE)) {
+    let initial = findTripPlans(fromStop.id, toStop.id);
+    if (initial.length === 0 && !isStaticDataHost(YBS_API_BASE)) {
       try {
         initial = await fetchTripPlansRemote(fromStop.id, toStop.id);
       } catch {
         initial = [];
       }
-    }
-    if (initial.length === 0) {
-      initial = findTripPlans(fromStop.id, toStop.id);
     }
     setPlans(initial);
 
