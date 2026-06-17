@@ -3,13 +3,15 @@ import { sharedStyles } from "@/constants/styles";
 import { colors, spacing } from "@/constants/theme";
 import { useBusData } from "@/contexts/BusDataContext";
 import { useLocale } from "@/contexts/LocaleContext";
-import { getStop, searchStops } from "@/services/busData";
+import { useCurrentLocationStop } from "@/hooks/useCurrentLocationStop";
+import { getStop, getStopServingRoutes, searchStops } from "@/services/busData";
 import { refineTripPlans } from "@/services/routeValidation";
 import { findTripPlans, type TripPlan } from "@/services/routePlanner";
 import { fetchTripPlansRemote } from "@/services/ybsRouteApi";
 import { isStaticDataHost, YBS_API_BASE } from "@/constants/api";
 import { formatStopLine, getStopName } from "@/services/stopLabels";
 import { formatTransferBetween } from "@/services/tripPlanUtils";
+import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
 import { useMemo, useState } from "react";
 import {
@@ -19,6 +21,7 @@ import {
   KeyboardAvoidingView,
   Platform,
   Pressable,
+  ScrollView,
   StyleSheet,
   Text,
   TextInput,
@@ -35,7 +38,9 @@ export default function PlanScreen() {
   const insets = useSafeAreaInsets();
   const { locale, t } = useLocale();
   const { dataVersion } = useBusData();
+  const location = useCurrentLocationStop();
   const [fromStop, setFromStop] = useState<BusStop | null>(null);
+  const [fromUsesCurrentLocation, setFromUsesCurrentLocation] = useState(false);
   const [toStop, setToStop] = useState<BusStop | null>(null);
   const [picker, setPicker] = useState<PickerTarget>(null);
   const [query, setQuery] = useState("");
@@ -44,6 +49,22 @@ export default function PlanScreen() {
   const [refining, setRefining] = useState(false);
 
   const pickerResults = useMemo(() => searchStops(query), [query, dataVersion]);
+
+  const fromServingRoutes = useMemo(
+    () => (fromStop ? getStopServingRoutes(fromStop) : []),
+    [fromStop, dataVersion]
+  );
+
+  async function handleUseCurrentLocation() {
+    Keyboard.dismiss();
+    setFromUsesCurrentLocation(true);
+    const nearest = await location.detect();
+    if (nearest) {
+      setFromStop(nearest);
+      setSearched(false);
+      setPlans([]);
+    }
+  }
 
   async function handleFindRoutes() {
     Keyboard.dismiss();
@@ -75,7 +96,11 @@ export default function PlanScreen() {
   }
 
   function selectStop(stop: BusStop) {
-    if (picker === "from") setFromStop(stop);
+    if (picker === "from") {
+      setFromStop(stop);
+      setFromUsesCurrentLocation(false);
+      location.clear();
+    }
     if (picker === "to") setToStop(stop);
     setPicker(null);
     setQuery("");
@@ -90,6 +115,35 @@ export default function PlanScreen() {
     Keyboard.dismiss();
   }
 
+  function renderFromValue() {
+    if (location.detecting && fromUsesCurrentLocation) {
+      return t("plan", "detectingLocation");
+    }
+    if (fromStop && fromUsesCurrentLocation) {
+      return `${t("plan", "currentLocation")} · ${getStopName(fromStop, locale)}`;
+    }
+    if (fromStop) {
+      return getStopName(fromStop, locale);
+    }
+    return "—";
+  }
+
+  function renderLocationError() {
+    if (!fromUsesCurrentLocation) return null;
+    if (location.permissionDenied) {
+      return t("plan", "locationDenied");
+    }
+    if (location.error && location.error !== "no-nearby-stop") {
+      return t("plan", "locationFailed");
+    }
+    if (location.error === "no-nearby-stop") {
+      return t("map", "noStops");
+    }
+    return null;
+  }
+
+  const locationError = renderLocationError();
+
   const header = (
     <View>
       <Text style={sharedStyles.title}>{t("plan", "title")}</Text>
@@ -98,9 +152,50 @@ export default function PlanScreen() {
       <Pressable style={styles.selector} onPress={() => setPicker("from")}>
         <Text style={styles.selectorLabel}>{t("plan", "from")}</Text>
         <Text style={styles.selectorValue} numberOfLines={3}>
-          {fromStop ? getStopName(fromStop, locale) : "—"}
+          {renderFromValue()}
         </Text>
+        {fromUsesCurrentLocation && location.formatDistance(locale) ? (
+          <Text style={styles.selectorMeta}>
+            {location.formatDistance(locale)} {t("currentStop", "away")}
+          </Text>
+        ) : null}
       </Pressable>
+
+      <Pressable
+        style={[styles.locationButton, location.detecting && styles.locationButtonDisabled]}
+        onPress={handleUseCurrentLocation}
+        disabled={location.detecting}
+      >
+        {location.detecting ? (
+          <ActivityIndicator color={colors.primary} size="small" />
+        ) : (
+          <Ionicons name="locate" size={18} color={colors.primary} />
+        )}
+        <Text style={styles.locationButtonText}>{t("plan", "useCurrentLocation")}</Text>
+      </Pressable>
+
+      {locationError ? <Text style={styles.locationError}>{locationError}</Text> : null}
+
+      {fromStop && fromServingRoutes.length > 0 ? (
+        <View style={styles.busesHereCard}>
+          <Text style={styles.busesHereTitle}>{t("plan", "busesHere")}</Text>
+          <ScrollView
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.busesHereRow}
+          >
+            {fromServingRoutes.map((route) => (
+              <Pressable
+                key={route.routeNumber}
+                style={[styles.busChip, { borderColor: route.color }]}
+                onPress={() => router.push(`/route/${route.routeNumber}`)}
+              >
+                <Text style={styles.busChipNumber}>{route.displayNumber}</Text>
+              </Pressable>
+            ))}
+          </ScrollView>
+        </View>
+      ) : null}
 
       <Pressable style={styles.selector} onPress={() => setPicker("to")}>
         <Text style={styles.selectorLabel}>{t("plan", "to")}</Text>
@@ -143,13 +238,42 @@ export default function PlanScreen() {
             </Pressable>
           </View>
 
+          {picker === "from" ? (
+            <Pressable
+              style={styles.currentLocationPicker}
+              onPress={async () => {
+                setFromUsesCurrentLocation(true);
+                const nearest = await location.detect();
+                if (nearest) selectStop(nearest);
+              }}
+              disabled={location.detecting}
+            >
+              <Ionicons name="locate" size={20} color={colors.primary} />
+              <View style={styles.currentLocationPickerText}>
+                <Text style={styles.currentLocationPickerTitle}>
+                  {t("plan", "useCurrentLocation")}
+                </Text>
+                <Text style={styles.currentLocationPickerSubtitle}>
+                  {location.detecting
+                    ? t("plan", "detectingLocation")
+                    : t("currentStop", "nearbyStops")}
+                </Text>
+              </View>
+              {location.detecting ? (
+                <ActivityIndicator color={colors.primary} size="small" />
+              ) : (
+                <Ionicons name="chevron-forward" size={18} color={colors.textMuted} />
+              )}
+            </Pressable>
+          ) : null}
+
           <TextInput
             style={styles.searchInput}
             placeholder={t("plan", "searchPlaceholder")}
             placeholderTextColor="#64748b"
             value={query}
             onChangeText={setQuery}
-            autoFocus
+            autoFocus={picker !== "from"}
             autoCorrect={false}
             returnKeyType="search"
             multiline={false}
@@ -219,8 +343,13 @@ export default function PlanScreen() {
                 const isLastLeg = legIndex === item.legs.length - 1;
                 const transferLabel =
                   nextLeg != null ? formatTransferBetween(leg, nextLeg, locale) : "";
+                const stepNumber = legIndex + 1;
                 return (
                   <View key={`${leg.routeNumber}-${legIndex}`} style={styles.legBlock}>
+                    <Text style={styles.stepLabel}>
+                      {t("plan", "step")} {stepNumber} · {t("plan", "takeBus")}{" "}
+                      {leg.displayNumber}
+                    </Text>
                     <ListCard
                       label={leg.displayNumber}
                       color={leg.color}
@@ -276,6 +405,69 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     flexShrink: 1,
   },
+  selectorMeta: {
+    color: colors.primary,
+    fontSize: 12,
+    fontWeight: "600",
+    marginTop: 4,
+  },
+  locationButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.sm,
+    backgroundColor: colors.surfaceAlt,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.primary,
+    paddingVertical: 12,
+    marginBottom: spacing.sm,
+  },
+  locationButtonDisabled: {
+    opacity: 0.85,
+  },
+  locationButtonText: {
+    color: colors.text,
+    fontWeight: "700",
+    fontSize: 15,
+  },
+  locationError: {
+    color: colors.warning,
+    fontSize: 13,
+    marginBottom: spacing.sm,
+  },
+  busesHereCard: {
+    backgroundColor: colors.surface,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.border,
+    padding: spacing.md,
+    marginBottom: spacing.sm,
+  },
+  busesHereTitle: {
+    color: colors.textMuted,
+    fontSize: 12,
+    fontWeight: "700",
+    textTransform: "uppercase",
+    letterSpacing: 0.4,
+    marginBottom: spacing.sm,
+  },
+  busesHereRow: {
+    gap: 8,
+    paddingRight: spacing.sm,
+  },
+  busChip: {
+    borderWidth: 2,
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    backgroundColor: colors.surfaceAlt,
+  },
+  busChipNumber: {
+    color: colors.text,
+    fontSize: 16,
+    fontWeight: "800",
+  },
   findButton: {
     backgroundColor: colors.primaryDark,
     borderRadius: 12,
@@ -312,6 +504,30 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontSize: 18,
     fontWeight: "700",
+  },
+  currentLocationPicker: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.sm,
+    backgroundColor: colors.surfaceAlt,
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: colors.primary,
+    padding: spacing.md,
+    marginBottom: spacing.sm,
+  },
+  currentLocationPickerText: {
+    flex: 1,
+  },
+  currentLocationPickerTitle: {
+    color: colors.text,
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  currentLocationPickerSubtitle: {
+    color: colors.textMuted,
+    fontSize: 13,
+    marginTop: 2,
   },
   searchInput: {
     backgroundColor: colors.surface,
@@ -351,6 +567,12 @@ const styles = StyleSheet.create({
   },
   legBlock: {
     marginBottom: spacing.sm,
+  },
+  stepLabel: {
+    color: colors.primary,
+    fontSize: 13,
+    fontWeight: "700",
+    marginBottom: 6,
   },
   legMeta: {
     color: colors.textMuted,

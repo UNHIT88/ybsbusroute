@@ -31,49 +31,12 @@ type Props = {
   onStopChange?: (stop: BusStop | null) => void;
 };
 
-function haversineM(lat1: number, lon1: number, lat2: number, lon2: number): number {
-  const toRad = (v: number) => (v * Math.PI) / 180;
-  const r = 6371000;
-  const dLat = toRad(lat2 - lat1);
-  const dLon = toRad(lon2 - lon1);
-  const a =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon / 2) ** 2;
-  return r * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
-
-const LOCATION_TIMEOUT_MS = 12_000;
-
-async function getLocationWithFallback() {
-  const servicesEnabled = await Location.hasServicesEnabledAsync();
-  if (!servicesEnabled) {
-    throw new Error("location-services-disabled");
-  }
-
-  try {
-    return await Promise.race([
-      Location.getCurrentPositionAsync({
-        accuracy: Location.Accuracy.Balanced,
-      }),
-      new Promise<Location.LocationObject>((_, reject) =>
-        setTimeout(() => reject(new Error("location-timeout")), LOCATION_TIMEOUT_MS)
-      ),
-    ]);
-  } catch {
-    const lastKnown = await Location.getLastKnownPositionAsync();
-    if (lastKnown) return lastKnown;
-    throw new Error("location-unavailable");
-  }
-}
-
-function formatDistance(meters: number, locale: "en" | "mm"): string {
-  if (meters < 1000) {
-    const m = Math.round(meters);
-    return locale === "mm" ? `${m} မီတာ` : `${m} m`;
-  }
-  const km = (meters / 1000).toFixed(1);
-  return locale === "mm" ? `${km} ကီလိုမီတာ` : `${km} km`;
-}
+import {
+  formatDistanceMeters,
+  getLocationWithFallback,
+  haversineMeters,
+  LOCATION_TIMEOUT_MS,
+} from "@/services/location";
 
 export function CurrentStopBuses({ onStopChange }: Props) {
   const router = useRouter();
@@ -117,7 +80,7 @@ export function CurrentStopBuses({ onStopChange }: Props) {
 
       const nearest = getNearestStop(latitude, longitude, 1.5);
       if (nearest) {
-        const dist = haversineM(latitude, longitude, nearest.lat, nearest.lng);
+        const dist = haversineMeters(latitude, longitude, nearest.lat, nearest.lng);
         selectStop(nearest, dist);
       } else {
         setPickerOpen(true);
@@ -236,7 +199,7 @@ export function CurrentStopBuses({ onStopChange }: Props) {
             <Text style={styles.stopMeta}>{formatStopLine(selectedStop, locale)}</Text>
             {distanceM != null ? (
               <Text style={styles.stopDistance}>
-                {formatDistance(distanceM, locale)} {t("currentStop", "away")}
+                {formatDistanceMeters(distanceM, locale)} {t("currentStop", "away")}
               </Text>
             ) : null}
           </>
@@ -269,7 +232,7 @@ export function CurrentStopBuses({ onStopChange }: Props) {
             renderItem={({ item }) => {
               const dist =
                 userCoords != null
-                  ? haversineM(userCoords.lat, userCoords.lng, item.lat, item.lng)
+                  ? haversineMeters(userCoords.lat, userCoords.lng, item.lat, item.lng)
                   : null;
               return (
                 <Pressable
@@ -285,7 +248,7 @@ export function CurrentStopBuses({ onStopChange }: Props) {
                   </Text>
                   <Text style={styles.pickerItemMeta} numberOfLines={1}>
                     {formatStopLine(item, locale)}
-                    {dist != null ? ` · ${formatDistance(dist, locale)}` : ""}
+                    {dist != null ? ` · ${formatDistanceMeters(dist, locale)}` : ""}
                   </Text>
                 </Pressable>
               );
