@@ -1,12 +1,5 @@
 import type { BusRoute, BusStop } from "@/types/bus";
-import {
-  getAllRoutes,
-  getAllStops,
-  getDisplayRouteNumber,
-  getRoute,
-  getStopServingRoutes,
-  type StopServingRoute,
-} from "@/services/busData";
+import { getAllRoutes, getAllStops, getDisplayRouteNumber, getRoute } from "@/services/busData";
 import { hasValidCoords } from "@/services/busDataNormalize";
 import { findLegSpanOnRoute, isPlanTopologicallyValid } from "@/services/routeValidation";
 import { getEquivalentStopIds } from "@/services/stopClusters";
@@ -467,43 +460,4 @@ export function findTripPlans(fromStopId: number, toStopId: number, limit = 15):
   }
 
   return merged;
-}
-
-export type ReachableBoardingRoute = StopServingRoute & {
-  isDirect: boolean;
-  transferCount: number;
-};
-
-export function getReachableBoardingRoutes(
-  fromStop: BusStop,
-  toStopId: number
-): ReachableBoardingRoute[] {
-  const plans = findTripPlans(fromStop.id, toStopId);
-  const bestByRoute = new Map<string, TripPlan>();
-
-  for (const plan of plans) {
-    const routeNumber = plan.legs[0]?.routeNumber;
-    if (!routeNumber) continue;
-
-    const previous = bestByRoute.get(routeNumber);
-    if (!previous || planQualityScore(plan) < planQualityScore(previous)) {
-      bestByRoute.set(routeNumber, plan);
-    }
-  }
-
-  return getStopServingRoutes(fromStop)
-    .filter((route) => bestByRoute.has(route.routeNumber))
-    .map((route) => {
-      const plan = bestByRoute.get(route.routeNumber)!;
-      return {
-        ...route,
-        isDirect: plan.transferCount === 0,
-        transferCount: plan.transferCount,
-      };
-    })
-    .sort((a, b) => {
-      if (a.isDirect !== b.isDirect) return a.isDirect ? -1 : 1;
-      if (a.transferCount !== b.transferCount) return a.transferCount - b.transferCount;
-      return a.displayNumber.localeCompare(b.displayNumber, undefined, { numeric: true });
-    });
 }
