@@ -1,0 +1,316 @@
+{
+  "id": "144",
+  "number": "128",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/144",
+  "summary": "ဒဂုံတက္ကသိုလ် - ဘုန်းကြီးကျောင်းကွေ့ - (၇/၈)လမ်းဆုံ - မဝတလမ်းဆုံ - ပင်လုံလမ်း - ဘေလီ - တောင်ဥက္ကလာပဘုရား - စံပြဈေး - ဇဝနလမ်းဆုံ - တာမွေ(ကျောင်းရှေ့) - တာမွေအဝိုင်း - ရွှေဂုံတိုင် - မြေနီကုန်း - စိန်ဂျွန်း - ဗဟိုရ်စည် - သခင်မြပန်းခြံ",
+  "major_stops": [
+    "ဒဂုံတက္ကသိုလ်",
+    "ဘုန်းကြီးကျောင်းကွေ့",
+    "(၇/၈)လမ်းဆုံ",
+    "မဝတလမ်းဆုံ",
+    "ပင်လုံလမ်း",
+    "ဘေလီ",
+    "တောင်ဥက္ကလာပဘုရား",
+    "စံပြဈေး",
+    "ဇဝနလမ်းဆုံ",
+    "တာမွေ(ကျောင်းရှေ့)",
+    "တာမွေအဝိုင်း",
+    "ရွှေဂုံတိုင်",
+    "မြေနီကုန်း",
+    "စိန်ဂျွန်း",
+    "ဗဟိုရ်စည်",
+    "သခင်မြပန်းခြံ"
+  ],
+  "origin": "ဒဂုံတက္ကသိုလ်",
+  "destination": "သခင်မြပန်းခြံ",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "၃၅",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "၃၆",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "၃၇",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဒဂုံတက္ကသိုလ်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "၁၀မိုင်",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "အဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "မုခ်ဝ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ဘုန်းကြီးကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ဈေးလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "၈သမ",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "၇/၈လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "၇/၈လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ရုံးရှေ့(၃၈ရပ်ကွက်)",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ကုန်ပဒေသာ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "စွမ်းအင်",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "မဝတလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "မန္တလေးလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "စစ်တောင်း",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ဆက်သွယ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "၃၅",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "သင်းဝင်",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "နာရီစင်",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ဘေလီ",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "မြင်သာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "တောင်ဥက္ကလာဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "မိုးဆွေ",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "၃၁ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "စီမံကိန်း",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "လိုင်စင်ရုံး",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ဘဝမြင့်",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "ဇဝန",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ခပ်ချီးယား",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "အသင်းတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "သံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "ကျိုက္ကဆံလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "တာမွေအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "၆ထပ်ကြီး",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "ဗန်ဒါပင်",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "ရွှေဂုံတိုင်",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "အုတ်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "လင့်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 51,
+      "name": "မြေနီကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 52,
+      "name": "မြေနီကုန်း(ပြည်လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 53,
+      "name": "ဟယ်လ်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 54,
+      "name": "ပဲခူးကလပ်",
+      "type": null
+    },
+    {
+      "sequence": 55,
+      "name": "စိန်ဂျွန်း",
+      "type": null
+    },
+    {
+      "sequence": 56,
+      "name": "ဗဟိုရ်စည်/မော်တင်",
+      "type": null
+    },
+    {
+      "sequence": 57,
+      "name": "သခင်မြပန်းခြံ",
+      "type": "end"
+    }
+  ],
+  "stop_count": 57
+}

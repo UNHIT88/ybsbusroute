@@ -1,0 +1,262 @@
+{
+  "id": "170",
+  "number": "64",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/170",
+  "summary": "ဝေဘာဂီ - ဝေဘာဂီလမ်း - ၆ကွေ့ - ခေမာသီလမ်း - မြောက်ဥက္ကလာပအဝိုင်း - လမ်းဝ - ကမ္ဘာအေးဘုရား - စက်မှု၁ - ဦးချစ်မောင်လမ်း - တာမွေအဝိုင်း - ဗညားဒလလမ်း - သျှင်ပါကူ မင်္ဂလာဈေး - သိမ်ဖြူလမ်း - စိန်ပေါလ် - ကမ်းနားလမ်း - ပန်းဆိုးတန်း - မဟာဗန္ဓုလလမ်း",
+  "major_stops": [
+    "ဝေဘာဂီ",
+    "ဝေဘာဂီလမ်း",
+    "၆ကွေ့",
+    "ခေမာသီလမ်း",
+    "မြောက်ဥက္ကလာပအဝိုင်း",
+    "လမ်းဝ",
+    "ကမ္ဘာအေးဘုရား",
+    "စက်မှု၁",
+    "ဦးချစ်မောင်လမ်း",
+    "တာမွေအဝိုင်း",
+    "ဗညားဒလလမ်း",
+    "သျှင်ပါကူ မင်္ဂလာဈေး",
+    "သိမ်ဖြူလမ်း",
+    "စိန်ပေါလ်",
+    "ကမ်းနားလမ်း",
+    "ပန်းဆိုးတန်း",
+    "မဟာဗန္ဓုလလမ်း"
+  ],
+  "origin": "ဝေဘာဂီ",
+  "destination": "မဟာဗန္ဓုလလမ်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ဝေဘာဂီ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "နွယ်သာကီ",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ဘုရားလေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "၆ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ဧရာ",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ကန်သာယာလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ဈဈေး",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ရုပ်ရှင်ရုံ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "နွယ်သာဂီ",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "မြရတနာ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ရုံး",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ဥက္ကာ(ဆေး-၂)",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "မေဓာဝီလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ရုံးသစ်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "မြောက်ဥက္ကလာပအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ကျောက်ရေတွင်း",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ဘုန်းကြီးလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "၂ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "၅လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "လမ်းဝ",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ကမ္ဘာအေးစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ကမ္ဘာအေးဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ချော်တွင်းကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "၁၀၆",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ရိပ်သာ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "လမ်းနီ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "စက်မှု(၁)",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "ဂွတ္တလစ်ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "မင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "မြလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "တာမွေအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ကျောက်မြောင်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ဗျိုင်းရေအိုးစင်(သျှင်ပါဂူ)",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "သီတာ",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "အောင်မင်္ဂလာ",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ယုဇနပလာဇာ",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "မင်္ဂလာဈေး(၁၂၄လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "မဆလာစက်",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "သိမ်ဖြူစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "သိမ်ဖြူဈေး",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "စိန်ပေါလ်",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "ကြယ်ငါးပွင့်",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ဘိုကလေးဈေး",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ပန်းဆိုးတန်း(ကမ်းနား)",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "ပန်းဆိုးတန်း(မဟာဗန္ဓုလလမ်း)",
+      "type": "end"
+    }
+  ],
+  "stop_count": 46
+}

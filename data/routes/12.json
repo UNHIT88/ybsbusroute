@@ -1,0 +1,299 @@
+{
+  "id": "12",
+  "number": "11",
+  "prefix": "YPS",
+  "color": "#f6e05e",
+  "url": "https://yangonbusroute.com/ybs-route/12",
+  "summary": "အောင်မင်္ဂလာအဝေးပြေး - အမှတ်(၃)လမ်းဆုံ - ခရေပင်းလမ်းခွဲ - ပြည်လမ်း - စော်ဘွားကြီးကုန်း - အင်းစိန်ပန်းခြံ - ဗဟိုလမ်း - ဟံသာဝတီဘူတာ - စလင်းကွင်း - ကြည့်မြင်တိုင်ဘူတာ - ဗားကရာလမ်း - မြေနီကုန်း - လင့်လမ်း - ရွှေတိဂုံဘုရား - ဦးထောင်ဘိုလမ်း - အနော်ရထာလမ်း - လသာ - မဟာဗန္ဓုလလမ်း - သိမ်ကြီးဈေး",
+  "major_stops": [
+    "အောင်မင်္ဂလာအဝေးပြေး",
+    "အမှတ်(၃)လမ်းဆုံ",
+    "ခရေပင်းလမ်းခွဲ",
+    "ပြည်လမ်း",
+    "စော်ဘွားကြီးကုန်း",
+    "အင်းစိန်ပန်းခြံ",
+    "ဗဟိုလမ်း",
+    "ဟံသာဝတီဘူတာ",
+    "စလင်းကွင်း",
+    "ကြည့်မြင်တိုင်ဘူတာ",
+    "ဗားကရာလမ်း",
+    "မြေနီကုန်း",
+    "လင့်လမ်း",
+    "ရွှေတိဂုံဘုရား",
+    "ဦးထောင်ဘိုလမ်း",
+    "အနော်ရထာလမ်း",
+    "လသာ",
+    "မဟာဗန္ဓုလလမ်း",
+    "သိမ်ကြီးဈေး"
+  ],
+  "origin": "အောင်မင်္ဂလာအဝေးပြေး",
+  "destination": "သိမ်ကြီးဈေး",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "အောင်မင်္ဂလာအဝေးပြေး(ကားဝင်း)",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "အောင်မင်္ဂလာအဝေးပြေးထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "အမှတ်၃လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ခရေပင်ရိပ်မွန်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "သုံးရာသီ",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ရာသက်ပန်",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ခရေပင်လမ်းခွဲ(ခရေပင်လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ခရေပင်လမ်းခွဲ(ပြည်လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "မင်္ဂလာဒုံစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ဆေးကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ပန်းခြံကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ကုလားဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ထန်းပင်ကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "စော်ဘွားကြီးကုန်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ဝပ်ရှော့",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "အုတ်ကျင်းဝ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "အင်းစိန်ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "အင်းစိန်ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "နို့ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ဝပ်ရှော့",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ပန်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ဘီပီအိုင်/ကြို့ကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ခဝဲခြံ",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "သမိုင်းမြို့သစ်",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "သမိုင်းဘူတာ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "မာလာမြိုင်(၅/၆)",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "အုတ်ကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "သီရိမြိုင်",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "သံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ကမာရွတ်",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ဘူတာရုံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ရွာမကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ဆိုက်ကားဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ဘီအာဘီ",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ခိုင်ရွှေဝါ",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ပြည်ရိပ်မွန်",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ရဲဝင်း",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "ဟံသာဝတီဘူတာ",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "နတ်စင်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "စလင်းကွင်း",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ကြည့်မြင်တိုင်ညဈေး",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "ကြည့်မြင်တိုင်ဘူတာ",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "၉ထပ်ကြီး",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ရှမ်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "ရွှေမန်း",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "မြေနီကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "လင့်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "မြောက်ဘက်မုခ်",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "အရှေ့ဘက်မုခ်",
+      "type": null
+    },
+    {
+      "sequence": 51,
+      "name": "ရွှေတိဂုံဘုရား(တောင်ဘက်မုခ်)",
+      "type": null
+    },
+    {
+      "sequence": 52,
+      "name": "ဆက်သွယ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 53,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 53
+}

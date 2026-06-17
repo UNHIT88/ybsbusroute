@@ -1,0 +1,130 @@
+{
+  "id": "76",
+  "number": "67",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/76",
+  "summary": "အလယ်ရွာ - ကျန်စစ်သားလမ်း - ရုံးရှေ့ - ဘုရားလမ်း(စက်မှုဇုန်) - ထနောင်းရိပ် မြတောင်ဝန်ကြီးဦးမှိုလမ်း - ကနောင်မင်းသားကြီးလမ်း - စက်မှုဇုန် - FMI CITY ၁ထိပ် - ရွှေလင်ပန်းအဝိုင်း - အလယ်ရွာ",
+  "major_stops": [
+    "အလယ်ရွာ",
+    "ကျန်စစ်သားလမ်း",
+    "ရုံးရှေ့",
+    "ဘုရားလမ်း(စက်မှုဇုန်)",
+    "ထနောင်းရိပ် မြတောင်ဝန်ကြီးဦးမှိုလမ်း",
+    "ကနောင်မင်းသားကြီးလမ်း",
+    "စက်မှုဇုန်",
+    "FMI CITY ၁ထိပ်",
+    "ရွှေလင်ပန်းအဝိုင်း",
+    "အလယ်ရွာ"
+  ],
+  "origin": "အလယ်ရွာ",
+  "destination": "အလယ်ရွာ",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "အလယ်ရွာ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "အဝိုင်းထိပ်(မီးသတ်အဝိုင်း)",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "မူကြိုလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "စိန်ပန်း",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ဈေးလေး",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ရွှေသီးလေး",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "၁၅ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "၁၂၇ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ကမ္ဘာဇ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "၁၀၃ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဈေးလေး(အောက်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ရေဥက္ကံ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ထနောင်းရိပ်",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ကျန်းမာရေး",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ဆင်နှစ်ကောင်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "အောင်ချမ်းသာပြာပုံ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "၅သုံးလုံး",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ညောင်ရွာဈေးထိပ်",
+      "type": "end"
+    }
+  ],
+  "stop_count": 21
+}

@@ -1,0 +1,436 @@
+{
+  "id": "82",
+  "number": "73",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/82",
+  "summary": "ရွှေပြည်သာ(လိန်ကုန်း) - အိမ်မဲကြီး - ထန်းခြောက်ပင် - ရွှေပြည်သာကွေ့ - အမှတ်၄လမ်း - ဒညင်းကုန်လမ်းဆုံ - ခရေပင်လမ်းခွဲ - အမှတ်၃လမ်းဆုံ - အမှတ်၃လမ်း - ပုလဲမြို့သစ် - ထောက်ကြန့်",
+  "major_stops": [
+    "ရွှေပြည်သာ(လိန်ကုန်း)",
+    "အိမ်မဲကြီး",
+    "ထန်းခြောက်ပင်",
+    "ရွှေပြည်သာကွေ့",
+    "အမှတ်၄လမ်း",
+    "ဒညင်းကုန်လမ်းဆုံ",
+    "ခရေပင်လမ်းခွဲ",
+    "အမှတ်၃လမ်းဆုံ",
+    "အမှတ်၃လမ်း",
+    "ပုလဲမြို့သစ်",
+    "ထောက်ကြန့်"
+  ],
+  "origin": "ရွှေပြည်သာ(လိန်ကုန်း)",
+  "destination": "ထောက်ကြန့်",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ရွှေပြည်သာလိန်ကုန်း",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ကွက်သစ်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ဒဒွေး",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "လှော်ကားအောက်ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "မိုးဆန်း",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "အိမ်မဲကြီး",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "အောင်မေတ္တာ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "အောင်ချမ်းသာ",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ဈေး(အောင်သုခ)",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ငြိမ်းချမ်းရေး",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "အမိုးကြီး",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ကိုးသုံးလုံး",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ဆင်နှစ်ကောင်",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "၃ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ငမောက်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ရေချမ်းစင်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "နဝရတ်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ကျော်စွာ",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "တော်ဝင်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ရွှေညာမောင်",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဆေးခန်း",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ထန်းခြောက်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "ကားလေးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ခေါင်းသုံးလုံး",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "သံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ရေစင်",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ရွှေပြည်သာကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "စစ်တပ်",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ကန်သာယာ",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "မြင်းလှည်းဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ဘုန်းကြီးကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "ဒညင်းကုန်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "အစာစက်",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "၆၄၆",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "၁၀၆",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ဆေးကျောင်းပေါက်",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ခရေပင်လမ်းခွဲ",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "ရာသက်ပန်",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "သုံးရာသီ",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "ခရေပင်ရိပ်မွန်",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "အမှတ်၃လမ်းဆုံ(အဝေးပြေးထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "အမှတ်၃လမ်းဆုံ(Terminal)",
+      "type": null
+    },
+    {
+      "sequence": 51,
+      "name": "အလယ်ပေါက်",
+      "type": null
+    },
+    {
+      "sequence": 52,
+      "name": "တရားရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 53,
+      "name": "အိုးအိမ်",
+      "type": null
+    },
+    {
+      "sequence": 54,
+      "name": "ညောင်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 55,
+      "name": "သင်္ဃန်းကျွန်းကြီး",
+      "type": null
+    },
+    {
+      "sequence": 56,
+      "name": "၁၂လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 57,
+      "name": "ပုလဲအိမ်ရာ",
+      "type": null
+    },
+    {
+      "sequence": 58,
+      "name": "၆လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 59,
+      "name": "ရခိုင်ကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 60,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 61,
+      "name": "ပုလဲလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 62,
+      "name": "သုံးသုံးလုံး",
+      "type": null
+    },
+    {
+      "sequence": 63,
+      "name": "မှိုရုံ",
+      "type": null
+    },
+    {
+      "sequence": 64,
+      "name": "နီလာ",
+      "type": null
+    },
+    {
+      "sequence": 65,
+      "name": "ဆိုင်းဘုတ်",
+      "type": null
+    },
+    {
+      "sequence": 66,
+      "name": "ဂိတ်ဟောင်း(လန်ဒန်)",
+      "type": null
+    },
+    {
+      "sequence": 67,
+      "name": "ပိုက်လုံး",
+      "type": null
+    },
+    {
+      "sequence": 68,
+      "name": "ကုန်းတလဘောင်",
+      "type": null
+    },
+    {
+      "sequence": 69,
+      "name": "တပ်ရင်း၉",
+      "type": null
+    },
+    {
+      "sequence": 70,
+      "name": "ရေစက်",
+      "type": null
+    },
+    {
+      "sequence": 71,
+      "name": "အမှတ်၃",
+      "type": null
+    },
+    {
+      "sequence": 72,
+      "name": "၄၇ ကုက္ကိုပင်",
+      "type": null
+    },
+    {
+      "sequence": 73,
+      "name": "ဝါးဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 74,
+      "name": "နွယ်ခွေ",
+      "type": null
+    },
+    {
+      "sequence": 75,
+      "name": "၄ရပ်ကွက်",
+      "type": null
+    },
+    {
+      "sequence": 76,
+      "name": "၁ရပ်ကွက်",
+      "type": null
+    },
+    {
+      "sequence": 77,
+      "name": "ကျောင်းရှေ့ (ထောက်ကြန့်)",
+      "type": null
+    },
+    {
+      "sequence": 78,
+      "name": "လမ်းသစ် (ထောက်ကြန့်)",
+      "type": null
+    },
+    {
+      "sequence": 79,
+      "name": "ပုပ္ပါးကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 80,
+      "name": "ထောက်ကြန့်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 81,
+      "name": "ထောက်ကြန့်ဈေးသစ်",
+      "type": null
+    },
+    {
+      "sequence": 82,
+      "name": "မြို့ရှောင်လမ်း",
+      "type": "end"
+    }
+  ],
+  "stop_count": 82
+}

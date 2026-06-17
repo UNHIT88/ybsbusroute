@@ -1,0 +1,285 @@
+{
+  "id": "89",
+  "number": "80",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/89",
+  "summary": "ဒဂုံဆိပ်ကမ်း(၁၆၈ရပ်ကွက်) - ကျန်စစ်သားလမ်း - ပုဏ္ဏမီလမ်း - သံလွင်လမ်း ရတနာလမ်း - SAMANEA - ပဲခူးမြစ်လမ်း - သိမ်ကျောင်း - ဧရာဝတီလမ်း - မိုးကုတ်တံတားသစ် - မြဝတ်ရည်လမ်း - ပေါ်ဆန်းမွေးလမ်း - သုဝဏ္ဏပန်းခြံ - သံသုမာလမ်း - ကြက်ဘဲဈေး - တာမွေဈေး - မင်္ဂလာဈေး - သိမ်ဖြူလမ်း - ဗိုလ်မင်းရောင်လမ်း - သိမ်ဖြူဈေး - ရန်ကုန်ဘူတာကြီး -",
+  "major_stops": [
+    "ဒဂုံဆိပ်ကမ်း(၁၆၈ရပ်ကွက်)",
+    "ကျန်စစ်သားလမ်း",
+    "ပုဏ္ဏမီလမ်း",
+    "သံလွင်လမ်း ရတနာလမ်း",
+    "SAMANEA",
+    "ပဲခူးမြစ်လမ်း",
+    "သိမ်ကျောင်း",
+    "ဧရာဝတီလမ်း",
+    "မိုးကုတ်တံတားသစ်",
+    "မြဝတ်ရည်လမ်း",
+    "ပေါ်ဆန်းမွေးလမ်း",
+    "သုဝဏ္ဏပန်းခြံ",
+    "သံသုမာလမ်း",
+    "ကြက်ဘဲဈေး",
+    "တာမွေဈေး",
+    "မင်္ဂလာဈေး",
+    "သိမ်ဖြူလမ်း",
+    "ဗိုလ်မင်းရောင်လမ်း",
+    "သိမ်ဖြူဈေး",
+    "ရန်ကုန်ဘူတာကြီး"
+  ],
+  "origin": "ဒဂုံဆိပ်ကမ်း(၁၆၈ရပ်ကွက်)",
+  "destination": "ရန်ကုန်ဘူတာကြီး",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "၁၆၈ရပ်ကွက်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ဦးတရုတ်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "လှသိင်္ဂီ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဆေးရုံကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ဆီဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ရတနာသိင်္ခ",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "၉ဂိတ်(၈၇ရပ်ကွက်)",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ဘောဂဗလ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "၁၄၆ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "မြင့်ဇူ(စိန်ပန်း)",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ဈေးလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ကြိုဆိုရေး",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ပါရမီ",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "သာဂေါင်ကြီး",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "သစ္စာလေးတန်",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "မြနန္ဒာ",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "စမားနီးယား",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ရတနာလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "သိမ်ကျောင်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ပြည်တော်သာကန်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ဘုန်းကြီးကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "၆၅",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ရွှေပြည့်ငွေလျှန်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ပေါ်ပြူလာ",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "စက်မှုဇုန်(ယောက်ကော်)",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဆိုလာ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ဘုရင့်နောင်",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "အောင်ဇေယျ",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "သုဝဏ္ဏဈေး",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "မီးဒုံး",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "မင်းဒင်",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "စုပေါင်း",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ရေစက်",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "သုဝဏ္ဏလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ဈေးလေး(ကြက်ဘဲဈေး)",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "အာသောက",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "တာမွေဗလီ",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "တာမွေဈေး",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ကျောက်မြောင်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "သီတာ",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "အောင်မင်္ဂလာ",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "ယုဇနပလာဇာ",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "မင်္ဂလာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "တော်ဝင်ပလာဇာ",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "အမဲဈေး",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "စာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "၉၁လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "ကျောက်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "ရန်ကုန်ဘူတာကြီး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 50
+}

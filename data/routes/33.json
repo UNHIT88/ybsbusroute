@@ -1,0 +1,270 @@
+{
+  "id": "33",
+  "number": "28",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/33",
+  "summary": "ဒဂုံတက္ကသိုလ် - ဗိုလ်မှူးဗထူးလမ်း - မြောက်ဥက္ကလာပအဝိုင်း - လမ်းဝ - ကမ္ဘာအေးဘုရား - ကမ္ဘာအေးဘုရားလမ်း - လမ်းနီ(မြန်မာပလာဇာ) - ဗဟန်း၃လမ်း(ကန်တော်ကြီး) - ရန်ကုန်ဘူတာကြီး - ဆူးလေ(မြို့တော်ခန်းမ)",
+  "major_stops": [
+    "ဒဂုံတက္ကသိုလ်",
+    "ဗိုလ်မှူးဗထူးလမ်း",
+    "မြောက်ဥက္ကလာပအဝိုင်း",
+    "လမ်းဝ",
+    "ကမ္ဘာအေးဘုရား",
+    "ကမ္ဘာအေးဘုရားလမ်း",
+    "လမ်းနီ(မြန်မာပလာဇာ)",
+    "ဗဟန်း၃လမ်း(ကန်တော်ကြီး)",
+    "ရန်ကုန်ဘူတာကြီး",
+    "ဆူးလေ(မြို့တော်ခန်းမ)"
+  ],
+  "origin": "ဒဂုံတက္ကသိုလ်",
+  "destination": "ဆူးလေ(မြို့တော်ခန်းမ)",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "၃၅",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "၃၆",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "၃၇",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဒဂုံတက္ကသိုလ်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "၁၀မိုင်",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "အဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "မုခ်ဝ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ဘုန်းကြီးကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "တသသ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "မုခ်ဝ",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဈေးလေး",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "စိန်ပန်း",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "၄၆လမ်းဆုံ(ညာ)",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "၄၆လမ်းဆုံ(ဘယ်)",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ကြားမှတ်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ဗထူးဈေး",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ဗညားဒလ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ကျောင်းလေးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "၄၄လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ကျန်းမာရေး",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ဖြိုးစံပယ်",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ခေမာ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဂန္ဓာရုံ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "မြောက်ဥက္ကလာပအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ကျောက်ရေတွင်း",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ဘုန်းကြီးလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "၂ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "၅လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "လမ်းဝ",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ကမ္ဘာအေးစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ကမ္ဘာအေးဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ချော်တွင်းကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "၁၀၆",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ရိပ်သာ",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "လမ်းနီ",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "လမ်းနီလေး(မြန်မာပလာဇာ)",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ကုက္ကိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ဟာမစ်တစ်",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "နှင်းဆီကုန်းဘိုးဘွားရိပ်သာ",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ရေခဲဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ဗဟန်း၃လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "ယောက်လမ်း(သမ္မတ)",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "ဆူးလေ(ရှန်ဂရီလာ)",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "ဆူးလေ(မြို့တော်ခန်းမ)",
+      "type": "end"
+    }
+  ],
+  "stop_count": 49
+}

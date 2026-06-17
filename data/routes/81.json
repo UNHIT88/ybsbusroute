@@ -1,0 +1,235 @@
+{
+  "id": "81",
+  "number": "72",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/81",
+  "summary": "သာကေတ(ရတနာအိမ်ရာ) - ရတနာလမ်း - နဝရတ်လမ်း - ဧရာဝဏ်လမ်း - သာကေတအဝိုင်း - ရှုခင်းသာလမ်း - ၅ကွေ့ - ဇင်ဂမလမ်း - ၁ဈေးကွေ့ - ကျောက်တိုင် -ငမိုးရိပ်တံတား - အာသောက - တာမွေဈေး - ယုဇနပလာဇာ - မင်္ဂလာဈေး - သိမ်ဖြူစာတိုက် - ဒေါသိန်းတင်လမ်း - အောင်ဆန်းကွင်း - ပန်းဆိုးတန်းလမ်း - ဆူးလေ(မြို့တော်ခန်းမ)",
+  "major_stops": [
+    "သာကေတ(ရတနာအိမ်ရာ)",
+    "ရတနာလမ်း",
+    "နဝရတ်လမ်း",
+    "ဧရာဝဏ်လမ်း",
+    "သာကေတအဝိုင်း",
+    "ရှုခင်းသာလမ်း",
+    "၅ကွေ့",
+    "ဇင်ဂမလမ်း",
+    "၁ဈေးကွေ့",
+    "ကျောက်တိုင်",
+    "ငမိုးရိပ်တံတား",
+    "အာသောက",
+    "တာမွေဈေး",
+    "ယုဇနပလာဇာ",
+    "မင်္ဂလာဈေး",
+    "သိမ်ဖြူစာတိုက်",
+    "ဒေါသိန်းတင်လမ်း",
+    "အောင်ဆန်းကွင်း",
+    "ပန်းဆိုးတန်းလမ်း",
+    "ဆူးလေ(မြို့တော်ခန်းမ)"
+  ],
+  "origin": "သာကေတ(ရတနာအိမ်ရာ)",
+  "destination": "ဆူးလေ(မြို့တော်ခန်းမ)",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "၁၃ဂိတ်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ကန်ကြီးထောင့်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "လယ်ယာဂိတ်ရင်း",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "၃၄ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "၁၀ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "သာကေတအဝိုင်း(တံတားနား)",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "သာကေတအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ဓမ္မာရုံ",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ခိုင်ရွှေဝါ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "အရက်ဆိုင်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "၄၉အစိမ်းဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ကြယ်ငါးပွင့်",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ဝေဇယန္တာ",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "၅ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ရုပ်ရှင်ရုံ",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ထူပါရုံ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "အနော်မာ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "၁ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "၁ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "တပ်ဖွဲ့",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "မြေနီ",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "တံတားဟောင်း(တရားရုံး)",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ပုသိမ်ညွှန့်(၆လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "အာသောက",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "တာမွေဗလီ",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "တာမွေဈေး",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ကျောက်မြောင်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "သီတာ",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "အောင်မင်္ဂလာ",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ယုဇနပလာဇာ",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "မင်္ဂလာဈေး(၁၂၄လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "မဆလာစက်",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "သိမ်ဖြူစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "၉၁လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "၈၈လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ယောက်လမ်း(သမ္မတ)",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "ဆူးလေ(ရှန်ဂရီလာ)",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ဆူးလေ(မြို့တော်ခန်းမ)",
+      "type": "end"
+    }
+  ],
+  "stop_count": 40
+}

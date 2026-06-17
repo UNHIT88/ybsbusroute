@@ -1,0 +1,276 @@
+{
+  "id": "4",
+  "number": "4",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/4",
+  "summary": "ယုဇနဥယျာဉ်မြို့တော် - ပဲခူးမြစ်လမ်း - သိမ်ကျောင်း - ဧရာဝတီလမ်း - ရတနာလမ်း - ဆောက်လုပ်ရေး - သာကေတအဝိုင်း - ကျောက်တိုင် - မင်းနန္ဒာလမ်း - ဒေါပုံသင်္ဘောကျင်း - မဟာဗန္ဓုလတံတား - အနော်ရထာလမ်း - လမ်း၅၀ – ရွှေတိဂုံဘုရားလမ်း - ဗိုလ်ချုပ်အောင်ဆန်းဈေး - ရုပ်ရှင်ရုံ - ဆူးလေ(မဟာဗန္ဓူလပန်းခြံ)",
+  "major_stops": [
+    "ယုဇနဥယျာဉ်မြို့တော်",
+    "ပဲခူးမြစ်လမ်း",
+    "သိမ်ကျောင်း",
+    "ဧရာဝတီလမ်း",
+    "ရတနာလမ်း",
+    "ဆောက်လုပ်ရေး",
+    "သာကေတအဝိုင်း",
+    "ကျောက်တိုင်",
+    "မင်းနန္ဒာလမ်း",
+    "ဒေါပုံသင်္ဘောကျင်း",
+    "မဟာဗန္ဓုလတံတား",
+    "အနော်ရထာလမ်း",
+    "လမ်း၅၀ – ရွှေတိဂုံဘုရားလမ်း",
+    "ဗိုလ်ချုပ်အောင်ဆန်းဈေး",
+    "ရုပ်ရှင်ရုံ",
+    "ဆူးလေ(မဟာဗန္ဓူလပန်းခြံ)"
+  ],
+  "origin": "ယုဇနဥယျာဉ်မြို့တော်",
+  "destination": "ဆူးလေ(မဟာဗန္ဓူလပန်းခြံ)",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ရတနာနှင်းဆီအိမ်ရာ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ရတနာလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ဆီဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "မုခ်ဦး",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "၁၇လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "၁၁လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "၅လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ပိတောက်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "အိုးအိမ်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "အောင်ချမ်းသာ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "မှတ်တိုင်သစ်",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "မြနန္ဒာ(အလယ်ဂိတ်)",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ရတနာလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "သိမ်ချောင်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "၆၅ရပ်ကွက်",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "စာဥ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "သစ်ဆိပ်",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ဒုဋ္ဌဝတီ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "သံလမ်းကွေ့(ရှာမတွေ့)",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ဗေလုဝကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "လယ်ယာ",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "၄၉ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "၁၀၈တောင်စေတီ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "သာကေတအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "စဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "မြေနီ",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "အနော်မာ",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "မြေနီ",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "တပ်ဖွဲ့",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "၁ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "သဒ္ဒါရုံ",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ဝက်စု",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ရန်အောင်",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "ဒေါပုံသင်္ဘောကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "အိုးရှင်း",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ဂန္ဒီ",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "လမ်း၅ဝ",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "လမ်း၄၆",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ပန်းဆိုးတန်း",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ဘားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "လမ်း၃၀",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "ကုန်ဈေးတန်း(သိမ်ကြီးဈေး)",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "လေဟာပြင်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "ဗိုလ်ချုပ်ဈေး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 49
+}

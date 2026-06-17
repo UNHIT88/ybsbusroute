@@ -1,0 +1,254 @@
+{
+  "id": "53",
+  "number": "45",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/53",
+  "summary": "လှည်းကူးဈေး - အမှတ်၁လမ်း - လှည်းကူးတာဆုံ - လှည်းကူး-ဖောင်ကြီးလမ်း - အမြန်လမ်းဆုံ - ဖောင်ကြီးတာဆုံ - ဗဟိုဝန်ထမ်းတက္ကသိုလ် - မင်းကုန်း",
+  "major_stops": [
+    "လှည်းကူးဈေး",
+    "အမှတ်၁လမ်း",
+    "လှည်းကူးတာဆုံ",
+    "လှည်းကူး",
+    "ဖောင်ကြီးလမ်း",
+    "အမြန်လမ်းဆုံ",
+    "ဖောင်ကြီးတာဆုံ",
+    "ဗဟိုဝန်ထမ်းတက္ကသိုလ်",
+    "မင်းကုန်း"
+  ],
+  "origin": "လှည်းကူးဈေး",
+  "destination": "မင်းကုန်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "လှည်းကူးဈေး",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "သဉ္ဇာဦး",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "လှည်းကူးတာဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "စန်းသော်တာ",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ညောင်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ဆည်မြောင်းရုံး",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ငပိတဲ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ဝါးဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "လေးအိမ်တန်း",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "စခန်းကြီး",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "မှန်ကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "မှန်ကုန်းရွာလယ်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ရွာဖျားဈေးဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ရှင်းလင်းဆောင်",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "နှုတ်ခမ်းမွှေးသိုက်",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "မြင့်မိုရ်ဦး",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ဇီးကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ထိန်သုံးပင်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ကလီထော်",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "အောင်သပြေ",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ကြာကန်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ကဒစ်",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "နှုတ်ခမ်းမွှေးသိုက်",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဆီအုန်း",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "သပြေကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "စာဘူးတောင်း",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "အမြန်လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ညောင်းကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ကြို့ကုန်းလမ်းသစ်",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ဟိုင်းကူး",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "သပြေတောင်",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ဥယျာဉ်ဝ",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ဥယျာဉ်ဝလမ်းသစ်",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ဘုရားကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "စည်ပင်လမ်းခွဲ",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ဖောင်ကြီးတာဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "အောင်ချမ်းသာ",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ဆေးရုံကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ဗဟိုဝန်ထမ်းတက္ကသိုလ်",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "စံပြ",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "၂ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "သမဝါယမကောလိပ်",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ဆောက်လုပ်ရေးလမ်းခွဲ",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "မင်းကုန်း",
+      "type": "end"
+    }
+  ],
+  "stop_count": 46
+}

@@ -1,0 +1,238 @@
+{
+  "id": "37",
+  "number": "31",
+  "prefix": "YPS",
+  "color": "#805ad5",
+  "url": "https://yangonbusroute.com/ybs-route/37",
+  "summary": "အရှေ့ပိုင်းတက္ကသိုလ်(သန်လျင်) - ဘုရားကုန်းလမ်းဆုံ - ကျိုက်ခေါက်ဘုရားလမ်း - သန်လျင်မြို့မဈေး - ရေနံဂိတ်ဝ - သန်လျင်တံတား - ရှုခင်းသာမြို့ပတ်လမ်း - ရှုခင်းသာ(WATER BOOM) -ယမုံနာလမ်း - မဟာဗန္ဓုလတံတား - လမ်း၅၀ - ကုန်သည်လမ်း - ပန်းဆိုးတန်း",
+  "major_stops": [
+    "အရှေ့ပိုင်းတက္ကသိုလ်(သန်လျင်)",
+    "ဘုရားကုန်းလမ်းဆုံ",
+    "ကျိုက်ခေါက်ဘုရားလမ်း",
+    "သန်လျင်မြို့မဈေး",
+    "ရေနံဂိတ်ဝ",
+    "သန်လျင်တံတား",
+    "ရှုခင်းသာမြို့ပတ်လမ်း",
+    "ရှုခင်းသာ(WATER BOOM)",
+    "ယမုံနာလမ်း",
+    "မဟာဗန္ဓုလတံတား",
+    "လမ်း၅၀",
+    "ကုန်သည်လမ်း",
+    "ပန်းဆိုးတန်း"
+  ],
+  "origin": "အရှေ့ပိုင်းတက္ကသိုလ်(သန်လျင်)",
+  "destination": "ပန်းဆိုးတန်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ခြောက်လမ်းသွား",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "အရှေ့ပိုင်းတက္ကသိုလ်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ကွမ်းယာဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ညောင်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ဘုရားကုန်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ကျိုက်ခေါက်ဘုရားရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "၁၈ကုန်းထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "အောင်ချမ်းသာ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ဆည်မြောင်း",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "သမကောလိပ်",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ကျားဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ဆေးရုံ အပေါ်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဆေးရုံအောက်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ပဲခူးစု",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ဖို့မြေ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "မြို့မဈေး(သန်လျင်)",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "မြို့မလမ်း(သန်လျင်)",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "လမ်းဆုံ(ဒါရ်ဂါလမ်းဆုံ)",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ရေနံဂိတ်ဝ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "မီးပွိုင့်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "လက်မှတ်ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ကန်ကြီးထောင့်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "၁၃ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ဂိတ်ဝ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ခန်းမ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "၄၉အစိမ်းဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "ကြယ်ငါးပွင့်",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ဝေဇယန္တာ",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "၅ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ဆီဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "မီးသွေးဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ရှုခင်းသာ",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "၃ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "မာန်ပြေ",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ရန်ပြေ",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "သင်္ဘောကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "အိုးရှင်း",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ဂန္ဒီ",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "လမ်း၅၀",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ဘိုကလေးဈေး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 42
+}

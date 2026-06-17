@@ -1,0 +1,352 @@
+{
+  "id": "169",
+  "number": "60",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/169",
+  "summary": "ယုဇနဦးယျာဉ်မြို့တော် - ကျွန်းရွှေဝါလမ်း - ရွှေလီလမ်း - ဆောက်လုပ်ရေး - ပြည်ထောင်စုလမ်း - တောင်မြောက်လမ်းဆုံ - စံပြဈေး - သံသုမာလမ်း - ရတနာလမ်း - ကျောက်ကုန်း - မိုးကောင်းလမ်း - ရန်ကင်းလမ်း - ရန်ရှင်းလမ်း - လမ်းနီ(မြန်မာပလာဇာ) - လှည်းတန်း - ဘုရင့်နောင်လမ်း - သီရိမင်္ဂလာဈေးသစ်",
+  "major_stops": [
+    "ယုဇနဦးယျာဉ်မြို့တော်",
+    "ကျွန်းရွှေဝါလမ်း",
+    "ရွှေလီလမ်း",
+    "ဆောက်လုပ်ရေး",
+    "ပြည်ထောင်စုလမ်း",
+    "တောင်မြောက်လမ်းဆုံ",
+    "စံပြဈေး",
+    "သံသုမာလမ်း",
+    "ရတနာလမ်း",
+    "ကျောက်ကုန်း",
+    "မိုးကောင်းလမ်း",
+    "ရန်ကင်းလမ်း",
+    "ရန်ရှင်းလမ်း",
+    "လမ်းနီ(မြန်မာပလာဇာ)",
+    "လှည်းတန်း",
+    "ဘုရင့်နောင်လမ်း",
+    "သီရိမင်္ဂလာဈေးသစ်"
+  ],
+  "origin": "ယုဇနဦးယျာဉ်မြို့တော်",
+  "destination": "သီရိမင်္ဂလာဈေးသစ်",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ယုဇနအိမ်ယာ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "မြသီတာပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ယုဇနမုခ်ဦး",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဆီဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "အိုးအိမ်",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "အောင်ချမ်းသာ",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "မှတ်တိုင်သစ်",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "မြနန္ဒာ(အလယ်ဂိတ်)",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ရတနာလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "သိမ်ချောင်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "၆၅ရပ်ကွက်",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ပုလဲကန်",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ဘီအမ်ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "မင်းကွန်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ဧရာတီလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ဈေးလေး",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "စက်မှုဇုန်(၂)",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ဂျီအီးစီ",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "သစ်ဆိုင်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ယောက်ကော်",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ယဉ်ကျေးမှု",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "သုခုမ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "တောင်မြောက်လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "လိုင်စင်ရုံး",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ဒေဝဒဟ",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ဘဝမြင့်",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "အာနန္ဒာဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ကျိုက္ကဆံဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "၁၄/၁၅လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ရတနာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ကုလားဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "၁၆ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "သံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ကျောက်ကုန်း(AMPS Condo)",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "မဟာဗောဓိ",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "မိုးကောင်း",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ရန်ကင်းစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "၁၂လုံးတန်း",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "၁၂လုံးတန်း",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "ရန်ကင်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "စက်မှုကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "လမ်းနီလေး(မြန်မာပလာဇာ)",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "ကုက္ကိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 51,
+      "name": "ရေစက်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 52,
+      "name": "သံလွင်",
+      "type": null
+    },
+    {
+      "sequence": 53,
+      "name": "UFL",
+      "type": null
+    },
+    {
+      "sequence": 54,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 55,
+      "name": "ကျောင်းရှေ့(ဓမ္မာရုံ)",
+      "type": null
+    },
+    {
+      "sequence": 56,
+      "name": "လှည်းတန်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 57,
+      "name": "လှည်းတန်းကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 58,
+      "name": "သင်္ဘောကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 59,
+      "name": "ရေကြောင်း",
+      "type": null
+    },
+    {
+      "sequence": 60,
+      "name": "ရွာမကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 61,
+      "name": "ချောင်းဝ",
+      "type": null
+    },
+    {
+      "sequence": 62,
+      "name": "ဘူတာရုံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 63,
+      "name": "အိုဝမ်း",
+      "type": null
+    },
+    {
+      "sequence": 64,
+      "name": "သီရိမင်္ဂလာဈေးသစ်",
+      "type": "end"
+    }
+  ],
+  "stop_count": 64
+}

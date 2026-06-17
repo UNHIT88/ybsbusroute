@@ -1,0 +1,374 @@
+{
+  "id": "92",
+  "number": "83",
+  "prefix": null,
+  "color": "#7b341e",
+  "url": "https://yangonbusroute.com/ybs-route/92",
+  "summary": "ဒဂုံဧရာအဝေးပြေး - သမကုန်း - ဘီအိုစီအဝိုင်း - ပုသိမ်လမ်း - စက်မှုဇုန် - ဘုရင့်နောင်တံတား - သမိုင်းလမ်းဆုံ - ၈မိုင်လမ်းဆုံ - ကမ္ဘာအေးဘုရား - ကန်ဘဲ့လမ်း - ရန်ကင်းကလေးဆေးရုံ - သစ္စာလမ်း - သံသုမာလမ်း - စံပြဈေး - တောင်မြောက်လမ်းဆုံ - ပြည်ထောင်စုလမ်း - လှော်ကားလမ်း - မောင်းမကန်သာလမ်း - ဧရာဝဏ်လမ်း - သိမ်ကျောင်း - ရွှေလီလမ်း - ရွှေလီအိမ်ရာ - သိမ်ကျောင်း - မြိတ်လမ်း",
+  "major_stops": [
+    "ဒဂုံဧရာအဝေးပြေး",
+    "သမကုန်း",
+    "ဘီအိုစီအဝိုင်း",
+    "ပုသိမ်လမ်း",
+    "စက်မှုဇုန်",
+    "ဘုရင့်နောင်တံတား",
+    "သမိုင်းလမ်းဆုံ",
+    "၈မိုင်လမ်းဆုံ",
+    "ကမ္ဘာအေးဘုရား",
+    "ကန်ဘဲ့လမ်း",
+    "ရန်ကင်းကလေးဆေးရုံ",
+    "သစ္စာလမ်း",
+    "သံသုမာလမ်း",
+    "စံပြဈေး",
+    "တောင်မြောက်လမ်းဆုံ",
+    "ပြည်ထောင်စုလမ်း",
+    "လှော်ကားလမ်း",
+    "မောင်းမကန်သာလမ်း",
+    "ဧရာဝဏ်လမ်း",
+    "သိမ်ကျောင်း",
+    "ရွှေလီလမ်း",
+    "ရွှေလီအိမ်ရာ",
+    "သိမ်ကျောင်း",
+    "မြိတ်လမ်း"
+  ],
+  "origin": "ဒဂုံဧရာအဝေးပြေး",
+  "destination": "မြိတ်လမ်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ဒဂုံဧရာအဝေးပြေး",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "သမကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "တိုးချဲ့",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "မီးခွက်ဈေး(အောက်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "နဝဒေး",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "အဆင့်မြင့်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ဗိုလ်ချုပ်",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "စက်မှုဇုံ",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "တပ်ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဘုရင့်နောင်လမ်းဆုံ(တံတား ပေါ်/အောက်)",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ဈေးဘူတာ",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ဦးဘဟန်",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ကြွေ၁",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "သမိုင်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ရဲရန်အောင်",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ကျိုက်ဝိုင်းဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ရဲဘော်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "၈မိုင်",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "၈မိုင်ပန်းခြံ(မြိုင်ဟေဝန်)",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "နဝဒေး",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ကမ္ဘာအေးစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ကမ္ဘာအေးဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ချော်တွင်းကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "၁၀၆",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "ရိပ်သာ",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "လမ်းနီ",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ရန်ကင်းကလေးဆေးရုံ",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "မိုးကောင်း",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "သံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ဗဟိုဈေး",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ပုဏ္ဏမီ",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "တောင်ဥက္ကလာစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "တောင်ဥက္ကလာဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "မိုးဆွေ",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "၃၁ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "စီမံကိန်း",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "လိုင်စင်ရုံး",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "တောင်မြောက်လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "သုခုမ",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "ယဉ်ကျေးမှု",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "ယောက်ကော်",
+      "type": null
+    },
+    {
+      "sequence": 51,
+      "name": "သစ်ဆိုင်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 52,
+      "name": "ဂျီအီးစီ",
+      "type": null
+    },
+    {
+      "sequence": 53,
+      "name": "စက်မှုဇုန်(၂)",
+      "type": null
+    },
+    {
+      "sequence": 54,
+      "name": "ကြာကန်",
+      "type": null
+    },
+    {
+      "sequence": 55,
+      "name": "သစ္စာ",
+      "type": null
+    },
+    {
+      "sequence": 56,
+      "name": "၂၀ကုန်တိုက်",
+      "type": null
+    },
+    {
+      "sequence": 57,
+      "name": "ကားလေးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 58,
+      "name": "ဘုန်းကြီးကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 59,
+      "name": "ကွမ်းယာဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 60,
+      "name": "အဝေရာ",
+      "type": null
+    },
+    {
+      "sequence": 61,
+      "name": "ပွိုင့်ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 62,
+      "name": "အထူးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 63,
+      "name": "အင်းဝအိမ်ရာ",
+      "type": null
+    },
+    {
+      "sequence": 64,
+      "name": "သိမ်ချောင်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 65,
+      "name": "၆၅ရပ်ကွက်",
+      "type": null
+    },
+    {
+      "sequence": 66,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 67,
+      "name": "ရတနာနှင်းဆီအိမ်ရာ",
+      "type": "end"
+    }
+  ],
+  "stop_count": 67
+}

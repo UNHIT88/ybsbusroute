@@ -1,0 +1,242 @@
+{
+  "id": "124",
+  "number": "114",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/124",
+  "summary": "အရှေ့ဒဂုံ(၁၀၈)ရပ်ကွက် - ကျောက်လမ်း - ကျန်စစ်သားလမ်း - တပင်ရွှေထီးလမ်း - ပြည်ထောင်စုလမ်း - တောင်မြောက်လမ်းဆုံ - စံပြဈေး - လေးထောင့်ကန်လမ်း - ဇဝန သုဝဏ္ဏလမ်းဆုံ - ကြက်ဘဲဈေး - ABC - အသင်းတိုက် - ပုဇွန်တောင်ဈေး - သီတာဆိပ် - ရာဇာဓိရာဇ်လမ်း - လင်းစဒေါင်း - ဗိုလ်တစ်ထောင်ဘုရား",
+  "major_stops": [
+    "အရှေ့ဒဂုံ(၁၀၈)ရပ်ကွက်",
+    "ကျောက်လမ်း",
+    "ကျန်စစ်သားလမ်း",
+    "တပင်ရွှေထီးလမ်း",
+    "ပြည်ထောင်စုလမ်း",
+    "တောင်မြောက်လမ်းဆုံ",
+    "စံပြဈေး",
+    "လေးထောင့်ကန်လမ်း",
+    "ဇဝန သုဝဏ္ဏလမ်းဆုံ",
+    "ကြက်ဘဲဈေး",
+    "ABC",
+    "အသင်းတိုက်",
+    "ပုဇွန်တောင်ဈေး",
+    "သီတာဆိပ်",
+    "ရာဇာဓိရာဇ်လမ်း",
+    "လင်းစဒေါင်း",
+    "ဗိုလ်တစ်ထောင်ဘုရား"
+  ],
+  "origin": "အရှေ့ဒဂုံ(၁၀၈)ရပ်ကွက်",
+  "destination": "ဗိုလ်တစ်ထောင်ဘုရား",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "၁၀၈ရပ်ကွက်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "၁၃ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ဆဒုံဒူးဝါး",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဘုန်းကြီးလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "၁၂ဂတ်စ်ဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "၃၆ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ဗိုလ်မင်းခေါင်",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "စိုးမြတ်",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "တံတားထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ဗိုလ်စောနောင်",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ကုန်ပဒေသာ",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "စွမ်းအင်",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "မ၀တလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "အားကစားကွင်း",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ကပရ",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "တံတားထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "တောင်မြောက်လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ဘဝမြင့်",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ဇဝန",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ခပ်ချီးယား",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "အသင်းတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "သုဝဏ္ဏလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ဈေးလေး(ကြက်ဘဲဈေး)",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ပုသိမ်ညွှန့်(၆လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "အေဘီစီ",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ရုံးလေး",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "၉လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "အသင်းတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ပုဇွန်တောင်စာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ပုဇွန်တောင်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ညောင်တန်း",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "သီတာဆိပ်",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "အိုးရှင်း",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ဂန္ဒီ",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ဆီဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ဗိုလ်တထောင်ဘုရား",
+      "type": "end"
+    }
+  ],
+  "stop_count": 42
+}

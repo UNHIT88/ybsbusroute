@@ -1,0 +1,232 @@
+{
+  "id": "84",
+  "number": "75",
+  "prefix": null,
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/84",
+  "summary": "သုဝဏ္ဏမြို့ဦးစေတီ - ကမာကြည်လမ်း - သုဝဏ္ဏဈေး - သံသုမာလမ်း - ကြက်ဘဲဈေး အာသောက တာမွေဈေး - ရွှေဂုံတိုင် - မြေနီကုန်း - အထက်ကြည့်မြင်တိုင်လမ်း - ဆင်မလိုက် - နတ်စင်လမ်း - ပန်းပင်ကြီးလမ်း - စလင်းကွင်း",
+  "major_stops": [
+    "သုဝဏ္ဏမြို့ဦးစေတီ",
+    "ကမာကြည်လမ်း",
+    "သုဝဏ္ဏဈေး",
+    "သံသုမာလမ်း",
+    "ကြက်ဘဲဈေး အာသောက တာမွေဈေး",
+    "ရွှေဂုံတိုင်",
+    "မြေနီကုန်း",
+    "အထက်ကြည့်မြင်တိုင်လမ်း",
+    "ဆင်မလိုက်",
+    "နတ်စင်လမ်း",
+    "ပန်းပင်ကြီးလမ်း",
+    "စလင်းကွင်း"
+  ],
+  "origin": "သုဝဏ္ဏမြို့ဦးစေတီ",
+  "destination": "စလင်းကွင်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ပင်လုံအိမ်ယာ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "၄ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ပင်လုံဆေးရုံ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "၁ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ပင်လုံနှင်းဆီ",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "စီးတီမော",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "လပြည့်ဝန်း",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ကင်းတဲ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ဗိုလ်ဖိုးစောလမ်းထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "၂၈ တံတားထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "မြို့ဦးစေတီ",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "တောင်မြောက်လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "သစ်စက်",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ချမ်းအေး(သွားဆေးတက္ကသိုလ်)",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ဝေဘူလ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "သုဝဏ္ဏဈေး",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "မီးဒုံး",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "မင်းဒင်",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "စုပေါင်း",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ရေစက်",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "သုဝဏ္ဏလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဈေးလေး(ကြက်ဘဲဈေး)",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "အာသောက",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "တာမွေဗလီ",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "တာမွေပလာဇာ",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "တာမွေအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "၆ထပ်ကြီး",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ဗန်ဒါပင်",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ရွှေဂုံတိုင်",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "အုတ်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "လင့်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "မြေနီကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ရွှေမန်း",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ရှမ်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "၉ထပ်ကြီး",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ကြည့်မြင်တိုင်ဘူတာ",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ကြည့်မြင်တိုင်ညဈေး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 41
+}

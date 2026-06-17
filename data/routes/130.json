@@ -1,0 +1,142 @@
+{
+  "id": "130",
+  "number": "120",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/130",
+  "summary": "သာကေတ(အနော်မာ) - မြင်တော်သာလမ်း - ရုပ်ရှင်ရုံ - ဇင်ဂမာလမ်း - မင်းနန္ဒာလမ်း - ဒေါပုံသင်္ဘောကျင်း - ဂျပန်တံတားသစ် - မင်္ဂလာဈေး - ဗညားဒလလမ်း - မြန်မာဂုဏ်ရည်လမ်း - ရန်ကုန်ဘူတာကြီး - အောင်ဆန်းကွင်း",
+  "major_stops": [
+    "သာကေတ(အနော်မာ)",
+    "မြင်တော်သာလမ်း",
+    "ရုပ်ရှင်ရုံ",
+    "ဇင်ဂမာလမ်း",
+    "မင်းနန္ဒာလမ်း",
+    "ဒေါပုံသင်္ဘောကျင်း",
+    "ဂျပန်တံတားသစ်",
+    "မင်္ဂလာဈေး",
+    "ဗညားဒလလမ်း",
+    "မြန်မာဂုဏ်ရည်လမ်း",
+    "ရန်ကုန်ဘူတာကြီး",
+    "အောင်ဆန်းကွင်း"
+  ],
+  "origin": "သာကေတ(အနော်မာ)",
+  "destination": "အောင်ဆန်းကွင်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "အနော်မာ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဘုရားရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "၇ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ကျန်းမာရေး",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ရုပ်ရှင်ရုံ",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ထူပါရုံ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "အနော်မာ",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "၁ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "၁ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "သဒ္ဒါရုံ",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဝက်စု",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ရန်အောင်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ဒေါပုံသင်္ဘောကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ဝါဆို",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "မင်္ဂလာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "မင်္ဂလာဈေး(၁၂၄လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "မဆလာစက်",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "စာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "၉၁လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ကျောက်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ရန်ကုန်ဘူတာကြီး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 23
+}

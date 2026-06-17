@@ -1,0 +1,233 @@
+{
+  "id": "60",
+  "number": "52",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/60",
+  "summary": "ထန်းတပင်(ကုမုဒြာပန်းခြံ) - ထန်းတပင်လမ်း - တူးချောင်း - အလုပ်သမားဆေးရုံ - ဒင်္ဂဧရာအဝေးပြေး - သမကုန်း - ဘီအိုစီအဝိုင်း - မီးခွက်ဈေး",
+  "major_stops": [
+    "ထန်းတပင်(ကုမုဒြာပန်းခြံ)",
+    "ထန်းတပင်လမ်း",
+    "တူးချောင်း",
+    "အလုပ်သမားဆေးရုံ",
+    "ဒင်္ဂဧရာအဝေးပြေး",
+    "သမကုန်း",
+    "ဘီအိုစီအဝိုင်း",
+    "မီးခွက်ဈေး"
+  ],
+  "origin": "ထန်းတပင်(ကုမုဒြာပန်းခြံ)",
+  "destination": "မီးခွက်ဈေး",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "မီးခွက်ဈေး(အပေါ်ထိပ်)",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "၅ထိပ်(စနေမ)",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "စနေမ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "သမကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ဒဂုံဧရာအဝေးပြေး",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "တပ်ရင်း၉",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "မြစိမ်းအောင်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "အီးပီစီ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "အလုပ်သမားဆေးရုံ",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "တူးချောင်း",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ကျောက်တံတား",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ဝါးတံတား",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ဘုရာလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ကျိုက္ခနာ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ဖိုးလဈေး",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ကျူလေးစု",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "တာသစ်",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "တိုးတက်",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "သဲဖြူ(ရိပ်သာ)",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "သဲဖြူ(ရွာထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "သံပုရာကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "တောလမ်းလေး",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ရိုးဂွ(လှေဆိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "အေးသာယာ",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ရွှေပြည်သာ",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ကျောင်းကုန်း(ဆိုင်းဘုတ်)",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ကျောင်းကုန်း(ဟိုဘက်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ငုတ်တို",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "သီရိမြိုင်",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ကျော်မိုး",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ချစ်ဆောင်",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "တင်အောင်",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "မောင်သိန်း",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "တင်မြင့်",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "လမ်းဆုံ(တရားရုံး)",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "နန်းဝေလင်း",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ကုမုဒြာပန်းခြံ",
+      "type": "end"
+    }
+  ],
+  "stop_count": 42
+}

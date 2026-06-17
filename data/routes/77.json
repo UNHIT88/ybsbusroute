@@ -1,0 +1,397 @@
+{
+  "id": "77",
+  "number": "68",
+  "prefix": "YPS",
+  "color": "#2b6cb0",
+  "url": "https://yangonbusroute.com/ybs-route/77",
+  "summary": "ရွှေပြည်သာ(အိမ်မဲကြီး) - ထန်းခြောက်ပင် - ပုလဲလမ်းဆုံ - ၁၄လမ်းဆုံ - ပုလဲလမ်း -\nပြည်တော်သာ - ရွာမ - အင်းစိန်ဘူတာ - သမိုင်းလမ်းဆုံ - ဘုရင့်နောင်လမ်းဆုံ - ဘုရင့်နောင်တံတား - ပုသိမ်လမ်း - စက်မှုဇုန် - အောက်ထိပ် - ဘီအိုစီအဝိုင်း သမကုန်း - ဒဂုံဧရာအဝေးပြေး - အနောက်ပိုင်းနည်းပညာတက္ကသိုလ်",
+  "major_stops": [
+    "ရွှေပြည်သာ(အိမ်မဲကြီး)",
+    "ထန်းခြောက်ပင်",
+    "ပုလဲလမ်းဆုံ",
+    "၁၄လမ်းဆုံ",
+    "ပုလဲလမ်း",
+    "ပြည်တော်သာ",
+    "ရွာမ",
+    "အင်းစိန်ဘူတာ",
+    "သမိုင်းလမ်းဆုံ",
+    "ဘုရင့်နောင်လမ်းဆုံ",
+    "ဘုရင့်နောင်တံတား",
+    "ပုသိမ်လမ်း",
+    "စက်မှုဇုန်",
+    "အောက်ထိပ်",
+    "ဘီအိုစီအဝိုင်း သမကုန်း",
+    "ဒဂုံဧရာအဝေးပြေး",
+    "အနောက်ပိုင်းနည်းပညာတက္ကသိုလ်"
+  ],
+  "origin": "ရွှေပြည်သာ(အိမ်မဲကြီး)",
+  "destination": "အနောက်ပိုင်းနည်းပညာတက္ကသိုလ်",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "အိမ်မဲကြီး",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "အောင်မေတ္တာ",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "အောင်ချမ်းသာ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဏဈေး(အောင်သုခ)",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ငြိမ်းချမ်းရေး",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "အမိုးကြီး",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ဏကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ကိုးသုံးလုံး",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ဆင်နှစ်ကောင်",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "၃ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ငမောက်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ရေချမ်းစင်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "နဝရတ်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ကျော်စွာ",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "တော်ဝင်",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ရွှေညာမောင်",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ဆေးခန်း",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ထန်းခြောက်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ကားလေးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "၈၁ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ပျော်ဘွယ်",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ဇင်ယော်",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ပုလဲလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ဘုန်းကြီးကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "တံတားထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "၁၉၉ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "၁၄လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "မြဝတီမင်းကြီး",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "အေအမ်စီ",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ဦးခက်",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ဦးထွန်း",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ကနောင်မင်းသားကြီး",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ဆင်နှစ်ကောင်အလယ်ပေါက်",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ဦးမြဲ",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "သစ်စက်ကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ကြွေမြေ",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "သံမဏိ",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ပြည်တော်သာ",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "ရွာမ",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "အေးသိဒ္ဓိ",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "အင်းစိန်ဆေးရုံ",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "အင်းစိန်ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "ကြို့ကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "ဘီပီအိုင် (YTU)",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "ခဝဲခြံ",
+      "type": null
+    },
+    {
+      "sequence": 51,
+      "name": "ကုလားကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 52,
+      "name": "သမိုင်းလမ်းဆုံ(Junction)",
+      "type": null
+    },
+    {
+      "sequence": 53,
+      "name": "ကြွေ",
+      "type": null
+    },
+    {
+      "sequence": 54,
+      "name": "ဦးဘဟန်",
+      "type": null
+    },
+    {
+      "sequence": 55,
+      "name": "ဈေးဘူတာ",
+      "type": null
+    },
+    {
+      "sequence": 56,
+      "name": "ဘုရင့်နောင်လမ်းဆုံ(တံတားပေါ်/အောက်)",
+      "type": null
+    },
+    {
+      "sequence": 57,
+      "name": "တပ်ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 58,
+      "name": "စက်မှုဇုံ",
+      "type": null
+    },
+    {
+      "sequence": 59,
+      "name": "ဗိုလ်ချုပ်",
+      "type": null
+    },
+    {
+      "sequence": 60,
+      "name": "အဆင့်မြင့်",
+      "type": null
+    },
+    {
+      "sequence": 61,
+      "name": "နဝဒေး",
+      "type": null
+    },
+    {
+      "sequence": 62,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 63,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 64,
+      "name": "မီးခွက်ဈေး(အောက်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 65,
+      "name": "တိုးချဲ့",
+      "type": null
+    },
+    {
+      "sequence": 66,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 67,
+      "name": "သမကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 68,
+      "name": "ဒဂုံဧရာအဝေးပြေး",
+      "type": null
+    },
+    {
+      "sequence": 69,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 70,
+      "name": "တပ်ရင်း၉",
+      "type": null
+    },
+    {
+      "sequence": 71,
+      "name": "မြစိမ်းရောင်",
+      "type": null
+    },
+    {
+      "sequence": 72,
+      "name": "နည်းပညာတက္ကသိုလ်အဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 73,
+      "name": "အနောက်ပိုင်းနည်းပညာတက္ကသိုလ်",
+      "type": "end"
+    }
+  ],
+  "stop_count": 73
+}

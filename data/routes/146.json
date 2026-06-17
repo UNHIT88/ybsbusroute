@@ -1,0 +1,256 @@
+{
+  "id": "146",
+  "number": "130",
+  "prefix": "YPS",
+  "color": "#2b6cb0",
+  "url": "https://yangonbusroute.com/ybs-route/146",
+  "summary": "အနောက်ပိုင်းနည်းပညာတက္ကသိုလ် - ဒဂုံဧရာအဝေးပြေး - သမကုန်း - မီးခွက်ဈေး - အောင်ဇေယျကြိုးတံတား - ပေါက်တောဝ - ဘုရင့်နောင်လမ်းဆုံ - သီရိမင်္ဂလာဈေးသစ် - ဆင်မလိုက် - ကြည့်မြင်တိုင်ကမ်းနားလမ်း - သခင်မြပန်းခြံ",
+  "major_stops": [
+    "အနောက်ပိုင်းနည်းပညာတက္ကသိုလ်",
+    "ဒဂုံဧရာအဝေးပြေး",
+    "သမကုန်း",
+    "မီးခွက်ဈေး",
+    "အောင်ဇေယျကြိုးတံတား",
+    "ပေါက်တောဝ",
+    "ဘုရင့်နောင်လမ်းဆုံ",
+    "သီရိမင်္ဂလာဈေးသစ်",
+    "ဆင်မလိုက်",
+    "ကြည့်မြင်တိုင်ကမ်းနားလမ်း",
+    "သခင်မြပန်းခြံ"
+  ],
+  "origin": "အနောက်ပိုင်းနည်းပညာတက္ကသိုလ်",
+  "destination": "သခင်မြပန်းခြံ",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "အနောက်ပိုင်းနည်းပညာတက္ကသိုလ်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "အဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "မြစိမ်းရောင်",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "တပ်ရင်း ၉",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ဆောက်လုပ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ဒဂုံဧရာအဝေးပြေး",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "သမကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "စနေမ",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "၅ထိပ်(စနေမ)",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "မီးခွက်ဈေး(အပေါ်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "၅ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "၃ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "၁ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "အင်းစိန်ကမ်းနား",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ပေါက်တောဝ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "ပေါက်တောဝ",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ညောင်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "မြို့သစ်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ပိတောက်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ကြို့ကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ဘုရင့်နောင်ဈေးပွဲရုံ",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ဘုရင့်နောင်လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "အုတ်ကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "သီရိမင်္ဂလာဈေးသစ်",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "အိုဝမ်း",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ဘူတာရုံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ချောင်းဝ",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ရွာမကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ရေကြောင်း",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "သင်္ဘောကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ဆင်မလိုက်",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "နတ်စင်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ကမ်းနားဈေး",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ကြည့်မြင်တိုင်ညဈေး",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ကြည့်မြင်တိုင်စာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "သဲကွင်း",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ဟုမ်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "သီရိမင်္ဂလာဈေးဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ဆင်မင်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "ဒန်အိုးစက်",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "သစ်တော",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ထော်လီကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "သခင်မြပန်းခြံ",
+      "type": "end"
+    }
+  ],
+  "stop_count": 46
+}

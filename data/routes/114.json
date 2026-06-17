@@ -1,0 +1,221 @@
+{
+  "id": "114",
+  "number": "104",
+  "prefix": "YPS",
+  "color": "#2b6cb0",
+  "url": "https://yangonbusroute.com/ybs-route/114",
+  "summary": "ဝါယာလက် - ခရေပင်လမ်းခွဲ - ပြည်လမ်း - စော်ဘွားကြီးကုန်း - ၈မိုင်လမ်းဆုံ - မြေနီကုန်း - ဗိုလ်ချုပ်အောင်ဆန်းလမ်း - ဆူးလေ(မြို့တော်ခန်းမ) - ကမ်းနားလမ်း - ၆ထပ်ရုံး - သိမ်ကြီးဈေး",
+  "major_stops": [
+    "ဝါယာလက်",
+    "ခရေပင်လမ်းခွဲ",
+    "ပြည်လမ်း",
+    "စော်ဘွားကြီးကုန်း",
+    "၈မိုင်လမ်းဆုံ",
+    "မြေနီကုန်း",
+    "ဗိုလ်ချုပ်အောင်ဆန်းလမ်း",
+    "ဆူးလေ(မြို့တော်ခန်းမ)",
+    "ကမ်းနားလမ်း",
+    "၆ထပ်ရုံး",
+    "သိမ်ကြီးဈေး"
+  ],
+  "origin": "ဝါယာလက်",
+  "destination": "သိမ်ကြီးဈေး",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ဝါယာလက်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ကျိုက္ကလို့",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ကျိုက္ကလဲ့/ဆပ်ပလိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဗဟိုနိုင်ငံရေး",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "မင်္ဂလာဒုံဈေး",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ခရေပင်လမ်းခွဲ(ပြည်လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "မင်္ဂလာဒုံစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ဆေးကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ပန်းခြံကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ကုလားဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ထန်းပင်ကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "စော်ဘွားကြီးကုန်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ကျောက်တော်ကြီးဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "၁၀မိုင်ကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "၉မိုင်ခွဲ",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "၉မိုင်",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "အေဝမ်း",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "မဟာစည်",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "၈မိုင်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "၇မိုင်",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "အေဒီ",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "၆မိုင်ခွဲ",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "မာလာ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "စိုက်ပျိုးရေး",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "ဟံသာဝတီအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "မဟာမြိုင်",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "မြေနီကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "မြေနီကုန်း(ပြည်လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ဟယ်လ်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ပဲခူးကလပ်",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "စိန်ဂျွန်း",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "သရက်တောကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ရန်ကုန်ပြည်သူ့ဆေးရုံကြီး",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ဗိုလ်ချုပ်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ဆူးလေ(ရှန်ဂရီလာ)",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "၆ထပ်ရုံး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 39
+}

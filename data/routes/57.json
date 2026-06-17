@@ -1,0 +1,56 @@
+{
+  "id": "57",
+  "number": "49",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/57",
+  "summary": "လှိုင်သာယာ(ဘီအိုစီ) - တွံတေးကြိုးတံတား - ဘုရားငုတ်တို - ကံဘဲ့ - ကော့မှူး - ကွမ်းခြံကုန်း",
+  "major_stops": [
+    "လှိုင်သာယာ(ဘီအိုစီ)",
+    "တွံတေးကြိုးတံတား",
+    "ဘုရားငုတ်တို",
+    "ကံဘဲ့",
+    "ကော့မှူး",
+    "ကွမ်းခြံကုန်း"
+  ],
+  "origin": "လှိုင်သာယာ(ဘီအိုစီ)",
+  "destination": "ကွမ်းခြံကုန်း",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ဘီအိုစီ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "လှိုင်သာယာ ကော့မှူးကားဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "တွံတေးကြိုးတံတား",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဘုရားငုတ္တိ",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ကံဘဲ့",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ကော့မှူး",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ကွမ်းခြံကုန်း",
+      "type": "end"
+    }
+  ],
+  "stop_count": 7
+}

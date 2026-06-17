@@ -1,0 +1,234 @@
+{
+  "id": "168",
+  "number": "53",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/168",
+  "summary": "ပေါက်တန်းအဝိုင်း - အလယ်ရွာ - ရွှေလင်ပန်းစက်မှုဇုန် - ကျန်စစ်သားလမ်း - ရုံးရှေ့ - မီးခွက်ဈေး - ဗိုလ်အောင်ကျော်လမ်း - ယောအတွင်းဝန်ဦးဖိုးလှိုင်လမ်း - ရိုးကြီး",
+  "major_stops": [
+    "ပေါက်တန်းအဝိုင်း",
+    "အလယ်ရွာ",
+    "ရွှေလင်ပန်းစက်မှုဇုန်",
+    "ကျန်စစ်သားလမ်း",
+    "ရုံးရှေ့",
+    "မီးခွက်ဈေး",
+    "ဗိုလ်အောင်ကျော်လမ်း",
+    "ယောအတွင်းဝန်ဦးဖိုးလှိုင်လမ်း",
+    "ရိုးကြီး"
+  ],
+  "origin": "ပေါက်တန်းအဝိုင်း",
+  "destination": "ရိုးကြီး",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "အလယ်ရွာ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "အဝိုင်းထိပ်(မီးသတ်အဝိုင်း)",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "မူကြိုလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "စိန်ပန်း",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ဈေးလေး",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ရွှေသီးလေး",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "၁၅ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "၁၂၇ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ကမ္ဘာဇ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "၁၀၃ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဈေးလေး(အောက်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "နဝဒေး",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "အဆင့်မြင့်",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ဗိုလ်ချုပ်",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "စက်မှုဇုံ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "တပ်ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "တပ်ထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "စက်မှုဇုံ",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ဗိုလ်ချုပ်",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "အဆင့်မြင့်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "နဝဒေး",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဈေးလေး(အောက်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "မီးခွက်ဈေး(အပေါ်ထိပ်)",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "၆သမ",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ပင်လုံဈေး",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ဓမ္မာရုံ",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "အလက၃",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "၁၆ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "အုန်းတော",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "၉၆အပြာဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ကြက်ခြံ",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "အဖြူဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ရိုးလေး",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ရိုးကြီး",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ပေါက်တန်းအဝိုင်း",
+      "type": "end"
+    }
+  ],
+  "stop_count": 42
+}

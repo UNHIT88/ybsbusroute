@@ -1,0 +1,263 @@
+{
+  "id": "13",
+  "number": "12",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/13",
+  "summary": "မြောက်ဒဂုံ(ထားဝယ်ချောင်) - ၅၀ကွေ့ - ပြည်ထောင်စုလမ်း - ၄၆ လမ်းဆုံ - ၇/၈လမ်းဆုံ - မဝတ – ပင်လုံလမ်း - ဘေလီ - ပါရမီလမ်း - ကေတုမာလာကွေ့ - သုမင်္ဂလာလမ်း - နန္ဒဝန်ဈေး - သစ္စာလမ်း - မိုးကောင်း - ရန်ကင်းလမ်း - ၁၂လုံးတန်း - ဆရာစံလမ်း - ဦးချစ်မောင်လမ်း - တာမွေအဝိုင်း - ၅ထပ်ကြီး - ရွှေဂုံတိုင် - ဗဟန်းသုံးလမ်း(ကန်တော်ကြီး) - ရန်ကုန်ဘူတာကြီး - ဆူးလေ(မြို့တော်ခန်းမ)",
+  "major_stops": [
+    "မြောက်ဒဂုံ(ထားဝယ်ချောင်)",
+    "၅၀ကွေ့",
+    "ပြည်ထောင်စုလမ်း",
+    "၄၆ လမ်းဆုံ",
+    "၇/၈လမ်းဆုံ",
+    "မဝတ – ပင်လုံလမ်း",
+    "ဘေလီ",
+    "ပါရမီလမ်း",
+    "ကေတုမာလာကွေ့",
+    "သုမင်္ဂလာလမ်း",
+    "နန္ဒဝန်ဈေး",
+    "သစ္စာလမ်း",
+    "မိုးကောင်း",
+    "ရန်ကင်းလမ်း",
+    "၁၂လုံးတန်း",
+    "ဆရာစံလမ်း",
+    "ဦးချစ်မောင်လမ်း",
+    "တာမွေအဝိုင်း",
+    "၅ထပ်ကြီး",
+    "ရွှေဂုံတိုင်",
+    "ဗဟန်းသုံးလမ်း(ကန်တော်ကြီး)",
+    "ရန်ကုန်ဘူတာကြီး",
+    "ဆူးလေ(မြို့တော်ခန်းမ)"
+  ],
+  "origin": "မြောက်ဒဂုံ(ထားဝယ်ချောင်)",
+  "destination": "ဆူးလေ(မြို့တော်ခန်းမ)",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ထားဝယ်ချောင်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "၅၀ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ရုံးရှေ့(၄၆ရပ်ကွက်)",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "အအေးဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "မြဝတီ",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "၄၆လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "၄၅",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "၇/၈လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ရုံးရှေ့(၃၈ရပ်ကွက်)",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ကုန်ပဒေသာ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "စွမ်းအင်",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "မဝတလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "မန္တလေးလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "စစ်တောင်း",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ဆက်သွယ်ရေး",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "၃၅",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "သင်းဝင်",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "နာရီစင်",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ပင်းယ",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ကေတုမာလာကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "တကောင်း",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "နန္ဒဝန်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "အင်းဝ",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "တောင်ဥက္ကလာစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ပုဏ္ဏမီ",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ဗဟိုဈေး",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "သံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "မိုးကောင်း",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ရန်ကင်းစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "၁၂လုံးတန်း",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ကြားမှတ်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ဂွတ္တလစ်ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "မင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "မြလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "တာမွေအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "တာမွေအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "၆ထပ်ကြီး",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ဗန်ဒါပင်",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ရွှေဂုံတိုင်",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ရေခဲဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "ဗဟန်း၃လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ယောက်လမ်း(သမ္မတ)",
+      "type": "end"
+    }
+  ],
+  "stop_count": 45
+}

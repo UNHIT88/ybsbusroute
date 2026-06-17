@@ -1,0 +1,50 @@
+{
+  "id": "55",
+  "number": "47",
+  "prefix": null,
+  "color": "#319795",
+  "url": "https://yangonbusroute.com/ybs-route/55",
+  "summary": "လှိုင်သာယာ(ဘီအိုစီ) - တွံတေးကြိုးတံတား - ဘုရားငုတ်တို - ကံဘဲ့ - တွံတေး",
+  "major_stops": [
+    "လှိုင်သာယာ(ဘီအိုစီ)",
+    "တွံတေးကြိုးတံတား",
+    "ဘုရားငုတ်တို",
+    "ကံဘဲ့",
+    "တွံတေး"
+  ],
+  "origin": "လှိုင်သာယာ(ဘီအိုစီ)",
+  "destination": "တွံတေး",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ဘီအိုစီ",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "လှိုင်သာယာ ကော့မှူးကားဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "တွံတေးကြိုးတံတား",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဘုရားငုတ္တိ",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ကံဘဲ့",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "တွံတေး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 6
+}

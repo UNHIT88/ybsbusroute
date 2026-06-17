@@ -1,0 +1,258 @@
+{
+  "id": "20",
+  "number": "17",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/20",
+  "summary": "ရွှေပေါက်ကံ(ဆင်ဖုံ) - ပုဂံလမ်း - ဆေးရုံကွေ့ - မင်းထူးကျော် - ၆ကွေ့ - အောင်မင်္ဂလာအဝေးပြေး - အမှတ်(၃)လမ်းဆုံ - ခရေပင်လမ်းခွဲ - ဒညင်းကုန်း - ဘူတာဈေး - ၁၄လမ်းဆုံ - ရွှေပြည်သာတံတား - ပေါက်တန်းအဝိုင်း - အနော်ရထာလမ်း - ရိုးကြီး - ရိုးလေး - သမကုန်း - ဒဂုံဧရာအဝေးပြေး",
+  "major_stops": [
+    "ရွှေပေါက်ကံ(ဆင်ဖုံ)",
+    "ပုဂံလမ်း",
+    "ဆေးရုံကွေ့",
+    "မင်းထူးကျော်",
+    "၆ကွေ့",
+    "အောင်မင်္ဂလာအဝေးပြေး",
+    "အမှတ်(၃)လမ်းဆုံ",
+    "ခရေပင်လမ်းခွဲ",
+    "ဒညင်းကုန်း",
+    "ဘူတာဈေး",
+    "၁၄လမ်းဆုံ",
+    "ရွှေပြည်သာတံတား",
+    "ပေါက်တန်းအဝိုင်း",
+    "အနော်ရထာလမ်း",
+    "ရိုးကြီး",
+    "ရိုးလေး",
+    "သမကုန်း",
+    "ဒဂုံဧရာအဝေးပြေး"
+  ],
+  "origin": "ရွှေပေါက်ကံ(ဆင်ဖုံ)",
+  "destination": "ဒဂုံဧရာအဝေးပြေး",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "၁၇ဂိတ်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ဆေးရုံကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "မီးသတ်",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "မင်းထူးကျော်",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ကျောက်လမ်းထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "မော်ကျွန်း",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ဓမ္မာရုံ",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "၆ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ဓမ္မာရုံ",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "အောင်မင်္ဂလာအဝေးပြေးထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "အမှတ်၃လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ခရေပင်ရိပ်မွန်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "သုံးရာသီ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ရာသက်ပန်",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ခရေပင်လမ်းခွဲ(ခရေပင်လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ဆေးကျောင်းပေါက်",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "၁၀၆",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ပန်းခြံ",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "၆၄၆",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "အစာစက်",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ဒညင်းကုန်းလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ဒညင်းကုန်းဘူတာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "၁၄လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "၁၉၉ ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ဧရာမြေ",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "မိုင်၂၀",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "အလယ်ရွာ",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ပေါက်တန်းအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ရိုးကြီး",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ရိုးလေး",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "၁၂၄",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ကျောင်းရှေ့(ရိုးလေး)",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "၈၆ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ရွှေရင်အေးဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ပဲခူးလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "ဈေးလေး",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "၁၂သမ",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "အောင်မင်္ဂလာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "အားမာန်",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "သမကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "သမကုန်း",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ဒဂုံဧရာအဝေးပြေး",
+      "type": "end"
+    }
+  ],
+  "stop_count": 45
+}

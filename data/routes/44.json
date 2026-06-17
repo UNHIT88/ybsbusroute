@@ -1,0 +1,198 @@
+{
+  "id": "44",
+  "number": "38",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/44",
+  "summary": "ပါရမီ(ညောင်ပင်) - ဘေလီ - သံသုမာလမ်း - တောင်ဥက္ကလာပဘုရား - သစ္စာလမ်း - ရန်ကင်းလမ်း - ရန်ရှင်းလမ်း - စက်မှုကွေ့ - လမ်းနီ(မြန်မာပလာဇာ) - လှည်းတန်းလမ်း - ဆင်မလိုက် - ဘုရင့်နောင်လမ်း - သီရိမင်္ဂလာဈေးသစ်",
+  "major_stops": [
+    "ပါရမီ(ညောင်ပင်)",
+    "ဘေလီ",
+    "သံသုမာလမ်း",
+    "တောင်ဥက္ကလာပဘုရား",
+    "သစ္စာလမ်း",
+    "ရန်ကင်းလမ်း",
+    "ရန်ရှင်းလမ်း",
+    "စက်မှုကွေ့",
+    "လမ်းနီ(မြန်မာပလာဇာ)",
+    "လှည်းတန်းလမ်း",
+    "ဆင်မလိုက်",
+    "ဘုရင့်နောင်လမ်း",
+    "သီရိမင်္ဂလာဈေးသစ်"
+  ],
+  "origin": "ပါရမီ(ညောင်ပင်)",
+  "destination": "သီရိမင်္ဂလာဈေးသစ်",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ပါရမီညောင်ပင်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ကေတုမာလာကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ပင်းယ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဘေလီ",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "မြင်သာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "တောင်ဥက္ကလာဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "တောင်ဥက္ကလာစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ပုဏ္ဏမီ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ဗဟိုဈေး",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "သံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "မိုးကောင်း",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ရန်ကင်းစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "၁၂လုံးတန်း",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "၁၂လုံးတန်း",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ရန်ကင်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "စက်မှုကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "လမ်းနီလေး(မြန်မာပလာဇာ)",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ကုက္ကိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "ရေစက်ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "သံလွင်",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "UFL",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ကျောင်းရှေ့(ဓမ္မာရုံ)",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "လှည်းတန်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "လှည်းတန်းကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "သင်္ဘောကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "ရေကြောင်း",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ရွာမကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "ချောင်းဝ",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "ဘူတာရုံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "အိုဝမ်း",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "သီရိမင်္ဂလာဈေးသစ်",
+      "type": "end"
+    }
+  ],
+  "stop_count": 34
+}

@@ -1,0 +1,278 @@
+{
+  "id": "80",
+  "number": "71",
+  "prefix": null,
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/80",
+  "summary": "သရက်ပင်ချောင် - လေးထောင့်ကန်ရွာလမ်း - လေးထောင့်ကန်ဆိုက်ကွေ့ - အမှတ်၂လမ်း -စီးပွားရေးတက္ကသိုလ်(ရွာသာကြီး) - တောင်မြောက်လမ်းဆုံ - စံပြဈေး - ဇဝန",
+  "major_stops": [
+    "သရက်ပင်ချောင်",
+    "လေးထောင့်ကန်ရွာလမ်း",
+    "လေးထောင့်ကန်ဆိုက်ကွေ့",
+    "အမှတ်၂လမ်း",
+    "စီးပွားရေးတက္ကသိုလ်(ရွာသာကြီး)",
+    "တောင်မြောက်လမ်းဆုံ",
+    "စံပြဈေး",
+    "ဇဝန"
+  ],
+  "origin": "သရက်ပင်ချောင်",
+  "destination": "ဇဝန",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "သရက်ပင်ချောင်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "၅လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "၄လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "၃လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "၂လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "၁လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ကျောင်းလမ်းရိပ်သာ",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "ရုံးရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "ညောင်ပင်ရွာထိပ်",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "မြန်မာ့သားကောင်း",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ဥက္ကံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "သစ်စက်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "မြေနီလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ဆေးရုံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "လေးထောင့်ကန်ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "မိဘရိပ်",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ရိပ်သာ",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "သမ",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "ဦးခွေးပု",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "မုန့်ဖို",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "သပြေခြံ",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ဒီဇင်ဘာမုဒ်ဦး",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဒီဇင်ဘာအလယ်ပေါက်",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "အအေးခန်း",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "ယူနစ်(၃)",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "စီးပွားရေးတက္ကသိုလ်(ရွာသာကြီး)",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ကြိုဆိုရေး",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "သစ်တော",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "လမ်းသစ်",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "အကြော်တဲ",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ညောင်နှစ်ပင်",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "အကောက်ခွန်",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "လိုင်စင်ရုံး",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ဦးထွန်းမြတ်",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "ကျောက်လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "တပ်ရင်း၃",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "ကွင်းဆင်းကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "သင်တန်းကျောင်း",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "နတ်စင်",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "တောင်မြောက်လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "တံတားဖြူ",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "ဘဝမြင့်",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 51,
+      "name": "ဇဝန",
+      "type": "end"
+    }
+  ],
+  "stop_count": 51
+}

@@ -1,0 +1,158 @@
+{
+  "id": "123",
+  "number": "113",
+  "prefix": "YPS",
+  "color": "#e53e3e",
+  "url": "https://yangonbusroute.com/ybs-route/123",
+  "summary": "ငမိုးရိပ်(ကားကြီးဂိတ်) - စံပြဈေး - ဇဝနလမ်းဆုံ - လေးထောင့်ကန်လမ်း - တာမွေဈေး - သီတာ - ယုဇနပလာဇာ - မင်္ဂလာဈေး - ဗညားဒလလမ်း - သိမ်ဖြူစာတိုက် - ကြယ်ငါးပွင့် - ကုန်သည်လမ်း - ဆူးလေ(မဟာန္ဓုလပန်းခြံ)",
+  "major_stops": [
+    "ငမိုးရိပ်(ကားကြီးဂိတ်)",
+    "စံပြဈေး",
+    "ဇဝနလမ်းဆုံ",
+    "လေးထောင့်ကန်လမ်း",
+    "တာမွေဈေး",
+    "သီတာ",
+    "ယုဇနပလာဇာ",
+    "မင်္ဂလာဈေး",
+    "ဗညားဒလလမ်း",
+    "သိမ်ဖြူစာတိုက်",
+    "ကြယ်ငါးပွင့်",
+    "ကုန်သည်လမ်း",
+    "ဆူးလေ(မဟာန္ဓုလပန်းခြံ)"
+  ],
+  "origin": "ငမိုးရိပ်(ကားကြီးဂိတ်)",
+  "destination": "ဆူးလေ(မဟာန္ဓုလပန်းခြံ)",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "ကားကြီးဂိတ်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ဘဝမြင့်",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ဇဝန",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "ခပ်ချီးယား",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "အသင်းတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "သံလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "ကျိုက္ကဆံလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ကျောင်းရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "တာမွေဈေးဟောင်း(အာယုဆေးရုံ)",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "တာမွေဈေး",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ကျောက်မြောင်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "သီတာ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "အောင်မင်္ဂလာ",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ယုဇနပလာဇာ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "မင်္ဂလာဈေး(၁၂၄လမ်း)",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "မဆလာစက်",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "သိမ်ဖြူစာတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "သိမ်ဖြူဈေး",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "စိန်ပေါလ်",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ကြယ်ငါးပွင့်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "ဘိုကလေးဈေး",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ပန်းဆိုးတန်း",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဆူးလေ(ပန်းခြံ)",
+      "type": "end"
+    }
+  ],
+  "stop_count": 26
+}

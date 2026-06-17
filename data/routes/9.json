@@ -1,0 +1,268 @@
+{
+  "id": "9",
+  "number": "9",
+  "prefix": null,
+  "color": "#805ad5",
+  "url": "https://yangonbusroute.com/ybs-route/9",
+  "summary": "ဒဂုံဆိပ်ကမ်း(၁၆၈ရပ်ကွက်) - ကနောင်မင်းသားကြီးလမ်း - ၈၉လမ်းဆုံ - သံလွင်လမ်း - ဧရာဝဏ်လမ်း - သိမ်ကျောင်း - သာကေတအဝိုင်း - ကျောက်တိုင် - မင်းနန္ဒာလမ်း - ဒေါပုံသင်္ဘောကျင်း - ဂျပန်တံတားသစ် - မင်္ဂလာဈေး - ယုဇနပလာဇာ - တာမွေဈေး - အာသောက – ကြက်ဘဲဈေး - သုဝဏ္ဏလမ်းဆုံ - သုဝဏ္ဏတံတား - ကျောက်တိုင်",
+  "major_stops": [
+    "ဒဂုံဆိပ်ကမ်း(၁၆၈ရပ်ကွက်)",
+    "ကနောင်မင်းသားကြီးလမ်း",
+    "၈၉လမ်းဆုံ",
+    "သံလွင်လမ်း",
+    "ဧရာဝဏ်လမ်း",
+    "သိမ်ကျောင်း",
+    "သာကေတအဝိုင်း",
+    "ကျောက်တိုင်",
+    "မင်းနန္ဒာလမ်း",
+    "ဒေါပုံသင်္ဘောကျင်း",
+    "ဂျပန်တံတားသစ်",
+    "မင်္ဂလာဈေး",
+    "ယုဇနပလာဇာ",
+    "တာမွေဈေး",
+    "အာသောက – ကြက်ဘဲဈေး",
+    "သုဝဏ္ဏလမ်းဆုံ",
+    "သုဝဏ္ဏတံတား",
+    "ကျောက်တိုင်"
+  ],
+  "origin": "ဒဂုံဆိပ်ကမ်း(၁၆၈ရပ်ကွက်)",
+  "destination": "ကျောက်တိုင်",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "တိုင်းရင်းသားဖွံ့ဖြိုးရေးကော်လိပ်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "စာဥ",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "သစ်ဆိပ်",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "ဒုဋ္ဌဝတီ",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "သံလမ်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ဘုရားလေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "၃၄ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "၁၀ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "သာကေတအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "စဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "မြေနီ",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "ကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "အနော်မာ",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "သုဝဏ္ဏလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ဈေးလေး(ကြက်ဘဲဈေး)",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "အာသောက",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "တာမွေဗလီ",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "တာမွေဈေး",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "ကျောက်မြောင်းဈေး",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "သီတာ",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "အောင်မင်္ဂလာ",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "ယုဇနပလာဇာ",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "မင်္ဂလာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "ဝါဆို",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "ဒေါပုံသင်္ဘောကျင်း",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ရန်အောင်",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "ဝက်စု",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "သဒ္ဒါရုံ",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "၁ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "တပ်ဖွဲ့",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "မြေနီ",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "အနော်မာ",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ကျောင်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "မြေနီ",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "စဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "သာကေတအဝိုင်း",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "၁၀ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "၃၄ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ဘုရားလေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "သံလမ်းကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "ဒုဋ္ဌဝတီ",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "သစ်ဆိပ်",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "စာဥ",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "တိုင်းရင်းသားဖွံ့ဖြိုးရေးကော်လိပ်",
+      "type": "end"
+    }
+  ],
+  "stop_count": 47
+}

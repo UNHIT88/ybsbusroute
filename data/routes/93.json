@@ -1,0 +1,288 @@
+{
+  "id": "93",
+  "number": "84",
+  "prefix": "YPS",
+  "color": "#2b6cb0",
+  "url": "https://yangonbusroute.com/ybs-route/93",
+  "summary": "မြောက်ဒဂုံ(၁၄ရပ်ကွက်လမ်းဆုံ) - ဗိုလ်မင်းခေါင်လမ်း - တပင်ရွှေထီးလမ်း - ငထွေးယုလမ်း - မင်းရဲကျော်စွာလမ်း/ရာဇာဓိရာဇ်လမ်း - ၇/၈လမ်းဆုံ - မင်းရဲကျော်စွာလမ်း - ဦးဝိစာရလမ်း - ဘေလီ - သံသုမာလမ်း - စံပြဈေး - လေးထောင့်ကန်လမ်း - သုဝဏ္ဏလမ်းဆုံ - သုဝဏ္ဏတံတား - ကျောက်တိုင် - ဇင်ဂမလမ်း - ၅ကွေ့ - သာကေတအစိမ်းဂိတ်",
+  "major_stops": [
+    "မြောက်ဒဂုံ(၁၄ရပ်ကွက်လမ်းဆုံ)",
+    "ဗိုလ်မင်းခေါင်လမ်း",
+    "တပင်ရွှေထီးလမ်း",
+    "ငထွေးယုလမ်း",
+    "မင်းရဲကျော်စွာလမ်း/ရာဇာဓိရာဇ်လမ်း",
+    "၇/၈လမ်းဆုံ",
+    "မင်းရဲကျော်စွာလမ်း",
+    "ဦးဝိစာရလမ်း",
+    "ဘေလီ",
+    "သံသုမာလမ်း",
+    "စံပြဈေး",
+    "လေးထောင့်ကန်လမ်း",
+    "သုဝဏ္ဏလမ်းဆုံ",
+    "သုဝဏ္ဏတံတား",
+    "ကျောက်တိုင်",
+    "ဇင်ဂမလမ်း",
+    "၅ကွေ့",
+    "သာကေတအစိမ်းဂိတ်"
+  ],
+  "origin": "မြောက်ဒဂုံ(၁၄ရပ်ကွက်လမ်းဆုံ)",
+  "destination": "သာကေတအစိမ်းဂိတ်",
+  "stops": [
+    {
+      "sequence": 1,
+      "name": "အစိမ်းဂိတ်",
+      "type": "start"
+    },
+    {
+      "sequence": 2,
+      "name": "ကြယ်ငါးပွင့်",
+      "type": null
+    },
+    {
+      "sequence": 3,
+      "name": "ဝေဇယန္တာ",
+      "type": null
+    },
+    {
+      "sequence": 4,
+      "name": "၅ကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 5,
+      "name": "ရုပ်ရှင်ရုံ",
+      "type": null
+    },
+    {
+      "sequence": 6,
+      "name": "ထူပါရုံ",
+      "type": null
+    },
+    {
+      "sequence": 7,
+      "name": "အနော်မာ",
+      "type": null
+    },
+    {
+      "sequence": 8,
+      "name": "၁ဈေးကွေ့",
+      "type": null
+    },
+    {
+      "sequence": 9,
+      "name": "တပ်ဖွဲ့",
+      "type": null
+    },
+    {
+      "sequence": 10,
+      "name": "မြေနီ",
+      "type": null
+    },
+    {
+      "sequence": 11,
+      "name": "ကျောက်တိုင်",
+      "type": null
+    },
+    {
+      "sequence": 12,
+      "name": "သုဝဏ္ဏလမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 13,
+      "name": "အသင်းတိုက်",
+      "type": null
+    },
+    {
+      "sequence": 14,
+      "name": "ခပ်ချီးယား",
+      "type": null
+    },
+    {
+      "sequence": 15,
+      "name": "ဇဝန",
+      "type": null
+    },
+    {
+      "sequence": 16,
+      "name": "ဘုရားလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 17,
+      "name": "ဘီအိုစီ",
+      "type": null
+    },
+    {
+      "sequence": 18,
+      "name": "ဘဝမြင့်",
+      "type": null
+    },
+    {
+      "sequence": 19,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 20,
+      "name": "စံပြဈေး",
+      "type": null
+    },
+    {
+      "sequence": 21,
+      "name": "လိုင်စင်ရုံး",
+      "type": null
+    },
+    {
+      "sequence": 22,
+      "name": "စီမံကိန်း",
+      "type": null
+    },
+    {
+      "sequence": 23,
+      "name": "၃၁ဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 24,
+      "name": "မိုးဆွေ",
+      "type": null
+    },
+    {
+      "sequence": 25,
+      "name": "တောင်ဥက္ကလာဘုရား",
+      "type": null
+    },
+    {
+      "sequence": 26,
+      "name": "မြင်သာဈေး",
+      "type": null
+    },
+    {
+      "sequence": 27,
+      "name": "ဘေလီ",
+      "type": null
+    },
+    {
+      "sequence": 28,
+      "name": "နာရီစင်",
+      "type": null
+    },
+    {
+      "sequence": 29,
+      "name": "၆လမ်း",
+      "type": null
+    },
+    {
+      "sequence": 30,
+      "name": "ဟောင်ကောင်",
+      "type": null
+    },
+    {
+      "sequence": 31,
+      "name": "အကြော်တဲ",
+      "type": null
+    },
+    {
+      "sequence": 32,
+      "name": "မဟာမြိုင်(ဆိုက်ရှေ့)",
+      "type": null
+    },
+    {
+      "sequence": 33,
+      "name": "ကားလေးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 34,
+      "name": "ကားကြီးဂိတ်",
+      "type": null
+    },
+    {
+      "sequence": 35,
+      "name": "ဇော်ဂျီ",
+      "type": null
+    },
+    {
+      "sequence": 36,
+      "name": "ဗိုလ်မင်းရောင်အိမ်ရာ",
+      "type": null
+    },
+    {
+      "sequence": 37,
+      "name": "တံတားဖြူ/ပင်လုံခန်းမ",
+      "type": null
+    },
+    {
+      "sequence": 38,
+      "name": "ဗိုလ်ထွန်းစံ",
+      "type": null
+    },
+    {
+      "sequence": 39,
+      "name": "၄၄",
+      "type": null
+    },
+    {
+      "sequence": 40,
+      "name": "ဗိုလ်ထွန်းစိန်",
+      "type": null
+    },
+    {
+      "sequence": 41,
+      "name": "လပြည့်ဝန်း",
+      "type": null
+    },
+    {
+      "sequence": 42,
+      "name": "ခိုင်ရွှေဝါ",
+      "type": null
+    },
+    {
+      "sequence": 43,
+      "name": "၇/၈လမ်းဆုံ",
+      "type": null
+    },
+    {
+      "sequence": 44,
+      "name": "၈သမ",
+      "type": null
+    },
+    {
+      "sequence": 45,
+      "name": "ကျောင်းလမ်း",
+      "type": null
+    },
+    {
+      "sequence": 46,
+      "name": "ဂိတ်ဟောင်း",
+      "type": null
+    },
+    {
+      "sequence": 47,
+      "name": "အမှတ်၈ဈေး",
+      "type": null
+    },
+    {
+      "sequence": 48,
+      "name": "ဗိုလ်မင်းခေါင်",
+      "type": null
+    },
+    {
+      "sequence": 49,
+      "name": "ဆည်းဆာရိပ်ရိပ်သာရှေ့",
+      "type": null
+    },
+    {
+      "sequence": 50,
+      "name": "အထည်ဆိုင်",
+      "type": null
+    },
+    {
+      "sequence": 51,
+      "name": "၁၄ရပ်ကွက်လမ်းဆုံ",
+      "type": "end"
+    }
+  ],
+  "stop_count": 51
+}
