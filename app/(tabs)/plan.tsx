@@ -5,7 +5,7 @@ import { useBusData } from "@/contexts/BusDataContext";
 import { useLocale } from "@/contexts/LocaleContext";
 import { useCurrentLocationStop } from "@/hooks/useCurrentLocationStop";
 import { getStop, getStopServingRoutes, searchStops } from "@/services/busData";
-import { refineTripPlans } from "@/services/routeValidation";
+import { refineTripPlansPerBoardingBus } from "@/services/routeValidation";
 import {
   findTripPlansPerBoardingBus,
   type TripPlan,
@@ -80,19 +80,24 @@ export default function PlanScreen() {
     setSearched(true);
     setRefining(true);
 
-    let initial = fromStop ? findTripPlansPerBoardingBus(fromStop, toStop.id) : [];
-    if (initial.length === 0 && !isStaticDataHost(YBS_API_BASE)) {
-      try {
-        initial = await fetchTripPlansRemote(fromStop.id, toStop.id);
-      } catch {
-        initial = [];
-      }
-    }
-    setPlans(initial);
-
     try {
-      const refined = await refineTripPlans(initial);
-      setPlans(refined.length > 0 ? refined : initial);
+      const initial = fromStop ? findTripPlansPerBoardingBus(fromStop, toStop.id) : [];
+      if (initial.length === 0 && !isStaticDataHost(YBS_API_BASE)) {
+        try {
+          const remote = await fetchTripPlansRemote(fromStop.id, toStop.id);
+          setPlans(remote);
+        } catch {
+          setPlans([]);
+        }
+      } else {
+        setPlans(initial);
+        try {
+          const refined = await refineTripPlansPerBoardingBus(initial);
+          setPlans(refined.length > 0 ? refined : initial);
+        } catch {
+          setPlans(initial);
+        }
+      }
     } finally {
       setRefining(false);
     }

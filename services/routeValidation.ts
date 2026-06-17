@@ -3,6 +3,7 @@ import { getRoute, getStop, routeStopMatchesBusStop } from "@/services/busData";
 import { fetchLegRoadDistanceMeters } from "@/services/osrmApi";
 import type { TripLeg, TripPlan } from "@/services/routePlanner";
 import { getEquivalentStopIds } from "@/services/stopClusters";
+import { sortPlansByQuality } from "@/services/tripPlanUtils";
 import { hasValidCoords } from "@/services/busDataNormalize";
 
 const MAX_SINGLE_HOP_KM = 30;
@@ -191,4 +192,18 @@ export async function refineTripPlans(plans: TripPlan[]): Promise<TripPlan[]> {
     .map((item) => item.plan);
 
   return ranked.length > 0 ? ranked : valid;
+}
+
+/** Refine each boarding-bus plan independently so one direct route does not hide transfer options. */
+export async function refineTripPlansPerBoardingBus(plans: TripPlan[]): Promise<TripPlan[]> {
+  const refined: TripPlan[] = [];
+
+  for (const plan of plans) {
+    if (!isPlanTopologicallyValid(plan)) continue;
+
+    const ranked = await refineTripPlans([plan]);
+    refined.push(ranked[0] ?? plan);
+  }
+
+  return sortPlansByQuality(refined);
 }

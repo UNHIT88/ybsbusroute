@@ -603,7 +603,7 @@ export function findTripPlansPerBoardingBus(
   const candidates = filterTransferPlansWithDirectBuses(
     sortPlansByQuality([...directPlans, ...oneTransferPlans, ...transferPlans]),
     directRouteNumbers
-  ).filter((plan) => isPlanTopologicallyValid(plan) && isAcceptablePlan(plan));
+  ).filter((plan) => isPlanTopologicallyValid(plan));
 
   const bestByBoardingRoute = new Map<string, TripPlan>();
   for (const plan of candidates) {
