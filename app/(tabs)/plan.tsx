@@ -4,16 +4,21 @@ import { colors, spacing } from "@/constants/theme";
 import { useBusData } from "@/contexts/BusDataContext";
 import { useLocale } from "@/contexts/LocaleContext";
 import { useCurrentLocationStop } from "@/hooks/useCurrentLocationStop";
-import { getStop, getStopServingRoutes, searchStops } from "@/services/busData";
+import { getStop, searchStops } from "@/services/busData";
 import { refineTripPlans } from "@/services/routeValidation";
-import { findTripPlans, type TripPlan } from "@/services/routePlanner";
+import {
+  findTripPlans,
+  getReachableBoardingRoutes,
+  type ReachableBoardingRoute,
+  type TripPlan,
+} from "@/services/routePlanner";
 import { fetchTripPlansRemote } from "@/services/ybsRouteApi";
 import { isStaticDataHost, YBS_API_BASE } from "@/constants/api";
 import { formatStopLine, getStopName } from "@/services/stopLabels";
 import { formatTransferBetween } from "@/services/tripPlanUtils";
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
   FlatList,
@@ -47,13 +52,34 @@ export default function PlanScreen() {
   const [plans, setPlans] = useState<TripPlan[]>([]);
   const [searched, setSearched] = useState(false);
   const [refining, setRefining] = useState(false);
+  const [reachableRoutes, setReachableRoutes] = useState<ReachableBoardingRoute[]>([]);
+  const [checkingBuses, setCheckingBuses] = useState(false);
 
   const pickerResults = useMemo(() => searchStops(query), [query, dataVersion]);
 
-  const fromServingRoutes = useMemo(
-    () => (fromStop ? getStopServingRoutes(fromStop) : []),
-    [fromStop, dataVersion]
-  );
+  useEffect(() => {
+    if (!fromStop || !toStop) {
+      setReachableRoutes([]);
+      setCheckingBuses(false);
+      return;
+    }
+
+    let cancelled = false;
+    setCheckingBuses(true);
+
+    const timer = setTimeout(() => {
+      const routes = getReachableBoardingRoutes(fromStop, toStop.id);
+      if (!cancelled) {
+        setReachableRoutes(routes);
+        setCheckingBuses(false);
+      }
+    }, 0);
+
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [fromStop, toStop, dataVersion]);
 
   async function handleUseCurrentLocation() {
     Keyboard.dismiss();
@@ -176,33 +202,55 @@ export default function PlanScreen() {
 
       {locationError ? <Text style={styles.locationError}>{locationError}</Text> : null}
 
-      {fromStop && fromServingRoutes.length > 0 ? (
-        <View style={styles.busesHereCard}>
-          <Text style={styles.busesHereTitle}>{t("plan", "busesHere")}</Text>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.busesHereRow}
-          >
-            {fromServingRoutes.map((route) => (
-              <Pressable
-                key={route.routeNumber}
-                style={[styles.busChip, { borderColor: route.color }]}
-                onPress={() => router.push(`/route/${route.routeNumber}`)}
-              >
-                <Text style={styles.busChipNumber}>{route.displayNumber}</Text>
-              </Pressable>
-            ))}
-          </ScrollView>
-        </View>
-      ) : null}
-
       <Pressable style={styles.selector} onPress={() => setPicker("to")}>
         <Text style={styles.selectorLabel}>{t("plan", "to")}</Text>
         <Text style={styles.selectorValue} numberOfLines={3}>
           {toStop ? getStopName(toStop, locale) : "—"}
         </Text>
       </Pressable>
+
+      {fromStop ? (
+        <View style={styles.busesHereCard}>
+          <Text style={styles.busesHereTitle}>
+            {toStop ? t("plan", "busesReachDestination") : t("plan", "busesHere")}
+          </Text>
+          {!toStop ? (
+            <Text style={styles.busesHereHint}>{t("plan", "busesPickDestination")}</Text>
+          ) : checkingBuses ? (
+            <View style={styles.busesCheckingRow}>
+              <ActivityIndicator color={colors.primary} size="small" />
+              <Text style={styles.busesHereHint}>{t("plan", "busesChecking")}</Text>
+            </View>
+          ) : reachableRoutes.length > 0 ? (
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.busesHereRow}
+            >
+              {reachableRoutes.map((route) => (
+                <Pressable
+                  key={route.routeNumber}
+                  style={[
+                    styles.busChip,
+                    { borderColor: route.color },
+                    route.isDirect ? styles.busChipDirect : styles.busChipTransfer,
+                  ]}
+                  onPress={() => router.push(`/route/${route.routeNumber}`)}
+                >
+                  <Text style={styles.busChipNumber}>{route.displayNumber}</Text>
+                  <Text style={styles.busChipMeta}>
+                    {route.isDirect
+                      ? t("plan", "busDirect")
+                      : `${route.transferCount} ${t("plan", "busWithTransfers")}`}
+                  </Text>
+                </Pressable>
+              ))}
+            </ScrollView>
+          ) : (
+            <Text style={styles.busesHereHint}>{t("plan", "busesNoneReach")}</Text>
+          )}
+        </View>
+      ) : null}
 
       <Pressable
         style={[styles.findButton, refining && styles.findButtonDisabled]}
@@ -452,6 +500,16 @@ const styles = StyleSheet.create({
     letterSpacing: 0.4,
     marginBottom: spacing.sm,
   },
+  busesHereHint: {
+    color: colors.textMuted,
+    fontSize: 13,
+    lineHeight: 20,
+  },
+  busesCheckingRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.sm,
+  },
   busesHereRow: {
     gap: 8,
     paddingRight: spacing.sm,
@@ -462,11 +520,26 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 8,
     backgroundColor: colors.surfaceAlt,
+    minWidth: 72,
+    alignItems: "center",
+  },
+  busChipDirect: {
+    backgroundColor: colors.surface,
+  },
+  busChipTransfer: {
+    borderStyle: "dashed",
   },
   busChipNumber: {
     color: colors.text,
     fontSize: 16,
     fontWeight: "800",
+  },
+  busChipMeta: {
+    color: colors.textMuted,
+    fontSize: 10,
+    fontWeight: "700",
+    marginTop: 2,
+    textAlign: "center",
   },
   findButton: {
     backgroundColor: colors.primaryDark,
