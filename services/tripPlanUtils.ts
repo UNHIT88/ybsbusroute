@@ -72,7 +72,7 @@ export function getDirectRouteNumbers(plans: TripPlan[]): Set<string> {
   return direct;
 }
 
-/** Drop transfer plans that reuse a bus line that already goes direct, or use the same bus twice. */
+/** Drop transfer plans that start with a bus line that already goes direct, or use the same bus twice. */
 export function filterTransferPlansWithDirectBuses(
   plans: TripPlan[],
   directRouteNumbers: Set<string>
@@ -80,7 +80,9 @@ export function filterTransferPlansWithDirectBuses(
   return plans.filter((plan) => {
     if (plan.transferCount === 0) return true;
     if (planHasDuplicateRouteNumbers(plan)) return false;
-    return !plan.legs.some((leg) => directRouteNumbers.has(leg.routeNumber));
+    const firstRoute = plan.legs[0]?.routeNumber;
+    if (firstRoute && directRouteNumbers.has(firstRoute)) return false;
+    return true;
   });
 }
 

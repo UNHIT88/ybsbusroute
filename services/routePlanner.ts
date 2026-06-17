@@ -1,11 +1,18 @@
 import type { BusRoute, BusStop } from "@/types/bus";
-import { getAllRoutes, getAllStops, getDisplayRouteNumber, getRoute } from "@/services/busData";
+import {
+  getAllRoutes,
+  getAllStops,
+  getDisplayRouteNumber,
+  getRoute,
+  getStopServingRoutes,
+} from "@/services/busData";
 import { hasValidCoords } from "@/services/busDataNormalize";
 import { findLegSpanOnRoute, isPlanTopologicallyValid } from "@/services/routeValidation";
 import { getEquivalentStopIds } from "@/services/stopClusters";
 import {
   filterTransferPlansWithDirectBuses,
   getDirectRouteNumbers,
+  planHasDuplicateRouteNumbers,
   planQualityScore,
   sortPlansByQuality,
   stopsAreTransferEquivalent,
@@ -212,6 +219,127 @@ function findOneTransferPlans(fromStopId: number, toStopId: number): TripPlan[] 
   }
 
   return sortPlansByQuality(plans);
+}
+
+function findDirectPlanOnRoute(
+  route: BusRoute,
+  fromStopId: number,
+  toStopId: number
+): TripPlan | null {
+  const fromIds = getEquivalentStopIds(fromStopId);
+  const toIds = getEquivalentStopIds(toStopId);
+  let best: TripPlan | null = null;
+
+  for (const fromId of fromIds) {
+    for (const toId of toIds) {
+      if (fromId === toId) continue;
+
+      const span = findLegSpanOnRoute(route, fromId, toId);
+      if (!span || span.stopCount === 0) continue;
+
+      const actualFrom = route.stops[span.fromIdx].stop_id;
+      const actualTo = route.stops[span.toIdx].stop_id;
+      const plan = simplifyTripPlan({
+        legs: [makeLeg(route.route_number, actualFrom, actualTo, span.stopCount)],
+        transferCount: 0,
+        totalStops: span.stopCount,
+        totalCost: span.stopCount,
+      });
+
+      if (!best || planQualityScore(plan) < planQualityScore(best)) {
+        best = plan;
+      }
+    }
+  }
+
+  return best;
+}
+
+function findOneTransferPlansForRoute(
+  routeA: BusRoute,
+  fromStopId: number,
+  toStopId: number
+): TripPlan[] {
+  const fromIds = getEquivalentStopIds(fromStopId);
+  const toIds = getEquivalentStopIds(toStopId);
+  const routes = getAllRoutes();
+  const plans: TripPlan[] = [];
+  const seen = new Set<string>();
+
+  for (const fromId of fromIds) {
+    for (const transferStop of routeA.stops) {
+      const spanA = findLegSpanOnRoute(routeA, fromId, transferStop.stop_id);
+      if (!spanA || spanA.stopCount === 0) continue;
+      if (routeA.stops[spanA.toIdx]?.stop_id !== transferStop.stop_id) continue;
+
+      const legAFrom = routeA.stops[spanA.fromIdx].stop_id;
+      const legATo = routeA.stops[spanA.toIdx].stop_id;
+
+      for (const routeB of routes) {
+        if (routeB.route_number === routeA.route_number) continue;
+
+        for (const boardStop of routeB.stops) {
+          if (!stopsAreTransferEquivalent(legATo, boardStop.stop_id)) continue;
+
+          for (const toId of toIds) {
+            const spanB = findLegSpanOnRoute(routeB, boardStop.stop_id, toId);
+            if (!spanB || spanB.stopCount === 0) continue;
+
+            const legBFrom = routeB.stops[spanB.fromIdx].stop_id;
+            const legBTo = routeB.stops[spanB.toIdx].stop_id;
+            const signature = `${routeA.route_number}:${legAFrom}->${legATo}|${routeB.route_number}:${legBFrom}->${legBTo}`;
+            if (seen.has(signature)) continue;
+            seen.add(signature);
+
+            plans.push(
+              simplifyTripPlan({
+                legs: [
+                  makeLeg(routeA.route_number, legAFrom, legATo, spanA.stopCount),
+                  makeLeg(routeB.route_number, legBFrom, legBTo, spanB.stopCount),
+                ],
+                transferCount: 1,
+                totalStops: spanA.stopCount + spanB.stopCount,
+                totalCost: spanA.stopCount + spanB.stopCount + TRANSFER_WEIGHT,
+              })
+            );
+          }
+        }
+      }
+    }
+  }
+
+  return sortPlansByQuality(plans);
+}
+
+function findBestPlanStartingWithRoute(
+  fromStopId: number,
+  toStopId: number,
+  routeNumber: string
+): TripPlan | null {
+  const route = getRoute(routeNumber);
+  if (!route) return null;
+
+  const direct = findDirectPlanOnRoute(route, fromStopId, toStopId);
+  if (direct) return direct;
+
+  let best: TripPlan | null = null;
+  for (const plan of findOneTransferPlansForRoute(route, fromStopId, toStopId)) {
+    if (planHasDuplicateRouteNumbers(plan)) continue;
+    if (!best || planQualityScore(plan) < planQualityScore(best)) {
+      best = plan;
+    }
+  }
+  if (best) return best;
+
+  for (const plan of findTransferRoutePlans(fromStopId, toStopId, 20)) {
+    if (plan.legs[0]?.routeNumber !== routeNumber) continue;
+    if (planHasDuplicateRouteNumbers(plan)) continue;
+    if (!best || planQualityScore(plan) < planQualityScore(best)) {
+      best = plan;
+    }
+  }
+
+  return best;
 }
 
 function isAcceptablePlan(plan: TripPlan): boolean {
@@ -460,4 +588,49 @@ export function findTripPlans(fromStopId: number, toStopId: number, limit = 15):
   }
 
   return merged;
+}
+
+/** One best plan per bus line that serves the boarding stop (direct or with transfers). */
+export function findTripPlansPerBoardingBus(
+  fromStop: BusStop,
+  toStopId: number
+): TripPlan[] {
+  const directPlans = findDirectRoutePlans(fromStop.id, toStopId);
+  const directRouteNumbers = getDirectRouteNumbers(directPlans);
+  const oneTransferPlans = findOneTransferPlans(fromStop.id, toStopId);
+  const transferPlans = findTransferRoutePlans(fromStop.id, toStopId, 30);
+
+  const candidates = filterTransferPlansWithDirectBuses(
+    sortPlansByQuality([...directPlans, ...oneTransferPlans, ...transferPlans]),
+    directRouteNumbers
+  ).filter((plan) => isPlanTopologicallyValid(plan) && isAcceptablePlan(plan));
+
+  const bestByBoardingRoute = new Map<string, TripPlan>();
+  for (const plan of candidates) {
+    const boardingRoute = plan.legs[0]?.routeNumber;
+    if (!boardingRoute) continue;
+
+    const previous = bestByBoardingRoute.get(boardingRoute);
+    if (!previous || planQualityScore(plan) < planQualityScore(previous)) {
+      bestByBoardingRoute.set(boardingRoute, simplifyTripPlan(plan));
+    }
+  }
+
+  const results: TripPlan[] = [];
+  for (const route of getStopServingRoutes(fromStop)) {
+    const cached = bestByBoardingRoute.get(route.routeNumber);
+    if (cached) {
+      results.push(cached);
+      continue;
+    }
+
+    const dedicated = findBestPlanStartingWithRoute(fromStop.id, toStopId, route.routeNumber);
+    if (!dedicated || !isPlanTopologicallyValid(dedicated)) continue;
+    if (planHasDuplicateRouteNumbers(dedicated)) continue;
+    if (dedicated.transferCount > 0 && directRouteNumbers.has(route.routeNumber)) continue;
+
+    results.push(simplifyTripPlan(dedicated));
+  }
+
+  return sortPlansByQuality(results);
 }

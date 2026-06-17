@@ -6,7 +6,10 @@ import { useLocale } from "@/contexts/LocaleContext";
 import { useCurrentLocationStop } from "@/hooks/useCurrentLocationStop";
 import { getStop, getStopServingRoutes, searchStops } from "@/services/busData";
 import { refineTripPlans } from "@/services/routeValidation";
-import { findTripPlans, type TripPlan } from "@/services/routePlanner";
+import {
+  findTripPlansPerBoardingBus,
+  type TripPlan,
+} from "@/services/routePlanner";
 import { fetchTripPlansRemote } from "@/services/ybsRouteApi";
 import { isStaticDataHost, YBS_API_BASE } from "@/constants/api";
 import { formatStopLine, getStopName } from "@/services/stopLabels";
@@ -77,7 +80,7 @@ export default function PlanScreen() {
     setSearched(true);
     setRefining(true);
 
-    let initial = findTripPlans(fromStop.id, toStop.id);
+    let initial = fromStop ? findTripPlansPerBoardingBus(fromStop, toStop.id) : [];
     if (initial.length === 0 && !isStaticDataHost(YBS_API_BASE)) {
       try {
         initial = await fetchTripPlansRemote(fromStop.id, toStop.id);
@@ -328,7 +331,7 @@ export default function PlanScreen() {
           renderItem={({ item, index }) => (
             <View style={styles.planCard}>
               <Text style={styles.planTitle}>
-                {t("plan", "option")} {index + 1} ·{" "}
+                {item.legs[0]?.displayNumber ?? t("plan", "option")} ·{" "}
                 {item.transferCount === 0
                   ? t("plan", "direct")
                   : `${item.transferCount} ${t("plan", "transfers")}`}{" "}
